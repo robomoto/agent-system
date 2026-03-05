@@ -21,6 +21,7 @@ A framework for building specialist Claude agents that delegate work through a t
 | **cost-accountant** | haiku | Token budget tracking, model routing optimization | Read, Glob, Grep, Bash (read-only) |
 | **sre** | sonnet | Reliability, monitoring, incident response, observability | Read, Write, Edit, Bash, Glob, Grep |
 | **sysadmin** | sonnet | Infrastructure, deployment, configuration, networking | Read, Write, Edit, Bash, Glob, Grep |
+| **qa** | sonnet | Test strategy, coverage gap analysis, edge case discovery, regression risk, acceptance criteria | Read, Glob, Grep, Bash (read-only) |
 | **claude-ai-specialist** | sonnet | Agent system optimization: prompts, tokens, model routing, determinism | Read, Glob, Grep, WebFetch, WebSearch |
 | **python-specialist** | sonnet | Python idioms, Pydantic, typing, Django, performance | Read, Glob, Grep, WebFetch, WebSearch |
 | ***-specialist** | varies | Created on demand per language/domain (see `create-specialist` skill) | Read, Glob, Grep + domain-appropriate |

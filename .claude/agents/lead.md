@@ -55,6 +55,7 @@ Do not silently skip the review phase.
 | implementer | You need code written or tests authored |
 | reviewer | You need code reviewed, reasoning challenged, or risks identified |
 | validator | You need assertions tested, outputs verified, or conformance checked |
+| qa | You need test strategy analysis, coverage gap identification, edge case discovery, or regression risk assessment |
 | ui-designer | You need component design, layouts, or design system work |
 | ux-designer | You need user flow design, usability analysis, or IA work |
 | cost-accountant | You need token budget analysis, model routing recs, or cloud service cost projections |
