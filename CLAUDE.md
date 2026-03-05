@@ -51,6 +51,17 @@ Agents return structured reports, not raw output:
 }
 ```
 
+### Subagent Type Routing
+
+When the lead dispatches agents, the `subagent_type` must match the task:
+
+| Task type | subagent_type | Why |
+|-----------|---------------|-----|
+| File/pattern discovery | `Explore` | Fast, read-only codebase navigation |
+| Analysis/evaluation (UX audit, security review) | `general-purpose` | Needs structured reasoning, not just search |
+| Implementation | `general-purpose` | Needs write tools |
+| Plan design | `Plan` | Specialized for architecture |
+
 ### Context Efficiency Rules
 
 - Pass references, not content. Say `see src/auth/handler.ts:45-80`, not the code itself.
@@ -58,6 +69,12 @@ Agents return structured reports, not raw output:
 - Route discovery to Haiku, implementation to Sonnet, orchestration to Opus.
 - Use agent memory (`.claude/agent-memory/`) for cross-session learning.
 - Parallel execution for independent subtasks (up to 7 concurrent).
+- **No redundant reads.** Agents must not re-read files they already read in the same session. The lead must not re-read files that specialists already reported on.
+
+### Session Hygiene
+
+- Each major task should start in a fresh session. Mixing projects in one session wastes context on irrelevant content.
+- If the user switches projects mid-session, the lead should flag that prior context will compress and may affect performance.
 
 ### Determinism Rules
 
@@ -81,6 +98,7 @@ Skills are reusable prompt bundles in `.claude/skills/`. Agents declare which sk
 | `security-audit` | reviewer, architect | OWASP top 10 checklist, STRIDE threat modeling, severity framework |
 | `cost-analysis` | cost-accountant, lead | Token cost estimation, cloud service projection, budget templates |
 | `design-system` | ui-designer, reviewer | Design tokens, component spec format, accessibility checklist, layout patterns |
+| `tracked-run` | lead | Self-review: instruments a run with metrics (dispatch parallelism, duplicate reads, token usage) for cross-session comparison |
 
 ### Specialist Doc Bundles
 
