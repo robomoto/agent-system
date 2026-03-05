@@ -24,14 +24,16 @@ A framework for building specialist Claude agents that delegate work through a t
 | **qa** | sonnet | Test strategy, coverage gap analysis, edge case discovery, regression risk, acceptance criteria | Read, Glob, Grep, Bash (read-only) |
 | **claude-ai-specialist** | sonnet | Agent system optimization: prompts, tokens, model routing, determinism | Read, Glob, Grep, WebFetch, WebSearch |
 | **python-specialist** | sonnet | Python idioms, Pydantic, typing, Django, performance | Read, Glob, Grep, WebFetch, WebSearch |
+| **roster-checker** | sonnet | **Mandatory first dispatch** — audits roster against project needs, creates missing specialists | Read, Glob, Grep, Bash, Write, Edit |
 | ***-specialist** | varies | Created on demand per language/domain (see `create-specialist` skill) | Read, Glob, Grep + domain-appropriate |
 
 ### Delegation Protocol
 
-1. Lead receives task and enters plan mode
-2. Lead decomposes into subtasks with dependency graph
-3. Lead delegates to specialists via structured task assignments
-4. Specialists work independently, return structured handoff reports
+1. **Lead dispatches roster-checker** (mandatory, blocks all other work)
+2. Lead receives roster report, proceeds with full specialist team
+3. Lead decomposes into subtasks with dependency graph
+4. Lead delegates to specialists via structured task assignments
+5. Specialists work independently, return structured handoff reports
 5. Lead synthesizes results and routes follow-up work
 6. Validator confirms assertions before lead marks complete
 

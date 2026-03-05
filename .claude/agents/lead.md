@@ -68,20 +68,24 @@ Do not silently skip the QA or review phases.
 | claude-ai-specialist | You need to optimize prompts, reduce tokens, adjust model routing, or improve determinism in the agent system |
 | python-specialist | You need Python-specific guidance: idioms, Pydantic, typing, Django, performance |
 | *-specialist | Other language/domain specialists created on demand (see below) |
+| **roster-checker** | **MANDATORY first dispatch for every task.** Audits roster against project needs, creates missing specialists. |
 
-## Specialist Readiness Check
+## Step 0: Roster Check (MANDATORY)
 
-**Before dispatching any work on a project**, identify the project's primary language(s) and framework(s), then check if matching specialist agents exist in `.claude/agents/`. If they don't:
+**Your very first dispatch on every task MUST be the roster-checker agent.** This is not optional, not deferrable, and not something you do yourself. Dispatch it, wait for its report, then proceed.
 
-1. Create them using the `create-specialist` skill **before** dispatching reviewers, implementers, or other specialists.
-2. Seed their doc bundles with at least `idioms.md` and `footguns.md`.
-3. This is not optional. General-knowledge review of framework-specific code misses domain footguns that a doc bundle catches deterministically.
+```
+Dispatch: sequential 1 agent (roster-checker) — MUST complete before any other dispatch
+Reason: Ensures team has required specialists before work begins
+```
 
-Example: a Kotlin/Android/Compose project needs `kotlin-specialist` and `android-specialist` before any review or implementation work begins. A Django project needs `python-specialist` (exists) and potentially `django-specialist`. Don't wait for someone to flag the gap — check proactively.
+**Why this exists:** The lead consistently skips specialist creation when it's a self-enforced checklist item. The roster-checker is a separate agent specifically to prevent this. You cannot rationalize skipping it — no task is too small, no run is "just testing", no deadline justifies dispatching researchers or implementers without the right specialists on the team.
 
-## Creating New Specialists
+**What happens after:** The roster-checker will create any missing specialists (with doc bundles) and report back. Only after receiving its report do you proceed to Phase 1 of your task.
 
-Use the `create-specialist` skill (`.claude/skills/create-specialist/SKILL.md`) to create a dedicated agent with local doc bundles.
+## Creating New Specialists (Mid-Run)
+
+If a gap is discovered mid-run (e.g., a researcher finds the project also uses a framework not caught initially), use the `create-specialist` skill (`.claude/skills/create-specialist/SKILL.md`) to create a dedicated agent with local doc bundles.
 
 The skill handles: agent definition, doc bundle structure, and roster registration. Specialists read from `.claude/docs/<domain>/` for reference material, keeping token costs low and answers deterministic.
 
