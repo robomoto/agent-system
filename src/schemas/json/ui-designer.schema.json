@@ -1,0 +1,163 @@
+{
+  "$defs": {
+    "ComponentSpec": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "variants": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Variants",
+          "type": "array"
+        },
+        "states": {
+          "items": {
+            "type": "string"
+          },
+          "title": "States",
+          "type": "array"
+        },
+        "props": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Props",
+          "type": "object"
+        },
+        "responsive": {
+          "default": "",
+          "title": "Responsive",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "ComponentSpec",
+      "type": "object"
+    },
+    "FileChange": {
+      "properties": {
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "action": {
+          "enum": [
+            "created",
+            "modified",
+            "deleted"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "action",
+        "description"
+      ],
+      "title": "FileChange",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "completed",
+        "blocked",
+        "needs-input"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "ui-designer",
+      "default": "ui-designer",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "components": {
+      "items": {
+        "$ref": "#/$defs/ComponentSpec"
+      },
+      "title": "Components",
+      "type": "array"
+    },
+    "design_tokens": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Design Tokens",
+      "type": "array"
+    },
+    "accessibility": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Accessibility",
+      "type": "array"
+    },
+    "files_changed": {
+      "items": {
+        "$ref": "#/$defs/FileChange"
+      },
+      "title": "Files Changed",
+      "type": "array"
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary"
+  ],
+  "title": "UIDesignerHandoff",
+  "type": "object"
+}

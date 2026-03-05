@@ -1,0 +1,241 @@
+{
+  "$defs": {
+    "AICosts": {
+      "properties": {
+        "by_agent": {
+          "items": {
+            "$ref": "#/$defs/AgentCostEstimate"
+          },
+          "title": "By Agent",
+          "type": "array"
+        },
+        "total_est_usd": {
+          "minimum": 0,
+          "title": "Total Est Usd",
+          "type": "number"
+        },
+        "optimization_recommendations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Optimization Recommendations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "total_est_usd"
+      ],
+      "title": "AICosts",
+      "type": "object"
+    },
+    "AgentCostEstimate": {
+      "properties": {
+        "agent": {
+          "title": "Agent",
+          "type": "string"
+        },
+        "model": {
+          "enum": [
+            "haiku",
+            "sonnet",
+            "opus"
+          ],
+          "title": "Model",
+          "type": "string"
+        },
+        "est_tokens": {
+          "minimum": 0,
+          "title": "Est Tokens",
+          "type": "integer"
+        },
+        "est_cost_usd": {
+          "minimum": 0,
+          "title": "Est Cost Usd",
+          "type": "number"
+        }
+      },
+      "required": [
+        "agent",
+        "model",
+        "est_tokens",
+        "est_cost_usd"
+      ],
+      "title": "AgentCostEstimate",
+      "type": "object"
+    },
+    "CloudCosts": {
+      "properties": {
+        "services": {
+          "items": {
+            "$ref": "#/$defs/CloudService"
+          },
+          "title": "Services",
+          "type": "array"
+        },
+        "total_monthly_usd": {
+          "minimum": 0,
+          "title": "Total Monthly Usd",
+          "type": "number"
+        },
+        "total_annual_usd": {
+          "minimum": 0,
+          "title": "Total Annual Usd",
+          "type": "number"
+        },
+        "risks": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Risks",
+          "type": "array"
+        }
+      },
+      "required": [
+        "total_monthly_usd",
+        "total_annual_usd"
+      ],
+      "title": "CloudCosts",
+      "type": "object"
+    },
+    "CloudService": {
+      "properties": {
+        "service": {
+          "title": "Service",
+          "type": "string"
+        },
+        "purpose": {
+          "title": "Purpose",
+          "type": "string"
+        },
+        "tier": {
+          "default": "",
+          "title": "Tier",
+          "type": "string"
+        },
+        "pricing_model": {
+          "default": "",
+          "title": "Pricing Model",
+          "type": "string"
+        },
+        "projected_monthly_usd": {
+          "minimum": 0,
+          "title": "Projected Monthly Usd",
+          "type": "number"
+        },
+        "free_tier": {
+          "default": "",
+          "title": "Free Tier",
+          "type": "string"
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Confidence",
+          "type": "string"
+        },
+        "source": {
+          "default": "",
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "service",
+        "purpose",
+        "projected_monthly_usd",
+        "confidence"
+      ],
+      "title": "CloudService",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "completed",
+        "blocked",
+        "needs-input"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "cost-accountant",
+      "default": "cost-accountant",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "ai_costs": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AICosts"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "cloud_costs": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CloudCosts"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary"
+  ],
+  "title": "CostAccountantHandoff",
+  "type": "object"
+}

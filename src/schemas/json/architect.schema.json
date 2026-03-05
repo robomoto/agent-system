@@ -1,0 +1,155 @@
+{
+  "$defs": {
+    "DesignOption": {
+      "properties": {
+        "option": {
+          "title": "Option",
+          "type": "string"
+        },
+        "pros": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Pros",
+          "type": "array"
+        },
+        "cons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Cons",
+          "type": "array"
+        },
+        "risk": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Risk",
+          "type": "string"
+        }
+      },
+      "required": [
+        "option",
+        "risk"
+      ],
+      "title": "DesignOption",
+      "type": "object"
+    },
+    "DesignSpec": {
+      "properties": {
+        "approach": {
+          "title": "Approach",
+          "type": "string"
+        },
+        "components": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Components",
+          "type": "array"
+        },
+        "contracts": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Contracts",
+          "type": "array"
+        },
+        "data_flow": {
+          "default": "",
+          "title": "Data Flow",
+          "type": "string"
+        }
+      },
+      "required": [
+        "approach"
+      ],
+      "title": "DesignSpec",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "completed",
+        "blocked",
+        "needs-input"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "architect",
+      "default": "architect",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "design": {
+      "$ref": "#/$defs/DesignSpec"
+    },
+    "options_considered": {
+      "items": {
+        "$ref": "#/$defs/DesignOption"
+      },
+      "title": "Options Considered",
+      "type": "array"
+    },
+    "risks": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Risks",
+      "type": "array"
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary",
+    "design"
+  ],
+  "title": "ArchitectHandoff",
+  "type": "object"
+}

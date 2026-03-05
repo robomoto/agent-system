@@ -1,0 +1,165 @@
+{
+  "$defs": {
+    "Assertion": {
+      "properties": {
+        "claim": {
+          "title": "Claim",
+          "type": "string"
+        },
+        "test_method": {
+          "title": "Test Method",
+          "type": "string"
+        },
+        "expected": {
+          "title": "Expected",
+          "type": "string"
+        },
+        "actual": {
+          "title": "Actual",
+          "type": "string"
+        },
+        "passed": {
+          "title": "Passed",
+          "type": "boolean"
+        },
+        "evidence": {
+          "default": "",
+          "title": "Evidence",
+          "type": "string"
+        }
+      },
+      "required": [
+        "claim",
+        "test_method",
+        "expected",
+        "actual",
+        "passed"
+      ],
+      "title": "Assertion",
+      "type": "object"
+    },
+    "TestSuiteResults": {
+      "properties": {
+        "command": {
+          "title": "Command",
+          "type": "string"
+        },
+        "passed": {
+          "minimum": 0,
+          "title": "Passed",
+          "type": "integer"
+        },
+        "failed": {
+          "minimum": 0,
+          "title": "Failed",
+          "type": "integer"
+        },
+        "skipped": {
+          "minimum": 0,
+          "title": "Skipped",
+          "type": "integer"
+        },
+        "duration_ms": {
+          "minimum": 0,
+          "title": "Duration Ms",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "command",
+        "passed",
+        "failed",
+        "skipped",
+        "duration_ms"
+      ],
+      "title": "TestSuiteResults",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "validator",
+      "default": "validator",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "validated",
+        "failed",
+        "blocked"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "assertions": {
+      "items": {
+        "$ref": "#/$defs/Assertion"
+      },
+      "title": "Assertions",
+      "type": "array"
+    },
+    "test_suite_results": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TestSuiteResults"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "regressions_found": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Regressions Found",
+      "type": "array"
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary"
+  ],
+  "title": "ValidatorHandoff",
+  "type": "object"
+}

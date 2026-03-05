@@ -1,0 +1,180 @@
+{
+  "$defs": {
+    "ModelRoutingReview": {
+      "properties": {
+        "agent": {
+          "title": "Agent",
+          "type": "string"
+        },
+        "current_model": {
+          "enum": [
+            "opus",
+            "sonnet",
+            "haiku"
+          ],
+          "title": "Current Model",
+          "type": "string"
+        },
+        "recommended_model": {
+          "enum": [
+            "opus",
+            "sonnet",
+            "haiku"
+          ],
+          "title": "Recommended Model",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "agent",
+        "current_model",
+        "recommended_model",
+        "rationale"
+      ],
+      "title": "ModelRoutingReview",
+      "type": "object"
+    },
+    "Optimization": {
+      "properties": {
+        "target": {
+          "title": "Target",
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "token-efficiency",
+            "determinism",
+            "model-selection",
+            "prompt-quality",
+            "architecture"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "current": {
+          "title": "Current",
+          "type": "string"
+        },
+        "recommended": {
+          "title": "Recommended",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "estimated_savings": {
+          "default": "",
+          "title": "Estimated Savings",
+          "type": "string"
+        },
+        "risk": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Risk",
+          "type": "string"
+        },
+        "doc_ref": {
+          "default": "",
+          "title": "Doc Ref",
+          "type": "string"
+        }
+      },
+      "required": [
+        "target",
+        "category",
+        "current",
+        "recommended",
+        "rationale",
+        "risk"
+      ],
+      "title": "Optimization",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "completed",
+        "blocked",
+        "needs-input"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "claude-ai-specialist",
+      "default": "claude-ai-specialist",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "optimizations": {
+      "items": {
+        "$ref": "#/$defs/Optimization"
+      },
+      "title": "Optimizations",
+      "type": "array"
+    },
+    "model_routing_review": {
+      "items": {
+        "$ref": "#/$defs/ModelRoutingReview"
+      },
+      "title": "Model Routing Review",
+      "type": "array"
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary"
+  ],
+  "title": "ClaudeAISpecialistHandoff",
+  "type": "object"
+}

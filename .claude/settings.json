@@ -1,0 +1,35 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/chris/claude_projects/agent-system && FILE=$(echo \"$CLAUDE_TOOL_INPUT\" | python3 -c \"import sys,json; print(json.load(sys.stdin).get('file_path',''))\" 2>/dev/null) && [ -n \"$FILE\" ] && [[ \"$FILE\" == *.py ]] && .venv/bin/ruff check \"$FILE\" --quiet 2>/dev/null; exit 0"
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/chris/claude_projects/agent-system && FILE=$(echo \"$CLAUDE_TOOL_INPUT\" | python3 -c \"import sys,json; print(json.load(sys.stdin).get('file_path',''))\" 2>/dev/null) && [ -n \"$FILE\" ] && [[ \"$FILE\" == *.py ]] && echo 'Writing Python file — will lint after creation'; exit 0"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/chris/claude_projects/agent-system && FILE=$(echo \"$CLAUDE_TOOL_INPUT\" | python3 -c \"import sys,json; print(json.load(sys.stdin).get('file_path',''))\" 2>/dev/null) && [ -n \"$FILE\" ] && [[ \"$FILE\" == *.py ]] && .venv/bin/ruff check \"$FILE\" 2>&1; exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}
