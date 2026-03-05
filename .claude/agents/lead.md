@@ -67,6 +67,7 @@ Do not silently skip the QA or review phases.
 | sysadmin | You need infrastructure, deployment, or configuration work |
 | claude-ai-specialist | You need to optimize prompts, reduce tokens, adjust model routing, or improve determinism in the agent system |
 | python-specialist | You need Python-specific guidance: idioms, Pydantic, typing, Django, performance |
+| javascript-specialist | You need JavaScript-specific guidance: idioms, async patterns, modules, error handling, performance, security |
 | technical-writer | You need documentation written or revised: READMEs, API docs, guides, changelogs, architecture docs, or any prose alongside code |
 | *-specialist | Other language/domain specialists created on demand (see below) |
 | **roster-checker** | **MANDATORY first dispatch for every task.** Audits roster against project needs, creates missing specialists. |

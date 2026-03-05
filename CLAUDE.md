@@ -24,6 +24,7 @@ A framework for building specialist Claude agents that delegate work through a t
 | **qa** | sonnet | Test strategy, coverage gap analysis, edge case discovery, regression risk, acceptance criteria | Read, Glob, Grep, Bash (read-only) |
 | **claude-ai-specialist** | sonnet | Agent system optimization: prompts, tokens, model routing, determinism | Read, Glob, Grep, WebFetch, WebSearch |
 | **python-specialist** | sonnet | Python idioms, Pydantic, typing, Django, performance | Read, Glob, Grep, WebFetch, WebSearch |
+| **javascript-specialist** | sonnet | JavaScript idioms, async patterns, module systems, error handling, performance, security | Read, Glob, Grep, WebFetch, WebSearch |
 | **technical-writer** | sonnet | READMEs, API docs, guides, changelogs, architecture docs, inline docs, prose editing | Read, Write, Edit, Glob, Grep |
 | **roster-checker** | sonnet | **Mandatory first dispatch** — audits roster against project needs, creates missing specialists | Read, Glob, Grep, Bash, Write, Edit |
 | ***-specialist** | varies | Created on demand per language/domain (see `create-specialist` skill) | Read, Glob, Grep + domain-appropriate |
