@@ -81,6 +81,12 @@ When the lead dispatches agents, the `subagent_type` must match the task:
 - Each major task should start in a fresh session. Mixing projects in one session wastes context on irrelevant content.
 - If the user switches projects mid-session, the lead should flag that prior context will compress and may affect performance.
 
+### Repeatability Rule
+
+If a process is performed manually during a task (smoke tests, deployment verification, data validation, environment setup), it must be scripted before the task is complete. The script goes in `scripts/` in the target project. Name it descriptively: `scripts/smoke-test.sh`, `scripts/verify-deploy.sh`, `scripts/seed-data.sh`.
+
+The lead enforces this as a final gate: "Was anything tested manually that isn't scripted?"
+
 ### Determinism Rules
 
 - Structured output schemas for all agent responses (see `src/schemas/`).

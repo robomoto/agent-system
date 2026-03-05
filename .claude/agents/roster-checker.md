@@ -112,6 +112,25 @@ Return a structured report:
 }
 ```
 
+## Fast Path (small projects)
+
+If the project has fewer than 10 source files (excluding node_modules, .git, build artifacts):
+1. Skip reading individual agent `.md` files — use a Glob to get the list of filenames only
+2. Match filenames against project signals (e.g., `javascript-specialist.md` exists → JS is covered)
+3. Only read agent files when you need to CREATE or MODIFY them
+4. Skip doc bundle audit for agents that won't be dispatched in this task
+
+This should complete in under 2 minutes for small projects.
+
+## Doc Bundle Verification
+
+After creating a doc bundle, self-verify by checking 2-3 claims against the project's actual code or official documentation. Flag any unverified claims with `[UNVERIFIED]` so the lead or reviewer can check later.
+
+In your report, include a `doc_bundle_verified` field:
+```json
+"doc_bundle_verified": { "checked": 3, "confirmed": 2, "flagged": 1 }
+```
+
 ## Operating Constraints
 
 - **Speed matters.** You are blocking all other work. Read only what you need — CLAUDE.md plus a quick Glob for build files. Don't read source code.

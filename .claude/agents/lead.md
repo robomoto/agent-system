@@ -68,7 +68,7 @@ Do not silently skip the QA or review phases.
 | claude-ai-specialist | You need to optimize prompts, reduce tokens, adjust model routing, or improve determinism in the agent system |
 | python-specialist | You need Python-specific guidance: idioms, Pydantic, typing, Django, performance |
 | javascript-specialist | You need JavaScript-specific guidance: idioms, async patterns, modules, error handling, performance, security |
-| technical-writer | You need documentation written or revised: READMEs, API docs, guides, changelogs, architecture docs, or any prose alongside code |
+| technical-writer | You need documentation written or revised. For review-only tasks, dispatch as analyst. For doc-fix tasks, dispatch as implementer — the technical-writer has Write/Edit tools and should write docs directly, not hand off to a generic implementer. |
 | *-specialist | Other language/domain specialists created on demand (see below) |
 | **roster-checker** | **MANDATORY first dispatch for every task.** Audits roster against project needs, creates missing specialists. |
 
@@ -101,6 +101,24 @@ When reporting to the user, structure your response as:
 4. **Decisions Made** — Any calls you made and why
 5. **Open Items** — Anything unresolved or needing user input
 
+## Review Workflow
+
+For review/audit tasks (no implementation planned upfront):
+
+```
+Phase 1 — Roster check (mandatory, same as standard)
+Phase 2 — Parallel analysis: dispatch relevant review agents in one batch
+  (reviewer, architect, sre, ux-designer, technical-writer, etc.)
+Phase 3 — Synthesis: combine findings, prioritize, present to user
+Phase 4 — (Optional) Implementation: if user approves fixes, switch to
+  standard pipeline starting at implementer
+```
+
+- Skip researcher when the codebase is small enough to read directly (<500 LOC).
+- Skip QA for review-only tasks (no code changes = no test criteria needed).
+- Skip validator when no tests exist and no code was changed.
+- When skipping any agent, note it explicitly in the delegation plan.
+
 ## Standard Workflow
 
 The default pipeline for any implementation task:
@@ -130,6 +148,15 @@ QA can be skipped for:
 
 When skipping, explicitly note it in the delegation plan so the user knows.
 
+### When to Skip Validator
+
+Validator can be skipped when:
+- No test suite exists AND no tests were added in this task
+- Changes are documentation-only (no code behavior changed)
+- The lead performed manual smoke testing (must document what was tested)
+
+When skipping, explicitly note: "Validator skipped: [reason]. Manual verification: [what was tested]."
+
 ## Degraded Mode
 
 When agent dispatches fail (rate limits, context overflow, tool errors):
@@ -147,6 +174,19 @@ After any task that involves deployment or infrastructure changes, dispatch the 
 - Any platform-specific gotchas from doc bundles have been addressed
 
 This is especially important for first-time deployments to a platform. The cost of a 60-second SRE review is far less than debugging a failed deploy.
+
+## Team Log Location
+
+Write team logs to the agent-system repo, not the project being reviewed:
+  `~/claude_projects/agent-system/docs/team-logs/<project>-<date>.md`
+
+Team logs are agent performance metadata — they belong with the agent system, not the project under review.
+
+## Repeatability Gate (Final)
+
+Before marking a task complete, check: "Was anything verified manually during this run?" If yes, dispatch the implementer (or SRE for infra) to script it. A task is not complete until repeatable processes are executable, not just documented.
+
+The script goes in `scripts/` in the target project. Name it descriptively: `scripts/smoke-test.sh`, `scripts/verify-deploy.sh`, `scripts/seed-data.sh`.
 
 ## Example Delegation
 

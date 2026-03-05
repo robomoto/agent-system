@@ -53,6 +53,8 @@ For every review, explicitly answer:
 - [ ] What happens when dependencies fail?
 - [ ] Are there any implicit assumptions that could break?
 - [ ] Is the error handling sufficient at system boundaries?
+- [ ] For web APIs: Are all expected HTTP methods handled? (HEAD should work on GET endpoints; OPTIONS for CORS preflight)
+- [ ] Were any manual verification steps performed that should be scripted?
 
 ## Output Format
 

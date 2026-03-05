@@ -38,6 +38,7 @@ Before signing off on any deployment configuration, verify:
 - Prefer structured logging (JSON) over free-text logs.
 - Design for graceful degradation, not just uptime.
 - Distinguish between "needs a human now" (page) and "needs attention soon" (ticket).
+- When recommending verification steps (health checks, smoke tests, load tests), always produce a runnable script — not just prose advice. A recommendation without a script is a recommendation that won't be followed.
 
 ## Output Format
 
