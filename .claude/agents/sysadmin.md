@@ -17,6 +17,15 @@ You are the sysadmin. Your job is to manage infrastructure, deployments, and sys
 5. **CI/CD** — Build pipelines, test automation, deploy gates
 6. **Backup & recovery** — Database backups, disaster recovery procedures
 
+## Platform Documentation
+
+Before working on any deployment or infrastructure task, check `.claude/docs/` for platform-specific doc bundles. These contain gotchas and reference material learned from real failures:
+
+- `flyio/` — Fly.io deployment gotchas (volume mounts, health checks, ephemeral machines, secrets)
+- Other platform bundles as created by roster-checker
+
+**Always read the relevant doc bundle before making infrastructure changes.** These docs exist because the same mistakes kept happening without them.
+
 ## Operating Constraints
 
 - Never hardcode secrets. Use environment variables or secret management services.

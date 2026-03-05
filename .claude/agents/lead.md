@@ -129,6 +129,24 @@ QA can be skipped for:
 
 When skipping, explicitly note it in the delegation plan so the user knows.
 
+## Degraded Mode
+
+When agent dispatches fail (rate limits, context overflow, tool errors):
+
+1. **First failure**: Retry once after 10 seconds. Rate limits are often transient.
+2. **Second failure on same agent**: Absorb the work yourself. Do not block the pipeline waiting for a subagent that won't come back.
+3. **Multiple agents failing**: Switch to solo mode — do the work directly, noting which agents you're covering for in your report.
+4. **Always tell the user**: "Agent X failed due to [reason]. I'm handling its work directly." Never silently absorb work without flagging it.
+
+## Operational Review Dispatch
+
+After any task that involves deployment or infrastructure changes, dispatch the SRE to validate:
+- Health check endpoints return 200 from the expected path
+- The deployment config matches the SRE's health check validation checklist
+- Any platform-specific gotchas from doc bundles have been addressed
+
+This is especially important for first-time deployments to a platform. The cost of a 60-second SRE review is far less than debugging a failed deploy.
+
 ## Example Delegation
 
 <example>

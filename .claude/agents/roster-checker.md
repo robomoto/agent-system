@@ -39,7 +39,33 @@ Compare what the project needs against what exists. A gap is when:
 - The task involves testing/QA but no `qa` agent exists
 - The task involves security but no security specialist exists beyond the generic `reviewer`
 
-### 4. Create Missing Specialists
+### 4. Audit Doc Bundles for Existing Agents
+
+**This step is mandatory even when no new agents are needed.** An agent existing is not enough — it must have documentation covering the project's specific platforms, services, and tools.
+
+For every agent that will be used in this task, check `.claude/docs/` for matching doc bundles:
+
+- **sysadmin/sre working on Fly.io?** Must have a `flyio/` doc bundle with deployment gotchas.
+- **sysadmin/sre working on AWS?** Must have an `aws/` doc bundle.
+- **python-specialist on a Django project?** Must have a `django/` doc bundle (or Django-specific content in `python/`).
+- **implementer working with HTMX?** Must have an `htmx/` doc bundle or relevant content in another bundle.
+
+**How to audit:**
+1. List every platform/service/tool the project uses (from CLAUDE.md, fly.toml, Dockerfile, package files)
+2. For each agent that will touch those tools, check if a relevant doc bundle exists in `.claude/docs/`
+3. If a doc bundle is missing, create it — even if the agent "should know" the technology. Doc bundles prevent the same mistakes from recurring across sessions.
+
+**Report doc bundle gaps in the same format as agent gaps:**
+```json
+{
+  "needed": "flyio doc bundle",
+  "reason": "Project deploys on Fly.io, sysadmin/sre have no platform-specific reference",
+  "created": true,
+  "files": [".claude/docs/flyio/gotchas.md", ".claude/docs/flyio/reference.md"]
+}
+```
+
+### 5. Create Missing Specialists and Doc Bundles
 
 For each gap, use the `create-specialist` skill at `~/claude_projects/agent-system/.claude/skills/create-specialist/SKILL.md`. Follow it exactly:
 1. Create the agent definition in `.claude/agents/<name>.md`
@@ -50,7 +76,7 @@ For doc bundles, prioritize:
 - **idioms.md**: The 10-15 patterns most relevant to THIS project (not exhaustive language coverage)
 - **footguns.md**: The 5-10 mistakes most likely in THIS project's codebase
 
-### 5. Report
+### 6. Report
 
 Return a structured report:
 
@@ -62,18 +88,27 @@ Return a structured report:
     "languages": ["Kotlin"],
     "frameworks": ["Jetpack Compose", "Ktor"],
     "platforms": ["Android"],
+    "services": ["Fly.io", "Cloudflare R2"],
     "task_type": "bug-fix|feature|review|testing|etc"
   },
   "existing_specialists": ["python-specialist", "..."],
-  "gaps_found": [
+  "agent_gaps": [
     {
       "needed": "kotlin-specialist",
       "reason": "Project is 100% Kotlin, no Kotlin specialist exists",
       "created": true
     }
   ],
+  "doc_bundle_gaps": [
+    {
+      "needed": "flyio doc bundle",
+      "reason": "Project deploys on Fly.io, sysadmin/sre have no platform-specific reference",
+      "created": true,
+      "files": [".claude/docs/flyio/gotchas.md", ".claude/docs/flyio/reference.md"]
+    }
+  ],
   "no_action_needed": ["python-specialist already exists but project doesn't use Python — ignore"],
-  "summary": "Created N specialists. Team is ready to proceed."
+  "summary": "Created N specialists, M doc bundles. Team is ready to proceed."
 }
 ```
 
@@ -99,13 +134,17 @@ Report: "Created 2 specialists (kotlin-specialist, android-specialist). Team is 
 </example>
 
 <example>
-Project CLAUDE.md says: "Django REST API, Python 3.12"
-Existing agents: python-specialist
+Project CLAUDE.md says: "Django REST API, Python 3.12, deployed on Fly.io"
+Existing agents: python-specialist, sysadmin, sre
+Existing doc bundles: python/
 
-Gaps:
+Agent gaps:
 1. django-specialist — created (the generic python-specialist doesn't cover Django ORM gotchas, DRF serializer patterns, etc.)
 
-No gap: python-specialist already exists.
+Doc bundle gaps:
+1. flyio/ — created (sysadmin and sre will work on deployment but have no Fly.io-specific reference docs; last session had 3 deployment failures from platform gotchas that doc bundles would have prevented)
 
-Report: "Created 1 specialist (django-specialist). Team is ready."
+No gap: python-specialist already exists with python/ doc bundle.
+
+Report: "Created 1 specialist (django-specialist), 1 doc bundle (flyio/). Team is ready."
 </example>
