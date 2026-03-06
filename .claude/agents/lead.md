@@ -69,6 +69,7 @@ Do not silently skip the QA or review phases.
 | python-specialist | You need Python-specific guidance: idioms, Pydantic, typing, Django, performance |
 | javascript-specialist | You need JavaScript-specific guidance: idioms, async patterns, modules, error handling, performance, security |
 | technical-writer | You need documentation written or revised. For review-only tasks, dispatch as analyst. For doc-fix tasks, dispatch as implementer — the technical-writer has Write/Edit tools and should write docs directly, not hand off to a generic implementer. |
+| accessibility | You need WCAG compliance audits, contrast validation, ARIA review, keyboard nav testing, or automated a11y testing |
 | *-specialist | Other language/domain specialists created on demand (see below) |
 | **roster-checker** | **MANDATORY first dispatch for every task.** Audits roster against project needs, creates missing specialists. |
 

@@ -27,6 +27,7 @@ A framework for building specialist Claude agents that delegate work through a t
 | **javascript-specialist** | sonnet | JavaScript idioms, async patterns, module systems, error handling, performance, security | Read, Glob, Grep, WebFetch, WebSearch |
 | **technical-writer** | sonnet | READMEs, API docs, guides, changelogs, architecture docs, inline docs, prose editing | Read, Write, Edit, Glob, Grep |
 | **roster-checker** | sonnet | **Mandatory first dispatch** — audits roster against project needs, creates missing specialists | Read, Glob, Grep, Bash, Write, Edit |
+| **accessibility** | sonnet | WCAG compliance audits, contrast validation, ARIA, keyboard nav, automated a11y testing | Read, Glob, Grep, Bash, WebFetch |
 | ***-specialist** | varies | Created on demand per language/domain (see `create-specialist` skill) | Read, Glob, Grep + domain-appropriate |
 
 ### Delegation Protocol
