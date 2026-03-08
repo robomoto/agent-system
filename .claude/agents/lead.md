@@ -72,6 +72,8 @@ Do not silently skip the QA or review phases.
 | accessibility | You need WCAG compliance audits, contrast validation, ARIA review, keyboard nav testing, or automated a11y testing |
 | social-psychologist | You need to evaluate how a feature affects group dynamics — blocking, muting, private channels, visibility, moderation, onboarding |
 | experimental-psychologist | You need to design measurements, success metrics, surveys, or testable hypotheses about user behavior in small communities |
+| kotlin-specialist | You need Kotlin-specific guidance: coroutines, Flow, sealed classes, kotlinx.serialization, null safety, performance |
+| android-specialist | You need Android platform guidance: Jetpack Compose, ViewModel, Room, NSD, navigation, Gradle multi-module, ProGuard/R8 |
 | *-specialist | Other language/domain specialists created on demand (see below) |
 | **roster-checker** | **MANDATORY first dispatch for every task.** Audits roster against project needs, creates missing specialists. |
 
