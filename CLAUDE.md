@@ -28,8 +28,8 @@ A framework for building specialist Claude agents that delegate work through a t
 | **technical-writer** | sonnet | READMEs, API docs, guides, changelogs, architecture docs, inline docs, prose editing | Read, Write, Edit, Glob, Grep |
 | **roster-checker** | sonnet | **Mandatory first dispatch** — audits roster against project needs, creates missing specialists | Read, Glob, Grep, Bash, Write, Edit |
 | **accessibility** | sonnet | WCAG compliance audits, contrast validation, ARIA, keyboard nav, automated a11y testing | Read, Glob, Grep, Bash, WebFetch |
-| **social-psychologist** | sonnet | Group dynamics evaluation: blocking, muting, private channels, visibility, moderation, onboarding | Read, Glob, Grep, WebFetch |
-| **experimental-psychologist** | sonnet | Measurement design, community metrics, surveys, testable hypotheses, small-N methods | Read, Glob, Grep, WebFetch |
+| **social-psychologist** | sonnet | Group dynamics evaluation: blocking, muting, private channels, visibility, moderation, onboarding. **Writes findings to `docs/reviews/`** | Read, Write, Glob, Grep, WebFetch |
+| **experimental-psychologist** | sonnet | Measurement design, community metrics, surveys, testable hypotheses, small-N methods. **Writes findings to `docs/reviews/`** | Read, Write, Glob, Grep, WebFetch |
 | ***-specialist** | varies | Created on demand per language/domain (see `create-specialist` skill) | Read, Glob, Grep + domain-appropriate |
 
 ### Delegation Protocol
