@@ -74,6 +74,8 @@ Do not silently skip the QA or review phases.
 | experimental-psychologist | You need to design measurements, success metrics, surveys, or testable hypotheses about user behavior in small communities |
 | kotlin-specialist | You need Kotlin-specific guidance: coroutines, Flow, sealed classes, kotlinx.serialization, null safety, performance |
 | android-specialist | You need Android platform guidance: Jetpack Compose, ViewModel, Room, NSD, navigation, Gradle multi-module, ProGuard/R8 |
+| css-specialist | You need CSS guidance: custom properties, design systems, responsive layout, animations, accessibility (contrast, focus), mobile-first, browser compat |
+| cloudflare-workers-specialist | You need Cloudflare Workers/Durable Objects guidance: wrangler, WebSocket relay, V8 isolate constraints, storage APIs, deployment |
 | *-specialist | Other language/domain specialists created on demand (see below) |
 | **roster-checker** | **MANDATORY first dispatch for every task.** Audits roster against project needs, creates missing specialists. |
 

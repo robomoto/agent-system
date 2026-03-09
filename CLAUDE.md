@@ -32,6 +32,8 @@ A framework for building specialist Claude agents that delegate work through a t
 | **experimental-psychologist** | sonnet | Measurement design, community metrics, surveys, testable hypotheses, small-N methods. **Writes findings to `docs/reviews/`** | Read, Write, Glob, Grep, WebFetch |
 | **kotlin-specialist** | sonnet | Kotlin idioms, coroutines, Flow, sealed classes, kotlinx.serialization, null safety, performance | Read, Glob, Grep, WebFetch, WebSearch |
 | **android-specialist** | sonnet | Jetpack Compose, ViewModel, Room, NSD, navigation, Gradle multi-module, ProGuard/R8 | Read, Glob, Grep, WebFetch, WebSearch |
+| **css-specialist** | sonnet | Custom properties, design systems, responsive layout, animations, accessibility (contrast, focus), mobile-first | Read, Glob, Grep, WebFetch, WebSearch |
+| **cloudflare-workers-specialist** | sonnet | Workers runtime, Durable Objects, wrangler, WebSocket relay, V8 isolate constraints, storage APIs | Read, Glob, Grep, WebFetch, WebSearch |
 | ***-specialist** | varies | Created on demand per language/domain (see `create-specialist` skill) | Read, Glob, Grep + domain-appropriate |
 
 ### Delegation Protocol
