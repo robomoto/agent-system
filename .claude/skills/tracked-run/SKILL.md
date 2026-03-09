@@ -175,6 +175,8 @@ Self-Critique:
 
 After writing the team log, spawn a **reviewer agent** to independently verify your self-reported metrics. This is mandatory for tracked runs.
 
+**Important:** The post-run reviewer dispatch is NOT counted in the run metrics. It is meta-instrumentation — overhead for measuring the run, not part of the task itself. Similarly, any implementer or other agent dispatched AFTER the user requests follow-up work (e.g., "now implement it") is a separate task, not part of the original tracked run.
+
 ### Dispatch Rules
 
 1. Run the metrics script first to generate ground-truth data. Use `--project` to filter to the correct project's JSONL (avoids grabbing a different project's session):

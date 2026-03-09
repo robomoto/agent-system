@@ -16,7 +16,23 @@ python3 scripts/parse-run-metrics.py latest
 python3 scripts/parse-run-metrics.py ~/.claude/projects/-Users-chris-claude-projects/<SESSION_ID>.jsonl
 ```
 
-This gives you dispatch counts, parallelization, duplicate reads, token usage, and wall-clock time — all from the raw log, independent of anything the lead reported.
+This gives you dispatch counts, parallelization, duplicate reads, token usage, and timing — all from the raw log, independent of anything the lead reported.
+
+### Scoping Rules
+
+**What counts as a task dispatch:**
+- Agents dispatched to accomplish the user's original request (roster-checker, researchers, reviewers, designers, etc.)
+
+**What does NOT count:**
+- The post-run reviewer itself (meta-instrumentation, not task work)
+- Agents dispatched for follow-up work the user requested separately (e.g., "now implement it" after a review task)
+- Background metric-parsing agents
+
+When comparing JSONL ground truth against self-reported metrics, exclude these meta-dispatches from both the actual and expected counts.
+
+### Timing Metric
+
+The primary timing metric is **lead active time**, not session duration or wall-clock time. Lead active time excludes idle gaps >2 min (user think time, AFK, etc.). The `parse-run-metrics.py` script computes this automatically. Session duration (total wall-clock) is informational only — it reflects user behavior, not lead performance.
 
 ## What to Analyze
 
@@ -84,7 +100,7 @@ Write findings as a review report:
 | Dispatches (parallel) | N | N | Y/N |
 | Duplicate read rate | X% | X% | Y/N |
 | Total tokens | ~NK | ~NK | Y/N |
-| Wall-clock time | ~N min | ~N min | Y/N |
+| Lead active time | ~N min | ~N min | Y/N |
 
 ## Discrepancies
 [List any mismatches with severity and likely cause]
@@ -105,7 +121,7 @@ Write findings as a review report:
 | Parallel dispatch rate | X% | Y% | +/-Z% | better/worse/same |
 | Duplicate read rate | X% | Y% | +/-Z% | better/worse/same |
 | Total tokens | ~NK | ~NK | +/-NK | better/worse/same |
-| Wall-clock time | ~N min | ~N min | +/-N min | better/worse/same |
+| Lead active time | ~N min | ~N min | +/-N min | better/worse/same |
 
 ## Verdict
 
@@ -128,7 +144,7 @@ The current baseline (Run 1, greenlake UX review, 2026-03-05):
 | Parallel dispatch rate | 0% (0/7 dispatches) |
 | Duplicate read rate | 48% (33/68 reads) |
 | Researcher overlap | ~40% |
-| Wall-clock time | ~7 min |
+| Lead active time | ~7 min |
 | Total tokens | ~267K |
 
 Source: `docs/plans/002-performance-improvements.md` and MEMORY.md.
