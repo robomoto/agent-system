@@ -14,7 +14,7 @@ Instead of one AI doing everything, this system gives you a **team lead** that b
 
 2. **This repo** — Clone it somewhere convenient:
    ```bash
-   git clone https://github.com/yourusername/agent-system.git ~/claude_projects/agent-system
+   git clone https://github.com/robomoto/agent-system.git ~/claude_projects/agent-system
    ```
 
 3. **Global instructions** — Tell Claude Code where to find the agent system by adding this to your `~/.claude/CLAUDE.md` file (create it if it doesn't exist):
