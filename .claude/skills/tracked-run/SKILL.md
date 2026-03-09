@@ -74,6 +74,10 @@ When dispatching multiple researchers in parallel:
 
 ## After the Run
 
+### Timing: Write the Log LAST
+
+The team log must be written only after ALL dispatched agents have reported back. If additional agents are dispatched after the log is written (e.g., user requests more phases of work in the same session), update the Run Metrics section with the final numbers before the session ends. Stale metrics (e.g., reporting 81 tests when 103 actually pass because a later agent added more) undermine the entire tracking system.
+
 ### Write the Metrics Section
 
 Add a `## Run Metrics` section to the team log with this exact format:
@@ -179,11 +183,7 @@ After writing the team log, spawn a **reviewer agent** to independently verify y
 
 ### Dispatch Rules
 
-1. Run the metrics script first to generate ground-truth data. Use `--project` to filter to the correct project's JSONL (avoids grabbing a different project's session):
-   ```
-   python3 scripts/parse-run-metrics.py latest --project greenlake
-   ```
-   Replace `greenlake` with a substring matching the project directory name. Save the output to a file (e.g., `docs/run-metrics-raw.md`).
+1. **Ground-truth metrics script**: `scripts/parse-run-metrics.py` does not exist yet. Until it is created, the post-run reviewer must verify metrics by spot-checking artifacts directly (running tests, counting files, checking git log). Do NOT reference this script in prompts or mark its checklist item as blocked — just skip it and note "no automated metrics script available" in the review.
 
 2. Spawn the reviewer with **only file references** — no summaries, no context, no editorializing. Use this exact prompt template:
 
@@ -221,5 +221,5 @@ Subagents start with a blank conversation — they don't inherit your context. B
 - [ ] Comparison table included (if baseline exists)
 - [ ] Self-Critique section written with concrete answers
 - [ ] Baseline updated in memory if this run improved on 3+ metrics
-- [ ] `parse-run-metrics.py latest` run and output saved
+- [ ] `parse-run-metrics.py latest` run and output saved (skip if script not yet created)
 - [ ] Reviewer spawned with locked-down prompt (file refs only, no context)
