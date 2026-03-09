@@ -3,7 +3,8 @@
 
 Usage:
     python scripts/parse-run-metrics.py <session.jsonl>
-    python scripts/parse-run-metrics.py latest  # most recent JSONL in default dir
+    python scripts/parse-run-metrics.py latest                    # most recent JSONL across all projects
+    python scripts/parse-run-metrics.py latest --project greenlake # most recent JSONL matching 'greenlake'
 
 Output: Markdown metrics table to stdout, suitable for pasting into a review doc.
 """
@@ -15,12 +16,23 @@ from datetime import datetime
 from pathlib import Path
 
 
-def find_latest_jsonl() -> Path:
-    """Find the most recently modified JSONL in the Claude projects directory."""
+def find_latest_jsonl(project_filter: str | None = None) -> Path:
+    """Find the most recently modified JSONL in the Claude projects directory.
+
+    Args:
+        project_filter: Optional substring to match against the JSONL's parent
+            directory name (e.g., 'greenlake' or 'blind-roll'). This filters
+            to a specific project's session logs.
+    """
     projects_dir = Path.home() / ".claude" / "projects"
     jsonls = sorted(projects_dir.rglob("*.jsonl"), key=lambda p: p.stat().st_mtime, reverse=True)
+    if project_filter:
+        jsonls = [p for p in jsonls if project_filter in p.parent.name]
     if not jsonls:
-        print("No JSONL files found in ~/.claude/projects/", file=sys.stderr)
+        msg = "No JSONL files found"
+        if project_filter:
+            msg += f" matching project filter '{project_filter}'"
+        print(msg, file=sys.stderr)
         sys.exit(1)
     return jsonls[0]
 
@@ -139,6 +151,9 @@ def detect_parallel_batches(timeline: list[dict]) -> list[list[dict]]:
     return batches
 
 
+IDLE_THRESHOLD = 120  # seconds — gaps longer than this are considered user idle time
+
+
 def extract_metrics(messages: list[dict]) -> dict:
     """Extract all performance metrics from parsed messages."""
     tool_calls: list[dict] = []
@@ -194,13 +209,34 @@ def extract_metrics(messages: list[dict]) -> dict:
     # Compute tool frequency
     tool_freq = Counter(tc["name"] for tc in tool_calls)
 
-    # Compute wall clock
+    # Compute wall clock: session duration and lead active time
     wall_clock_seconds = None
+    lead_active_seconds = None
+    idle_gaps: list[dict] = []
     if len(timestamps) >= 2:
         t0 = parse_ts(timestamps[0])
         t1 = parse_ts(timestamps[-1])
         if t0 and t1:
             wall_clock_seconds = (t1 - t0).total_seconds()
+
+        # Compute lead active time by subtracting idle gaps.
+        # An idle gap is a period between consecutive assistant tool_calls
+        # (or tool_results) where nothing happens for > IDLE_THRESHOLD seconds.
+        # This filters out user think time, AFK time, etc.
+        parsed_ts = [parse_ts(t) for t in timestamps]
+        valid_ts = [t for t in parsed_ts if t is not None]
+        if len(valid_ts) >= 2:
+            total_idle = 0.0
+            for i in range(1, len(valid_ts)):
+                gap = (valid_ts[i] - valid_ts[i - 1]).total_seconds()
+                if gap > IDLE_THRESHOLD:
+                    idle_gaps.append({
+                        "start": valid_ts[i - 1].isoformat(),
+                        "end": valid_ts[i].isoformat(),
+                        "duration_s": gap,
+                    })
+                    total_idle += gap
+            lead_active_seconds = wall_clock_seconds - total_idle if wall_clock_seconds else None
 
     return {
         "total_agents": total_agents,
@@ -217,6 +253,8 @@ def extract_metrics(messages: list[dict]) -> dict:
         "tool_freq": tool_freq,
         "token_usage": token_usage,
         "wall_clock_seconds": wall_clock_seconds,
+        "lead_active_seconds": lead_active_seconds,
+        "idle_gaps": idle_gaps,
         "total_messages": len(messages),
         "timestamps": (timestamps[0] if timestamps else "", timestamps[-1] if timestamps else ""),
     }
@@ -228,7 +266,8 @@ def format_report(metrics: dict, path: Path) -> str:
     total = m["total_agents"]
     parallel_rate = (m["parallel_agents"] / total * 100) if total else 0
     dup_rate = (m["duplicate_reads"] / m["total_reads"] * 100) if m["total_reads"] else 0
-    wall_min = f"~{m['wall_clock_seconds'] / 60:.1f} min" if m["wall_clock_seconds"] else "unknown"
+    session_min = f"~{m['wall_clock_seconds'] / 60:.1f} min" if m["wall_clock_seconds"] else "unknown"
+    active_min = f"~{m['lead_active_seconds'] / 60:.1f} min" if m["lead_active_seconds"] else "unknown"
     total_tokens = m["token_usage"]["input"] + m["token_usage"]["output"]
 
     lines = [
@@ -342,6 +381,24 @@ def format_report(metrics: dict, path: Path) -> str:
     for tool, count in m["tool_freq"].most_common():
         lines.append(f"| {tool} | {count} |")
 
+    # Idle gaps section (if any)
+    if m["idle_gaps"]:
+        lines += [
+            "",
+            "## Idle Gaps (excluded from lead active time)",
+            "",
+            f"Threshold: >{IDLE_THRESHOLD}s between messages.",
+            "",
+            "| Start | End | Duration |",
+            "|-------|-----|----------|",
+        ]
+        for gap in m["idle_gaps"]:
+            start = gap["start"].split("T")[1][:8] if "T" in gap["start"] else gap["start"]
+            end = gap["end"].split("T")[1][:8] if "T" in gap["end"] else gap["end"]
+            dur_min = gap["duration_s"] / 60
+            lines.append(f"| {start} | {end} | {dur_min:.1f} min |")
+        lines.append("")
+
     lines += [
         "",
         "## Summary",
@@ -351,7 +408,8 @@ def format_report(metrics: dict, path: Path) -> str:
         f"| Parallel dispatch rate | {parallel_rate:.0f}% |",
         f"| Duplicate read rate | {dup_rate:.0f}% |",
         f"| Total tokens (lead) | {total_tokens:,} |",
-        f"| Wall-clock time | {wall_min} |",
+        f"| Lead active time | {active_min} |",
+        f"| Session duration | {session_min} |",
     ]
 
     return "\n".join(lines)
@@ -363,8 +421,14 @@ def main():
         sys.exit(1)
 
     arg = sys.argv[1]
+    project_filter = None
+    if "--project" in sys.argv:
+        idx = sys.argv.index("--project")
+        if idx + 1 < len(sys.argv):
+            project_filter = sys.argv[idx + 1]
+
     if arg == "latest":
-        path = find_latest_jsonl()
+        path = find_latest_jsonl(project_filter)
         print(f"Using: {path}", file=sys.stderr)
     else:
         path = Path(arg)

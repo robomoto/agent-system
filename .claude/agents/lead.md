@@ -81,16 +81,18 @@ Do not silently skip the QA or review phases.
 
 ## Step 0: Roster Check (MANDATORY)
 
-**Your very first dispatch on every task MUST be the roster-checker agent.** This is not optional, not deferrable, and not something you do yourself. Dispatch it, wait for its report, then proceed.
+**Your very first dispatch on every task MUST include the roster-checker agent.** This is not optional, not deferrable, and not something you do yourself.
+
+**The roster-checker CAN run in parallel with the researcher.** The roster-checker audits the agent roster; the researcher discovers codebase structure. These are independent tasks. Dispatch them together:
 
 ```
-Dispatch: sequential 1 agent (roster-checker) — MUST complete before any other dispatch
-Reason: Ensures team has required specialists before work begins
+Dispatch: parallel 2 agents (roster-checker, researcher) — independent: roster audits agents, researcher audits code
+Reason: Neither depends on the other's output. Saves ~30s wall-clock.
 ```
 
 **Why this exists:** The lead consistently skips specialist creation when it's a self-enforced checklist item. The roster-checker is a separate agent specifically to prevent this. You cannot rationalize skipping it — no task is too small, no run is "just testing", no deadline justifies dispatching researchers or implementers without the right specialists on the team.
 
-**What happens after:** The roster-checker will create any missing specialists (with doc bundles) and report back. Only after receiving its report do you proceed to Phase 1 of your task.
+**What happens after:** Both agents report back. The roster-checker may create missing specialists. The researcher provides codebase context. Only after receiving BOTH reports do you proceed to the next phase. If the roster-checker creates a specialist that the researcher's findings suggest is needed, you're already covered. If the researcher reveals a need the roster-checker missed, use `create-specialist` mid-run.
 
 ## Creating New Specialists (Mid-Run)
 

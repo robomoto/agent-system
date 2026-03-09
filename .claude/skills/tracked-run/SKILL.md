@@ -93,8 +93,16 @@ Add a `## Run Metrics` section to the team log with this exact format:
 | Duplicate read rate | X% |
 | Parallel dispatch rate | X% |
 | Total tokens (all agents) | ~NK |
-| Wall-clock time | ~N min |
+| Lead active time | ~N min |
+| Session duration | ~N min |
 ```
+
+**Lead active time** measures the lead's performance — time spent working, excluding idle
+gaps >2 min (user think time, AFK, etc.). The `parse-run-metrics.py` script computes this
+automatically by subtracting gaps >120s between consecutive messages.
+
+**Session duration** is the full wall-clock span from first to last message. This includes
+user interaction time and is NOT a measure of lead performance.
 
 ### Rates
 
@@ -102,6 +110,10 @@ Add a `## Run Metrics` section to the team log with this exact format:
 Parallel dispatch rate = dispatches_parallel / dispatches_total * 100
 Duplicate read rate = reads_duplicate / reads_total * 100
 ```
+
+### Preserve Researcher Findings
+
+If a researcher was dispatched, include a `## Researcher Findings` section in the team log summarizing the key discoveries (architecture, file paths, patterns found). Researcher output is lost when the session ends — the team log is the only durable record. Keep it to 10-15 bullet points covering what was discovered and where.
 
 ### Write the Comparison Section (if baseline exists)
 
@@ -113,7 +125,7 @@ Duplicate read rate = reads_duplicate / reads_total * 100
 | Parallel dispatch rate | X% | Y% | +/-Z% |
 | Duplicate read rate | X% | Y% | +/-Z% |
 | Total tokens | ~NK | ~NK | +/-NK |
-| Wall-clock time | ~N min | ~N min | +/-N min |
+| Lead active time | ~N min | ~N min | +/-N min |
 ```
 
 ### Self-Critique
@@ -165,11 +177,11 @@ After writing the team log, spawn a **reviewer agent** to independently verify y
 
 ### Dispatch Rules
 
-1. Run the metrics script first to generate ground-truth data:
+1. Run the metrics script first to generate ground-truth data. Use `--project` to filter to the correct project's JSONL (avoids grabbing a different project's session):
    ```
-   python3 scripts/parse-run-metrics.py latest
+   python3 scripts/parse-run-metrics.py latest --project greenlake
    ```
-   Save the output to a file (e.g., `docs/run-metrics-raw.md`).
+   Replace `greenlake` with a substring matching the project directory name. Save the output to a file (e.g., `docs/run-metrics-raw.md`).
 
 2. Spawn the reviewer with **only file references** — no summaries, no context, no editorializing. Use this exact prompt template:
 
