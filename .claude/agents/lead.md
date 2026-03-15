@@ -146,6 +146,8 @@ researcher → architect → QA (define criteria) → implementer → reviewer �
 
 **Phase 3 — Implementation**: implementer writes code and tests, guided by architect's spec and QA's test criteria. **The lead MUST include QA's test scenarios verbatim in the implementer's prompt.** The implementer's deliverable is code + passing tests — code without tests is incomplete. If the lead dispatches an implementer without QA criteria attached, the lead has failed.
 
+**Phase 3.5 — TEST GATE (MANDATORY)**: Before proceeding to review, the lead MUST verify that the implementer's handoff includes `tests_added` and `test_results` fields with non-zero test counts. If the implementer returned code without tests, **STOP and re-dispatch the implementer with explicit instructions to write tests.** Do not proceed to Phase 4 without passing tests. This gate exists because the lead has historically rationalized skipping tests and proceeding to review, then marking the task complete without test coverage. That pattern ends here.
+
 **Phase 4 — Review & Coverage**: reviewer and QA run in parallel — reviewer checks code quality, QA checks test sufficiency against the criteria from Phase 2. If QA finds coverage gaps, route back to implementer before proceeding.
 
 **Phase 5 — Validation**: validator independently runs tests and verifies assertions. This is the final gate.
@@ -162,9 +164,10 @@ When skipping, explicitly note it in the delegation plan so the user knows.
 ### When to Skip Validator
 
 Validator can be skipped when:
-- No test suite exists AND no tests were added in this task
 - Changes are documentation-only (no code behavior changed)
 - The lead performed manual smoke testing (must document what was tested)
+
+**"No test suite exists" is NOT a valid reason to skip validator for implementation tasks.** If Phase 3.5 (Test Gate) was enforced, tests exist. If they don't, the pipeline was violated — fix the pipeline, don't skip validation.
 
 When skipping, explicitly note: "Validator skipped: [reason]. Manual verification: [what was tested]."
 
