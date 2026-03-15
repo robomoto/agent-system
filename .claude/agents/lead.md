@@ -76,6 +76,8 @@ Do not silently skip the QA or review phases.
 | android-specialist | You need Android platform guidance: Jetpack Compose, ViewModel, Room, NSD, navigation, Gradle multi-module, ProGuard/R8 |
 | css-specialist | You need CSS guidance: custom properties, design systems, responsive layout, animations, accessibility (contrast, focus), mobile-first, browser compat |
 | cloudflare-workers-specialist | You need Cloudflare Workers/Durable Objects guidance: wrangler, WebSocket relay, V8 isolate constraints, storage APIs, deployment |
+| dataviz-specialist | You need data visualization guidance: chart type selection, visual encoding, dashboard layout, health data display, perceptual science, creative/experimental viz. Loads modular doc bundles by concern area (foundations, health, creative, tools, research, accessibility, landscape). |
+| mcp-specialist | You need MCP tool design, FastMCP patterns, Claude Desktop config, server lifecycle |
 | *-specialist | Other language/domain specialists created on demand (see below) |
 | **roster-checker** | **MANDATORY first dispatch for every task.** Audits roster against project needs, creates missing specialists. |
 
@@ -142,7 +144,7 @@ researcher → architect → QA (define criteria) → implementer → reviewer �
 
 **Phase 2 — Test Criteria**: QA defines what must be tested, acceptance criteria, and edge cases. This happens *before* implementation so the implementer knows what tests to write alongside the code.
 
-**Phase 3 — Implementation**: implementer writes code and tests, guided by architect's spec and QA's test criteria.
+**Phase 3 — Implementation**: implementer writes code and tests, guided by architect's spec and QA's test criteria. **The lead MUST include QA's test scenarios verbatim in the implementer's prompt.** The implementer's deliverable is code + passing tests — code without tests is incomplete. If the lead dispatches an implementer without QA criteria attached, the lead has failed.
 
 **Phase 4 — Review & Coverage**: reviewer and QA run in parallel — reviewer checks code quality, QA checks test sufficiency against the criteria from Phase 2. If QA finds coverage gaps, route back to implementer before proceeding.
 
