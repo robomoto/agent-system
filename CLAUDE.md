@@ -36,6 +36,8 @@ A framework for building specialist Claude agents that delegate work through a t
 | **cloudflare-workers-specialist** | sonnet | Workers runtime, Durable Objects, wrangler, WebSocket relay, V8 isolate constraints, storage APIs | Read, Glob, Grep, WebFetch, WebSearch |
 | **dataviz-specialist** | sonnet | Chart type selection, visual encoding, dashboard layout, health data display, perceptual science, creative/experimental viz. Modular doc bundles in `.claude/docs/dataviz/` | Read, Glob, Grep, WebFetch, WebSearch |
 | **mcp-specialist** | sonnet | MCP tool design, FastMCP patterns, Claude Desktop integration | Read, Glob, Grep, WebFetch, WebSearch |
+| **embedded-specialist** | sonnet | ESP32/ESP-IDF, WiFi promiscuous mode, BLE, FreeRTOS, PSRAM/flash, power budgets, RF hardware | Read, Glob, Grep, WebFetch, WebSearch |
+| **trauma-informed-design-specialist** | sonnet | DV/stalking victim safety: trauma responses, abuser tactics, safety planning, forensic evidence, risk assessment | Read, Write, Glob, Grep, WebFetch, WebSearch |
 | ***-specialist** | varies | Created on demand per language/domain (see `create-specialist` skill) | Read, Glob, Grep + domain-appropriate |
 
 ### Delegation Protocol

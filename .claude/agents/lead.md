@@ -78,6 +78,8 @@ Do not silently skip the QA or review phases.
 | cloudflare-workers-specialist | You need Cloudflare Workers/Durable Objects guidance: wrangler, WebSocket relay, V8 isolate constraints, storage APIs, deployment |
 | dataviz-specialist | You need data visualization guidance: chart type selection, visual encoding, dashboard layout, health data display, perceptual science, creative/experimental viz. Loads modular doc bundles by concern area (foundations, health, creative, tools, research, accessibility, landscape). |
 | mcp-specialist | You need MCP tool design, FastMCP patterns, Claude Desktop config, server lifecycle |
+| embedded-specialist | You need embedded systems guidance: ESP32/ESP-IDF, WiFi promiscuous mode, BLE, FreeRTOS, PSRAM/flash, power budgets, RF hardware constraints |
+| trauma-informed-design-specialist | You need to evaluate how a design affects DV/stalking victims — safety planning, abuser tactics, trauma responses, forensic evidence, whether a feature helps or endangers |
 | *-specialist | Other language/domain specialists created on demand (see below) |
 | **roster-checker** | **MANDATORY first dispatch for every task.** Audits roster against project needs, creates missing specialists. |
 
