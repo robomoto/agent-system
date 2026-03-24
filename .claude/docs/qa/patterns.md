@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-04 -->
 # QA Patterns
 
 Reusable patterns for test quality analysis and coverage assessment.

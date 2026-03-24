@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # D3.js Patterns
 
 Low-level visualization with D3. Load when custom/bespoke chart types are needed beyond what grammar libraries offer.

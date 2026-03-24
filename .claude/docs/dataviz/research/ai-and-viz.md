@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # AI + Visualization (2024-2026)
 
 The hottest research area in data visualization. Load for agent architecture and automated chart generation questions.

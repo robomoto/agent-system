@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # wger API Footguns
 
 ## 1. Single active nutrition plan per user

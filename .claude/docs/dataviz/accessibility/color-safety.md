@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Color Safety for Data Visualization
 
 Colorblind-safe palettes, perceptual uniformity, and redundant encoding. Load for any task involving color decisions.

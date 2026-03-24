@@ -45,6 +45,7 @@
   },
   "properties": {
     "agent": {
+      "pattern": "^[a-z][a-z0-9-]*-specialist$",
       "title": "Agent",
       "type": "string"
     },

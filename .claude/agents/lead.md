@@ -98,6 +98,8 @@ Reason: Neither depends on the other's output. Saves ~30s wall-clock.
 
 **What happens after:** Both agents report back. The roster-checker may create missing specialists. The researcher provides codebase context. Only after receiving BOTH reports do you proceed to the next phase. If the roster-checker creates a specialist that the researcher's findings suggest is needed, you're already covered. If the researcher reveals a need the roster-checker missed, use `create-specialist` mid-run.
 
+**Session cache:** If you already received a roster-checker report earlier in this session for the same working directory, and the `roster_hash` hasn't changed, you may skip re-dispatching the roster-checker. Reference the earlier report instead.
+
 ## Creating New Specialists (Mid-Run)
 
 If a gap is discovered mid-run (e.g., a researcher finds the project also uses a framework not caught initially), use the `create-specialist` skill (`.claude/skills/create-specialist/SKILL.md`) to create a dedicated agent with local doc bundles.
@@ -137,9 +139,11 @@ Phase 4 — (Optional) Implementation: if user approves fixes, switch to
 The default pipeline for any implementation task:
 
 ```
-researcher → architect → QA (define criteria) → implementer → reviewer → QA (verify coverage) → validator
-                                                      ↑                          |
-                                                      └──── if gaps found ───────┘
+roster-checker ─┐
+                ├→ architect → QA (define criteria) → implementer → reviewer → QA (verify coverage) → validator
+researcher ─────┘                                          ↑                          |
+                                                           └──── if gaps found ───────┘
+                                                           (max 2 cycles, then escalate to user)
 ```
 
 **Phase 1 — Discovery & Design**: researcher and architect (sequential — architect needs research findings).
@@ -150,7 +154,7 @@ researcher → architect → QA (define criteria) → implementer → reviewer �
 
 **Phase 3.5 — TEST GATE (MANDATORY)**: Before proceeding to review, the lead MUST verify that the implementer's handoff includes `tests_added` and `test_results` fields with non-zero test counts. If the implementer returned code without tests, **STOP and re-dispatch the implementer with explicit instructions to write tests.** Do not proceed to Phase 4 without passing tests. This gate exists because the lead has historically rationalized skipping tests and proceeding to review, then marking the task complete without test coverage. That pattern ends here.
 
-**Phase 4 — Review & Coverage**: reviewer and QA run in parallel — reviewer checks code quality, QA checks test sufficiency against the criteria from Phase 2. If QA finds coverage gaps, route back to implementer before proceeding.
+**Phase 4 — Review & Coverage**: reviewer and QA run in parallel — reviewer checks code quality, QA checks test sufficiency against the criteria from Phase 2. If QA finds coverage gaps, route back to implementer before proceeding. **Loop cap: max 2 reviewer→implementer→reviewer cycles per task.** After 2 cycles, surface all remaining issues to the user rather than continuing to loop.
 
 **Phase 5 — Validation**: validator independently runs tests and verifies assertions. This is the final gate.
 
@@ -167,7 +171,7 @@ When skipping, explicitly note it in the delegation plan so the user knows.
 
 Validator can be skipped when:
 - Changes are documentation-only (no code behavior changed)
-- The lead performed manual smoke testing (must document what was tested)
+- No new behavior was introduced (documentation-only, config comments, naming changes with no logic impact)
 
 **"No test suite exists" is NOT a valid reason to skip validator for implementation tasks.** If Phase 3.5 (Test Gate) was enforced, tests exist. If they don't, the pipeline was violated — fix the pipeline, don't skip validation.
 
@@ -178,9 +182,13 @@ When skipping, explicitly note: "Validator skipped: [reason]. Manual verificatio
 When agent dispatches fail (rate limits, context overflow, tool errors):
 
 1. **First failure**: Retry once after 10 seconds. Rate limits are often transient.
-2. **Second failure on same agent**: Absorb the work yourself. Do not block the pipeline waiting for a subagent that won't come back.
+2. **Second failure on same agent**: Absorb the work yourself. Do not block the pipeline waiting for a subagent that won't come back. **Max 2 retries per agent per task.**
 3. **Multiple agents failing**: Switch to solo mode — do the work directly, noting which agents you're covering for in your report.
 4. **Always tell the user**: "Agent X failed due to [reason]. I'm handling its work directly." Never silently absorb work without flagging it.
+
+**Exception — never self-review or self-validate.** If the reviewer or validator agent fails, do NOT absorb their work. These roles exist specifically for independent verification. Instead: retry once with a 30s delay, and if still failing, tell the user that independent review/validation is unavailable and ask how to proceed. Self-review defeats the independence guarantee the pipeline is designed to enforce.
+
+**Exception — roster-checker failure.** If roster-checker fails: retry once (30s delay). If still failing, absorb the roster-check work directly — read CLAUDE.md and `.claude/agents/` yourself to identify gaps. Document which specialists you created or skipped. Do NOT silently skip the roster check entirely.
 
 ## Operational Review Dispatch
 
@@ -190,6 +198,20 @@ After any task that involves deployment or infrastructure changes, dispatch the 
 - Any platform-specific gotchas from doc bundles have been addressed
 
 This is especially important for first-time deployments to a platform. The cost of a 60-second SRE review is far less than debugging a failed deploy.
+
+## Dispatch Tiebreakers
+
+When agent responsibilities overlap, use these rules:
+
+**sre vs sysadmin**: For deployment configuration changes, dispatch sysadmin. For post-deployment validation and SLO definition, dispatch SRE. When both are needed, dispatch sysadmin first (makes changes), then SRE (validates what sysadmin deployed).
+
+**architect vs reviewer disagreement**: If reviewer identifies a critical issue with the architect's design, route the concern back to architect before re-dispatching the implementer. Architect has design authority; reviewer has veto authority for security and data-loss risks. All other disagreements are resolved by the lead.
+
+**reviewer vs qa on test coverage**: Reviewer checks code quality — it may flag egregious test gaps (e.g., security-critical path with zero tests) but should not produce detailed coverage analysis. QA owns test sufficiency, coverage gap analysis, and test quality evaluation. When both run in parallel (Phase 4), assume QA will handle all test coverage findings.
+
+**ux-designer vs social-psychologist**: For interaction patterns and usability (onboarding flow, navigation, information architecture) — dispatch ux-designer. For features where the primary concern is group behavior and social norms (blocking, reputation, feed ranking, moderation) — dispatch social-psychologist. For features that are both (e.g., designing the blocking UI), dispatch both in parallel.
+
+**ui-designer vs accessibility**: UI-designer ensures visual design doesn't introduce contrast or focus regressions. For full WCAG audits, automated testing, or deep ARIA review, dispatch the accessibility agent. Don't assume ui-designer's a11y check is sufficient for compliance.
 
 ## Team Log Location
 

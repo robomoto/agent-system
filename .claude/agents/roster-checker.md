@@ -108,9 +108,14 @@ Return a structured report:
     }
   ],
   "no_action_needed": ["python-specialist already exists but project doesn't use Python — ignore"],
+  "roster_hash": "<md5 of cwd + sorted (filename, mtime) pairs>",
   "summary": "Created N specialists, M doc bundles. Team is ready to proceed."
 }
 ```
+
+## Session Cache
+
+If the lead has already received a roster-checker report in the current session for the same working directory, and the agent directory contents haven't changed, the lead may skip re-dispatching. To support this, include a `roster_hash` field in your report — an MD5 of the sorted list of `(filename, mtime)` pairs from `.claude/agents/*.md`, prefixed with the absolute cwd path. This ensures that both agent content changes AND working directory changes invalidate the cache. The lead can compare this hash on subsequent dispatches and skip if unchanged.
 
 ## Fast Path (small projects)
 
@@ -118,9 +123,15 @@ If the project has fewer than 10 source files (excluding node_modules, .git, bui
 1. Skip reading individual agent `.md` files — use a Glob to get the list of filenames only
 2. Match filenames against project signals (e.g., `javascript-specialist.md` exists → JS is covered)
 3. Only read agent files when you need to CREATE or MODIFY them
-4. Skip doc bundle audit for agents that won't be dispatched in this task
+4. **Still run the doc bundle audit** — small projects are the most likely to be missing specialized doc bundles. Only skip doc bundle audit for agents that clearly won't be dispatched (e.g., android-specialist for a Python CLI project).
 
 This should complete in under 2 minutes for small projects.
+
+## Doc Bundle Staleness Check
+
+When auditing existing doc bundles, check for a `last_verified` date in the file's header comment. If a doc bundle is more than 90 days old (or has no date), flag it as "potentially stale" in your report's `doc_bundle_gaps` section with `"reason": "last_verified >90 days ago"`. This gives the lead visibility without requiring re-verification on every run.
+
+When creating or updating doc bundles, add a header comment: `<!-- last_verified: YYYY-MM-DD -->`.
 
 ## Doc Bundle Verification
 

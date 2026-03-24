@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Clinical Dashboard Translation
 
 What translates from medical informatics to personal health dashboards, and what doesn't.

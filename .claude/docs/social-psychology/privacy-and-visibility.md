@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-06 -->
 # Privacy and Visibility in Community Design
 
 ## The Privacy Paradox (Acquisti & Grossklags, 2005)

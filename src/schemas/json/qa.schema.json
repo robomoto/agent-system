@@ -1,0 +1,252 @@
+{
+  "$defs": {
+    "CoverageGap": {
+      "properties": {
+        "location": {
+          "title": "Location",
+          "type": "string"
+        },
+        "risk": {
+          "enum": [
+            "critical",
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Risk",
+          "type": "string"
+        },
+        "gap_type": {
+          "enum": [
+            "no-test",
+            "shallow-test",
+            "missing-edge-case",
+            "missing-error-path"
+          ],
+          "title": "Gap Type",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "recommendation": {
+          "title": "Recommendation",
+          "type": "string"
+        },
+        "business_impact": {
+          "title": "Business Impact",
+          "type": "string"
+        }
+      },
+      "required": [
+        "location",
+        "risk",
+        "gap_type",
+        "description",
+        "recommendation",
+        "business_impact"
+      ],
+      "title": "CoverageGap",
+      "type": "object"
+    },
+    "RegressionRisk": {
+      "properties": {
+        "area": {
+          "title": "Area",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "mitigation": {
+          "title": "Mitigation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "area",
+        "reason",
+        "mitigation"
+      ],
+      "title": "RegressionRisk",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "completed",
+        "blocked",
+        "needs-input"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "TestLandscape": {
+      "properties": {
+        "frameworks": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Frameworks",
+          "type": "array"
+        },
+        "coverage_percent": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Coverage Percent"
+        },
+        "test_count": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Test Count",
+          "type": "integer"
+        },
+        "pyramid_balance": {
+          "enum": [
+            "healthy",
+            "top-heavy",
+            "bottom-heavy",
+            "missing-middle"
+          ],
+          "title": "Pyramid Balance",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pyramid_balance"
+      ],
+      "title": "TestLandscape",
+      "type": "object"
+    },
+    "TestQualityIssue": {
+      "properties": {
+        "location": {
+          "title": "Location",
+          "type": "string"
+        },
+        "issue": {
+          "enum": [
+            "tests-implementation",
+            "over-mocked",
+            "no-assertion",
+            "shared-state",
+            "happy-path-only"
+          ],
+          "title": "Issue",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "suggestion": {
+          "title": "Suggestion",
+          "type": "string"
+        }
+      },
+      "required": [
+        "location",
+        "issue",
+        "description",
+        "suggestion"
+      ],
+      "title": "TestQualityIssue",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "qa",
+      "default": "qa",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "test_landscape": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TestLandscape"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "coverage_gaps": {
+      "items": {
+        "$ref": "#/$defs/CoverageGap"
+      },
+      "title": "Coverage Gaps",
+      "type": "array"
+    },
+    "test_quality_issues": {
+      "items": {
+        "$ref": "#/$defs/TestQualityIssue"
+      },
+      "title": "Test Quality Issues",
+      "type": "array"
+    },
+    "regression_risks": {
+      "items": {
+        "$ref": "#/$defs/RegressionRisk"
+      },
+      "title": "Regression Risks",
+      "type": "array"
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary"
+  ],
+  "title": "QAHandoff",
+  "type": "object"
+}

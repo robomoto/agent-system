@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-06 -->
 # Survey Design for Small Communities
 
 ## Core Principles

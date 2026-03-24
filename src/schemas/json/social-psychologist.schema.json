@@ -1,0 +1,213 @@
+{
+  "$defs": {
+    "CommunityContext": {
+      "properties": {
+        "size": {
+          "title": "Size",
+          "type": "string"
+        },
+        "type": {
+          "title": "Type",
+          "type": "string"
+        },
+        "key_dynamics": {
+          "default": "",
+          "title": "Key Dynamics",
+          "type": "string"
+        }
+      },
+      "required": [
+        "size",
+        "type"
+      ],
+      "title": "CommunityContext",
+      "type": "object"
+    },
+    "SocialAnalysisDimension": {
+      "properties": {
+        "dimension": {
+          "title": "Dimension",
+          "type": "string"
+        },
+        "finding": {
+          "title": "Finding",
+          "type": "string"
+        },
+        "confidence": {
+          "enum": [
+            "established",
+            "suggestive",
+            "extrapolation"
+          ],
+          "title": "Confidence",
+          "type": "string"
+        },
+        "source_ref": {
+          "default": "",
+          "title": "Source Ref",
+          "type": "string"
+        },
+        "implication": {
+          "default": "",
+          "title": "Implication",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dimension",
+        "finding",
+        "confidence"
+      ],
+      "title": "SocialAnalysisDimension",
+      "type": "object"
+    },
+    "SocialRecommendation": {
+      "properties": {
+        "option": {
+          "title": "Option",
+          "type": "string"
+        },
+        "prosocial_effects": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Prosocial Effects",
+          "type": "array"
+        },
+        "risks": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Risks",
+          "type": "array"
+        },
+        "mitigations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mitigations",
+          "type": "array"
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Confidence",
+          "type": "string"
+        }
+      },
+      "required": [
+        "option",
+        "confidence"
+      ],
+      "title": "SocialRecommendation",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "completed",
+        "blocked",
+        "needs-input"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "social-psychologist",
+      "default": "social-psychologist",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "feature_evaluated": {
+      "default": "",
+      "title": "Feature Evaluated",
+      "type": "string"
+    },
+    "community_context": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CommunityContext"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "analysis": {
+      "items": {
+        "$ref": "#/$defs/SocialAnalysisDimension"
+      },
+      "title": "Analysis",
+      "type": "array"
+    },
+    "recommendations": {
+      "items": {
+        "$ref": "#/$defs/SocialRecommendation"
+      },
+      "title": "Recommendations",
+      "type": "array"
+    },
+    "trade_offs": {
+      "default": "",
+      "title": "Trade Offs",
+      "type": "string"
+    },
+    "review_file": {
+      "default": "",
+      "title": "Review File",
+      "type": "string"
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary"
+  ],
+  "title": "SocialPsychologistHandoff",
+  "type": "object"
+}

@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-06 -->
 # Status and Reputation Dynamics
 
 ## Social Comparison Theory (Festinger, 1954)

@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-08 -->
 # Durable Objects Reference
 
 ## What They Are

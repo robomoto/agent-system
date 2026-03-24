@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Dashboard Architecture
 
 Structural principles for organizing data displays. Load for layout, hierarchy, and interaction design questions.

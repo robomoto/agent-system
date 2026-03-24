@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Rendering Technologies for Visualization
 
 SVG vs Canvas vs WebGL selection guide. Load for performance and implementation decisions.

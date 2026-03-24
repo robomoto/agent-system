@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # Cloudflare Workers Footguns
 
 ## 1. No Node.js APIs

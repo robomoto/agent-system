@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-04 -->
 # Python Idioms Reference
 
 ## Version: Python 3.11+

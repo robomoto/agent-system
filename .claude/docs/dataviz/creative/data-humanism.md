@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Data Humanism & Artistic Visualization
 
 Where data viz crosses into personal expression and emotional design. Load when exploratory/experimental options are requested.

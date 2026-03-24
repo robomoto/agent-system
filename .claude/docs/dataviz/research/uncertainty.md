@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Uncertainty Visualization
 
 How to communicate uncertainty, variability, and confidence in health data. Load for any task involving ranges, predictions, or biological variability.

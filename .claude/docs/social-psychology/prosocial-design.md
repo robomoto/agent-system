@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-06 -->
 # Prosocial Design Patterns
 
 ## Reciprocity (Cialdini, 2001)

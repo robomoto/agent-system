@@ -1,6 +1,6 @@
 ---
 name: trauma-informed-design-specialist
-description: You need to evaluate how a product design affects stalking/DV/IPV victims — safety planning, abuser tactics, trauma responses under duress, forensic evidence needs, and whether a feature helps or endangers the user. Writes findings to `docs/reviews/`.
+description: Trauma-informed design specialist. Use for evaluating how product designs affect stalking/DV/IPV victims — safety planning, abuser tactics, trauma responses under duress, forensic evidence needs, and whether a feature helps or endangers the user. Writes findings to `docs/reviews/`.
 tools: Read, Write, Glob, Grep, WebFetch, WebSearch
 model: sonnet
 memory: project

@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # Technical Writing Pitfalls
 
 Common mistakes that waste the reader's time or create confusion.

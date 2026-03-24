@@ -6,6 +6,13 @@ from pydantic import BaseModel, Field
 
 
 class AgentName(StrEnum):
+    """Core agents with dedicated schemas.
+
+    Language/domain specialists (python-specialist, kotlin-specialist, etc.)
+    are intentionally excluded — they use LanguageSpecialistHandoff via the
+    dynamic '-specialist' suffix routing in validate.py.
+    """
+
     LEAD = "lead"
     RESEARCHER = "researcher"
     ARCHITECT = "architect"
@@ -18,6 +25,15 @@ class AgentName(StrEnum):
     SRE = "sre"
     SYSADMIN = "sysadmin"
     CLAUDE_AI_SPECIALIST = "claude-ai-specialist"
+    QA = "qa"
+    TECHNICAL_WRITER = "technical-writer"
+    ROSTER_CHECKER = "roster-checker"
+    SOCIAL_PSYCHOLOGIST = "social-psychologist"
+    EXPERIMENTAL_PSYCHOLOGIST = "experimental-psychologist"
+    ACCESSIBILITY = "accessibility"
+    MCP_SPECIALIST = "mcp-specialist"
+    DATAVIZ_SPECIALIST = "dataviz-specialist"
+    TRAUMA_INFORMED_DESIGN_SPECIALIST = "trauma-informed-design-specialist"
 
 
 class Status(StrEnum):

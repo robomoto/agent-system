@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-06 -->
 # Conflict and Moderation in Small Communities
 
 ## The Spiral of Silence (Noelle-Neumann, 1974)

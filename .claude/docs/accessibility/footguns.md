@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # Accessibility — Footguns
 
 ## Dark Mode Contrast Failures

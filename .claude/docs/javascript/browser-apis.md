@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-08 -->
 # Browser APIs Reference — Vanilla JS Web Client
 
 ## WebSocket API

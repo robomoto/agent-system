@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # Fly.io Gotchas
 
 Common deployment pitfalls on Fly.io, learned from real failures.

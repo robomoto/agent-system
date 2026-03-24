@@ -1,0 +1,242 @@
+{
+  "$defs": {
+    "ExperimentalHypothesis": {
+      "properties": {
+        "hypothesis": {
+          "title": "Hypothesis",
+          "type": "string"
+        },
+        "testable": {
+          "default": true,
+          "title": "Testable",
+          "type": "boolean"
+        },
+        "minimum_n": {
+          "default": "",
+          "title": "Minimum N",
+          "type": "string"
+        },
+        "feasible_with_current_community": {
+          "default": true,
+          "title": "Feasible With Current Community",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "hypothesis"
+      ],
+      "title": "ExperimentalHypothesis",
+      "type": "object"
+    },
+    "ImplementationSpec": {
+      "properties": {
+        "complexity": {
+          "enum": [
+            "trivial",
+            "moderate",
+            "significant"
+          ],
+          "title": "Complexity",
+          "type": "string"
+        },
+        "requires_new_tracking": {
+          "default": false,
+          "title": "Requires New Tracking",
+          "type": "boolean"
+        },
+        "suggested_queries_or_tools": {
+          "default": "",
+          "title": "Suggested Queries Or Tools",
+          "type": "string"
+        }
+      },
+      "required": [
+        "complexity"
+      ],
+      "title": "ImplementationSpec",
+      "type": "object"
+    },
+    "MeasureSpec": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "operationalization": {
+          "title": "Operationalization",
+          "type": "string"
+        },
+        "data_source": {
+          "default": "",
+          "title": "Data Source",
+          "type": "string"
+        },
+        "frequency": {
+          "default": "",
+          "title": "Frequency",
+          "type": "string"
+        },
+        "baseline": {
+          "default": "",
+          "title": "Baseline",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "operationalization"
+      ],
+      "title": "MeasureSpec",
+      "type": "object"
+    },
+    "MeasurementDesign": {
+      "properties": {
+        "method": {
+          "title": "Method",
+          "type": "string"
+        },
+        "measures": {
+          "items": {
+            "$ref": "#/$defs/MeasureSpec"
+          },
+          "title": "Measures",
+          "type": "array"
+        },
+        "confounds": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Confounds",
+          "type": "array"
+        },
+        "timeline": {
+          "default": "",
+          "title": "Timeline",
+          "type": "string"
+        },
+        "ethical_considerations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Ethical Considerations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "method"
+      ],
+      "title": "MeasurementDesign",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "completed",
+        "blocked",
+        "needs-input"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "experimental-psychologist",
+      "default": "experimental-psychologist",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "research_question": {
+      "default": "",
+      "title": "Research Question",
+      "type": "string"
+    },
+    "hypotheses": {
+      "items": {
+        "$ref": "#/$defs/ExperimentalHypothesis"
+      },
+      "title": "Hypotheses",
+      "type": "array"
+    },
+    "measurement_design": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/MeasurementDesign"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "implementation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ImplementationSpec"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    },
+    "review_file": {
+      "default": "",
+      "title": "Review File",
+      "type": "string"
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary"
+  ],
+  "title": "ExperimentalPsychologistHandoff",
+  "type": "object"
+}

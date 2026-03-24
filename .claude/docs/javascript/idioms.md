@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # JavaScript Idioms (ES2020+)
 
 ## 1. Nullish Checks

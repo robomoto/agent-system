@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # wger REST API v2 Reference
 
 wger is the workout + nutrition tracking service running at `http://192.168.50.248:8080`.

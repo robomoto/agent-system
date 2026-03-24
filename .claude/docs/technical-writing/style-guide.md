@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # Technical Writing Style Guide
 
 ## Core Principles

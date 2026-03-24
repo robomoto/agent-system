@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-06 -->
 # Small Group Dynamics (N < 200)
 
 ## Dunbar's Number and Community Layers

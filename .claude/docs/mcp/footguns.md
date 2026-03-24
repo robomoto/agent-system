@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # MCP Footguns — Common Mistakes
 
 ## 1. Writing to stdout

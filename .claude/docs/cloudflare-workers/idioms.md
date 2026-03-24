@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # Cloudflare Workers Idioms
 
 ## 1. Module Worker Export Pattern

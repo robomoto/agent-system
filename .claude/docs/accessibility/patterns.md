@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # Accessibility — Patterns
 
 ## Contrast Ratios (WCAG 1.4.3 / 1.4.6 / 1.4.11)

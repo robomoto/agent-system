@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-08 -->
 # CSS Idioms (Modern CSS, 2023+)
 
 ## 1. Design Tokens via Custom Properties

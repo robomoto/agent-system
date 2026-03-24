@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # InfluxDB 1.x Footguns
 
 ## 1. Using influxdb-client (2.x) instead of influxdb (1.x)

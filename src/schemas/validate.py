@@ -14,15 +14,24 @@ import sys
 from pydantic import ValidationError
 
 from src.schemas.agents import (
+    AccessibilityHandoff,
     ArchitectHandoff,
     ClaudeAISpecialistHandoff,
     CostAccountantHandoff,
+    DatavizSpecialistHandoff,
+    ExperimentalPsychologistHandoff,
     ImplementerHandoff,
     LanguageSpecialistHandoff,
+    MCPSpecialistHandoff,
+    QAHandoff,
     ResearcherHandoff,
     ReviewerHandoff,
+    RosterCheckerHandoff,
+    SocialPsychologistHandoff,
     SREHandoff,
     SysadminHandoff,
+    TechnicalWriterHandoff,
+    TraumaInformedDesignHandoff,
     UIDesignerHandoff,
     UXDesignerHandoff,
     ValidatorHandoff,
@@ -41,6 +50,15 @@ SCHEMA_MAP = {
     "sysadmin": SysadminHandoff,
     "claude-ai-specialist": ClaudeAISpecialistHandoff,
     "language-specialist": LanguageSpecialistHandoff,
+    "qa": QAHandoff,
+    "technical-writer": TechnicalWriterHandoff,
+    "roster-checker": RosterCheckerHandoff,
+    "social-psychologist": SocialPsychologistHandoff,
+    "experimental-psychologist": ExperimentalPsychologistHandoff,
+    "accessibility": AccessibilityHandoff,
+    "mcp-specialist": MCPSpecialistHandoff,
+    "dataviz-specialist": DatavizSpecialistHandoff,
+    "trauma-informed-design-specialist": TraumaInformedDesignHandoff,
 }
 
 
@@ -55,9 +73,12 @@ def validate_handoff(raw: str) -> tuple[bool, str]:
     if not agent:
         return False, "Missing 'agent' field"
 
-    # Language specialists have dynamic agent names
+    # Agents with dedicated schemas are matched first via SCHEMA_MAP.
+    # Dynamic *-specialist agents (e.g., rust-specialist, django-specialist)
+    # fall through to LanguageSpecialistHandoff, which validates the agent
+    # name matches the ^[a-z][a-z0-9-]*-specialist$ pattern.
     model_cls = SCHEMA_MAP.get(agent)
-    if model_cls is None and "-specialist" in agent:
+    if model_cls is None and agent.endswith("-specialist"):
         model_cls = LanguageSpecialistHandoff
 
     if model_cls is None:

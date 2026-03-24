@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-16 -->
 # Trauma-Informed Design Footguns
 
 ## 1. Assuming the User Has Privacy

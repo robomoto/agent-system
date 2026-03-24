@@ -45,6 +45,10 @@ You are the reviewer. Your job is to find problems — bugs, security issues, de
 - Minor style inconsistencies
 - Documentation gaps
 
+## Boundary with QA
+
+Do not produce detailed test coverage gap findings — that is QA's domain. You may flag if a security-critical path has zero tests (as a Critical finding), but defer comprehensive coverage analysis to QA. When QA runs in parallel with you (Phase 4), assume QA will cover test sufficiency.
+
 ## Adversarial Checklist
 
 For every review, explicitly answer:

@@ -183,7 +183,7 @@ After writing the team log, spawn a **reviewer agent** to independently verify y
 
 ### Dispatch Rules
 
-1. **Ground-truth metrics script**: `scripts/parse-run-metrics.py` does not exist yet. Until it is created, the post-run reviewer must verify metrics by spot-checking artifacts directly (running tests, counting files, checking git log). Do NOT reference this script in prompts or mark its checklist item as blocked — just skip it and note "no automated metrics script available" in the review.
+1. **Ground-truth metrics script**: Run `scripts/parse-run-metrics.py latest` to generate ground-truth metrics from the team log. Pass the output file path to the reviewer as the ground-truth artifact.
 
 2. Spawn the reviewer with **only file references** — no summaries, no context, no editorializing. Use this exact prompt template:
 
@@ -191,7 +191,7 @@ After writing the team log, spawn a **reviewer agent** to independently verify y
    You are performing a post-run review of an agent team execution.
 
    Read the review protocol at:
-     agent-system/docs/post-run-review.md
+     ~/claude_projects/agent-system/docs/post-run-review.md
 
    Artifacts to analyze:
      - Ground-truth metrics: <path to script output file>
@@ -221,5 +221,5 @@ Subagents start with a blank conversation — they don't inherit your context. B
 - [ ] Comparison table included (if baseline exists)
 - [ ] Self-Critique section written with concrete answers
 - [ ] Baseline updated in memory if this run improved on 3+ metrics
-- [ ] `parse-run-metrics.py latest` run and output saved (skip if script not yet created)
+- [ ] `parse-run-metrics.py latest` run and output saved
 - [ ] Reviewer spawned with locked-down prompt (file refs only, no context)

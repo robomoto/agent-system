@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # InfluxDB 1.x Reference
 
 This stack runs InfluxDB 1.11 (not 2.x). Use InfluxQL, not Flux.

@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Consumer Health Product Visualization Patterns
 
 What works (and doesn't) in shipped health/fitness products. Load for health dashboard design tasks.

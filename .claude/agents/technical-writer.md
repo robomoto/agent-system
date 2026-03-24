@@ -54,17 +54,16 @@ Wrong:
 {
   "agent": "technical-writer",
   "task_id": "<assigned task id>",
-  "domain": "documentation",
   "status": "completed|blocked|needs-input",
   "summary": "What was written or revised",
-  "artifacts": [
+  "files_changed": [
     {
       "path": "path/to/file.md",
-      "action": "created|revised|restructured",
+      "action": "created|modified|deleted",
       "description": "Brief note on what changed"
     }
   ],
-  "style_notes": ["Any tone or convention decisions made and why"],
+  "style_issues": ["Any tone or convention decisions made and why"],
   "artifact_refs": [],
   "decisions": [],
   "next_steps": [],

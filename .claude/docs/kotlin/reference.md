@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-07 -->
 # Kotlin Reference — Key APIs
 
 Version: Kotlin 1.9+ / kotlinx.coroutines 1.7+ / kotlinx.serialization 1.6+

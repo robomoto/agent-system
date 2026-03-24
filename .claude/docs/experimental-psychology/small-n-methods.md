@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-06 -->
 # Research Methods for Small Communities (N < 200)
 
 ## The Small-N Problem

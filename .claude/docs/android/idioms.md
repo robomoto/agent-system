@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-07 -->
 # Android / Jetpack Compose Idioms
 
 Version: Compose 1.6+ / Material3 / minSdk 26+

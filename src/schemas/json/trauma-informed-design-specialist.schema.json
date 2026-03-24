@@ -1,0 +1,138 @@
+{
+  "$defs": {
+    "Status": {
+      "enum": [
+        "completed",
+        "blocked",
+        "needs-input"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "TraumaRecommendation": {
+      "properties": {
+        "topic": {
+          "title": "Topic",
+          "type": "string"
+        },
+        "guidance": {
+          "title": "Guidance",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "risk_level": {
+          "enum": [
+            "critical",
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Risk Level",
+          "type": "string"
+        },
+        "discovery_test": {
+          "default": "",
+          "title": "Discovery Test",
+          "type": "string"
+        }
+      },
+      "required": [
+        "topic",
+        "guidance",
+        "rationale",
+        "risk_level"
+      ],
+      "title": "TraumaRecommendation",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "trauma-informed-design-specialist",
+      "default": "trauma-informed-design-specialist",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "domain": {
+      "default": "trauma-informed-design",
+      "title": "Domain",
+      "type": "string"
+    },
+    "recommendations": {
+      "items": {
+        "$ref": "#/$defs/TraumaRecommendation"
+      },
+      "title": "Recommendations",
+      "type": "array"
+    },
+    "footguns": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Footguns",
+      "type": "array"
+    },
+    "requires_real_world_review": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Requires Real World Review",
+      "type": "array"
+    },
+    "review_file": {
+      "default": "",
+      "title": "Review File",
+      "type": "string"
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary"
+  ],
+  "title": "TraumaInformedDesignHandoff",
+  "type": "object"
+}

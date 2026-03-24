@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-04 -->
 # Python Footguns
 
 Common mistakes that silently produce wrong results or cause subtle bugs.

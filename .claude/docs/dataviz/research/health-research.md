@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Health Dashboard Research (CHI/UbiComp 2024-2026)
 
 Recent academic findings directly applicable to personal health dashboards. Load for evidence-based design decisions.

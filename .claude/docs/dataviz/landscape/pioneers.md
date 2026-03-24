@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Data Visualization Pioneers & Practitioners
 
 Who's doing what in the field. Load for context on practitioners, influences, and current work.

@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # MCP Idioms — FastMCP Patterns
 
 Patterns from the health-stack wger-mcp server and FastMCP best practices.

@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-04 -->
 # Python Standard Library Reference
 
 Modules we commonly use in the agent system.

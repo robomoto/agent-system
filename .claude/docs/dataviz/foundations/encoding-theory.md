@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Visual Encoding Theory
 
 Core references for mapping data to visual channels. Load for every visualization question.

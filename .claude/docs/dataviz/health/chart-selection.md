@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Chart Types for Health Data
 
 Chart type × health metric selection guide. Rates each as tried-and-true, experimental, or skip.

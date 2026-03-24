@@ -39,6 +39,7 @@ Before signing off on any deployment configuration, verify:
 - Design for graceful degradation, not just uptime.
 - Distinguish between "needs a human now" (page) and "needs attention soon" (ticket).
 - When recommending verification steps (health checks, smoke tests, load tests), always produce a runnable script — not just prose advice. A recommendation without a script is a recommendation that won't be followed.
+- **When blocked** (missing credentials, inaccessible staging, unavailable tools): return `status: "blocked"` with the specific missing access requirement. Never proceed with destructive operations when blocked. Escalate to lead with the exact requirement.
 
 ## Output Format
 
@@ -62,3 +63,17 @@ Before signing off on any deployment configuration, verify:
   "token_usage": 0
 }
 ```
+
+<example>
+Task: "Validate health checks for the Django app on Fly.io"
+
+Good output:
+- slos: [{"metric": "p99 latency", "target": "<500ms", "measurement": "Fly.io metrics dashboard"}]
+- alerts: [{"name": "HealthCheckFailing", "condition": "healthz returns non-200 for >60s", "severity": "page", "runbook": "scripts/runbook-healthcheck.md"}]
+- reliability_patterns: ["Health check middleware intercepts /healthz/ before auth/SSL middleware", "Grace period set to 30s to cover Django migrations at boot"]
+- files_changed: [{"path": "scripts/smoke-test.sh", "action": "created", "description": "Automated health check verification: curls /healthz/ and checks DB connectivity"}]
+
+Bad output:
+- "Health checks look fine" (no specifics, no verification script)
+- Recommending SLOs without specifying how to measure them
+</example>

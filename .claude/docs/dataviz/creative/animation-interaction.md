@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Animation & Interaction for Data Visualization
 
 When and how to use motion and interaction in dashboards. Load for interaction design and transition questions.

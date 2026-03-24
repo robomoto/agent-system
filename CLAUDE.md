@@ -18,7 +18,7 @@ A framework for building specialist Claude agents that delegate work through a t
 | **validator** | sonnet | Assertion verification, test execution, output conformance | Read, Bash, Glob, Grep |
 | **ui-designer** | sonnet | Visual design, component architecture, design systems | Read, Write, Edit, Glob, Grep |
 | **ux-designer** | sonnet | User flows, information architecture, usability heuristics | Read, Glob, Grep, WebFetch |
-| **cost-accountant** | haiku | Token budget tracking, model routing optimization | Read, Glob, Grep, Bash (read-only) |
+| **cost-accountant** | haiku | Token budget tracking, model routing optimization | Read, Glob, Grep, Bash (read-only), WebFetch |
 | **sre** | sonnet | Reliability, monitoring, incident response, observability | Read, Write, Edit, Bash, Glob, Grep |
 | **sysadmin** | sonnet | Infrastructure, deployment, configuration, networking | Read, Write, Edit, Bash, Glob, Grep |
 | **qa** | sonnet | Test strategy, coverage gap analysis, edge case discovery, regression risk, acceptance criteria | Read, Glob, Grep, Bash (read-only) |
@@ -32,11 +32,11 @@ A framework for building specialist Claude agents that delegate work through a t
 | **experimental-psychologist** | sonnet | Measurement design, community metrics, surveys, testable hypotheses, small-N methods. **Writes findings to `docs/reviews/`** | Read, Write, Glob, Grep, WebFetch |
 | **kotlin-specialist** | sonnet | Kotlin idioms, coroutines, Flow, sealed classes, kotlinx.serialization, null safety, performance | Read, Glob, Grep, WebFetch, WebSearch |
 | **android-specialist** | sonnet | Jetpack Compose, ViewModel, Room, NSD, navigation, Gradle multi-module, ProGuard/R8 | Read, Glob, Grep, WebFetch, WebSearch |
-| **css-specialist** | sonnet | Custom properties, design systems, responsive layout, animations, accessibility (contrast, focus), mobile-first | Read, Glob, Grep, WebFetch, WebSearch |
+| **css-specialist** | sonnet | Custom properties, design systems, responsive layout, animations, accessibility (contrast, focus), mobile-first, browser compatibility | Read, Glob, Grep, WebFetch, WebSearch |
 | **cloudflare-workers-specialist** | sonnet | Workers runtime, Durable Objects, wrangler, WebSocket relay, V8 isolate constraints, storage APIs | Read, Glob, Grep, WebFetch, WebSearch |
 | **dataviz-specialist** | sonnet | Chart type selection, visual encoding, dashboard layout, health data display, perceptual science, creative/experimental viz. Modular doc bundles in `.claude/docs/dataviz/` | Read, Glob, Grep, WebFetch, WebSearch |
 | **mcp-specialist** | sonnet | MCP tool design, FastMCP patterns, Claude Desktop integration | Read, Glob, Grep, WebFetch, WebSearch |
-| **embedded-specialist** | sonnet | ESP32/ESP-IDF, WiFi promiscuous mode, BLE, FreeRTOS, PSRAM/flash, power budgets, RF hardware | Read, Glob, Grep, WebFetch, WebSearch |
+| **embedded-specialist** | sonnet | ESP32/ESP-IDF, MicroPython, WiFi promiscuous mode, BLE, FreeRTOS, PSRAM/flash, power budgets, PCB considerations, RF hardware | Read, Glob, Grep, WebFetch, WebSearch |
 | **trauma-informed-design-specialist** | sonnet | DV/stalking victim safety: trauma responses, abuser tactics, safety planning, forensic evidence, risk assessment | Read, Write, Glob, Grep, WebFetch, WebSearch |
 | ***-specialist** | varies | Created on demand per language/domain (see `create-specialist` skill) | Read, Glob, Grep + domain-appropriate |
 
@@ -47,8 +47,8 @@ A framework for building specialist Claude agents that delegate work through a t
 3. Lead decomposes into subtasks with dependency graph
 4. Lead delegates to specialists via structured task assignments
 5. Specialists work independently, return structured handoff reports
-5. Lead synthesizes results and routes follow-up work
-6. Validator confirms assertions before lead marks complete
+6. Lead synthesizes results and routes follow-up work
+7. Validator confirms assertions before lead marks complete
 
 ### Handoff Format
 
@@ -66,6 +66,10 @@ Agents return structured reports, not raw output:
   "token_usage": 12400
 }
 ```
+
+**Status enum overrides:** The base status is `completed|blocked|needs-input`. Two agents use domain-specific overrides:
+- **reviewer**: `approved|changes-requested|blocked`
+- **validator**: `validated|failed|blocked`
 
 ### Subagent Type Routing
 
@@ -121,6 +125,7 @@ Skills are reusable prompt bundles in `.claude/skills/`. Agents declare which sk
 | `cost-analysis` | cost-accountant, lead | Token cost estimation, cloud service projection, budget templates |
 | `design-system` | ui-designer, reviewer | Design tokens, component spec format, accessibility checklist, layout patterns |
 | `tracked-run` | lead | Self-review: instruments a run with metrics (dispatch parallelism, duplicate reads, token usage) for cross-session comparison |
+| `project-review` | reviewer, lead | Structured review for AI agent systems and config-driven projects: consistency, completeness, cross-references, architecture, adversarial |
 
 ### Specialist Doc Bundles
 
@@ -138,12 +143,20 @@ agent-system/
 │   │       ├── idioms.md      # Idiomatic patterns
 │   │       ├── footguns.md    # Common mistakes and gotchas
 │   │       └── reference.md   # Key APIs and features
-│   └── skills/                # Reusable skill bundles
-│       └── create-specialist/ # Skill for creating new specialist agents
+│   └── skills/                # Reusable skill bundles (8 total)
+│       ├── code-review/       # Structured multi-pass review protocol
+│       ├── cost-analysis/     # Token/cloud cost estimation
+│       ├── create-specialist/ # Create new specialist agents on demand
+│       ├── design-system/     # Design tokens, components, accessibility
+│       ├── project-review/    # Agent system / config-driven project review
+│       ├── security-audit/    # OWASP/STRIDE security review
+│       ├── testing-strategy/  # Test pyramid, coverage, edge cases
+│       └── tracked-run/       # Instrumented run with metrics
 ├── docs/
 │   └── plans/                 # PRDs and execution plans
 ├── src/
-│   └── schemas/               # Structured output schemas
+│   └── schemas/               # Structured output schemas (Pydantic models)
+│       └── json/              # JSON Schema exports (for Claude structured outputs)
 ├── tests/                     # Agent consistency and flow tests
 └── scripts/                   # Orchestration and validation scripts
 ```

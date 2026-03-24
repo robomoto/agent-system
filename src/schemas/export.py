@@ -12,15 +12,24 @@ import sys
 from pathlib import Path
 
 from src.schemas.agents import (
+    AccessibilityHandoff,
     ArchitectHandoff,
     ClaudeAISpecialistHandoff,
     CostAccountantHandoff,
+    DatavizSpecialistHandoff,
+    ExperimentalPsychologistHandoff,
     ImplementerHandoff,
     LanguageSpecialistHandoff,
+    MCPSpecialistHandoff,
+    QAHandoff,
     ResearcherHandoff,
     ReviewerHandoff,
+    RosterCheckerHandoff,
+    SocialPsychologistHandoff,
     SREHandoff,
     SysadminHandoff,
+    TechnicalWriterHandoff,
+    TraumaInformedDesignHandoff,
     UIDesignerHandoff,
     UXDesignerHandoff,
     ValidatorHandoff,
@@ -39,6 +48,15 @@ SCHEMAS = {
     "sysadmin": SysadminHandoff,
     "claude-ai-specialist": ClaudeAISpecialistHandoff,
     "language-specialist": LanguageSpecialistHandoff,
+    "qa": QAHandoff,
+    "technical-writer": TechnicalWriterHandoff,
+    "roster-checker": RosterCheckerHandoff,
+    "social-psychologist": SocialPsychologistHandoff,
+    "experimental-psychologist": ExperimentalPsychologistHandoff,
+    "accessibility": AccessibilityHandoff,
+    "mcp-specialist": MCPSpecialistHandoff,
+    "dataviz-specialist": DatavizSpecialistHandoff,
+    "trauma-informed-design-specialist": TraumaInformedDesignHandoff,
 }
 
 

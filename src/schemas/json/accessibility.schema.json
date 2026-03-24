@@ -1,0 +1,215 @@
+{
+  "$defs": {
+    "A11yFinding": {
+      "properties": {
+        "severity": {
+          "enum": [
+            "critical",
+            "warning",
+            "suggestion"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "wcag_criterion": {
+          "title": "Wcag Criterion",
+          "type": "string"
+        },
+        "issue": {
+          "title": "Issue",
+          "type": "string"
+        },
+        "location": {
+          "title": "Location",
+          "type": "string"
+        },
+        "theme": {
+          "default": "",
+          "title": "Theme",
+          "type": "string"
+        },
+        "current": {
+          "default": "",
+          "title": "Current",
+          "type": "string"
+        },
+        "expected": {
+          "default": "",
+          "title": "Expected",
+          "type": "string"
+        },
+        "fix": {
+          "default": "",
+          "title": "Fix",
+          "type": "string"
+        }
+      },
+      "required": [
+        "severity",
+        "wcag_criterion",
+        "issue",
+        "location"
+      ],
+      "title": "A11yFinding",
+      "type": "object"
+    },
+    "AutomatedScanResults": {
+      "properties": {
+        "tool": {
+          "title": "Tool",
+          "type": "string"
+        },
+        "violations": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Violations",
+          "type": "integer"
+        },
+        "passes": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Passes",
+          "type": "integer"
+        },
+        "incomplete": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Incomplete",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "tool"
+      ],
+      "title": "AutomatedScanResults",
+      "type": "object"
+    },
+    "ContrastPair": {
+      "properties": {
+        "foreground": {
+          "title": "Foreground",
+          "type": "string"
+        },
+        "background": {
+          "title": "Background",
+          "type": "string"
+        },
+        "ratio": {
+          "title": "Ratio",
+          "type": "string"
+        },
+        "pass": {
+          "default": true,
+          "title": "Pass",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "foreground",
+        "background",
+        "ratio"
+      ],
+      "title": "ContrastPair",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "completed",
+        "blocked",
+        "needs-input"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "agent": {
+      "const": "accessibility",
+      "default": "accessibility",
+      "title": "Agent",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Summary",
+      "type": "string"
+    },
+    "artifact_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifact Refs",
+      "type": "array"
+    },
+    "decisions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "next_steps": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Next Steps",
+      "type": "array"
+    },
+    "token_usage": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Token Usage",
+      "type": "integer"
+    },
+    "wcag_level": {
+      "default": "AA",
+      "enum": [
+        "A",
+        "AA",
+        "AAA"
+      ],
+      "title": "Wcag Level",
+      "type": "string"
+    },
+    "findings": {
+      "items": {
+        "$ref": "#/$defs/A11yFinding"
+      },
+      "title": "Findings",
+      "type": "array"
+    },
+    "automated_results": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AutomatedScanResults"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "contrast_pairs_checked": {
+      "items": {
+        "$ref": "#/$defs/ContrastPair"
+      },
+      "title": "Contrast Pairs Checked",
+      "type": "array"
+    }
+  },
+  "required": [
+    "task_id",
+    "status",
+    "summary"
+  ],
+  "title": "AccessibilityHandoff",
+  "type": "object"
+}

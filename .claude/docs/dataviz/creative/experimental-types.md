@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Experimental Chart Types & Approaches
 
 Novel visualization techniques beyond standard charts. Load when exploring "what's possible."

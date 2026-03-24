@@ -23,26 +23,23 @@ Load your reference docs before answering:
 - Identify tool result sizing problems and error handling gaps
 - Guide stateless server design for Desktop's process model
 
-## Project Context (health-stack)
-
-The primary MCP server is `wger-mcp/server.py`:
-- FastMCP server using `lifespan` for dependency injection (WgerClient, FoodDB, StandardsDB)
-- stdio transport for Claude Desktop
-- YAML-backed persistence for local food/standard meal databases
-- httpx async client for wger REST API calls
-- Registered at `~/Library/Application Support/Claude/claude_desktop_config.json`
-
 ## Output Format
 
-Return structured findings:
-
-```
-status: completed | blocked | needs-input
-summary: <one paragraph>
-findings:
-  - <specific issue or recommendation>
-decisions:
-  - <call made and why>
-next_steps:
-  - <what should happen next>
+```json
+{
+  "agent": "mcp-specialist",
+  "task_id": "<assigned task id>",
+  "status": "completed|blocked|needs-input",
+  "summary": "One-paragraph finding",
+  "domain": "mcp",
+  "recommendations": [
+    {"topic": "...", "guidance": "...", "rationale": "...", "version": "", "doc_ref": ""}
+  ],
+  "footguns": ["Specific mistake or risk identified"],
+  "tool_schemas_reviewed": ["tool_name"],
+  "artifact_refs": ["path/to/file:line-range"],
+  "decisions": ["Key decision made and why"],
+  "next_steps": ["What should happen next"],
+  "token_usage": 0
+}
 ```

@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-07 -->
 # Kotlin Footguns
 
 Version: Kotlin 1.9+ / kotlinx.coroutines 1.7+

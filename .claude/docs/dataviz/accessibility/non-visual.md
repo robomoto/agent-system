@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Non-Visual Data Access
 
 Screen readers, sonification, and tactile approaches for chart accessibility. Load for accessibility reviews.

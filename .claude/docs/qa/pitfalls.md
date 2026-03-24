@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-04 -->
 # QA Pitfalls
 
 Common mistakes in test strategy and quality assessment.

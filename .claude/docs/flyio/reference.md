@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # Fly.io Reference
 
 Key commands and configuration for Fly.io deployments.

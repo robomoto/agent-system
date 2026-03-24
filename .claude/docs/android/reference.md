@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-07 -->
 # Android Reference — Key APIs
 
 Version: Compose 1.6+ / Material3 1.2+ / Room 2.6+ / Navigation 2.7+

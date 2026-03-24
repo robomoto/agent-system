@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Declarative Visualization Grammars
 
 Spec-based approaches to chart generation. Load for implementation and tool selection tasks.

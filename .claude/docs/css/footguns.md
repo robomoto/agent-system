@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-08 -->
 # CSS Footguns
 
 ## 1. iOS Safari `position: fixed` in Scrollable Contexts

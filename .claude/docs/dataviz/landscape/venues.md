@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Visualization Venues, Competitions & Community
 
 Where the field publishes, competes, and gathers. Load for context on state-of-the-art and who's winning.

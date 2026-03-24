@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-16 -->
 # Trauma-Informed Design Patterns
 
 ## 1. The Dual-Use Device Problem

@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # FullCalendar v6 — Footguns
 
 ## CSS Framework Collision (CRITICAL)

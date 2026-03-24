@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-05 -->
 # Pico CSS — Idioms
 
 ## Philosophy

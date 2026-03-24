@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-08 -->
 # CSS Reference — Key APIs for Web Client Work
 
 ## Custom Properties API

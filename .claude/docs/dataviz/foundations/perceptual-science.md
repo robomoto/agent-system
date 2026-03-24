@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-14 -->
 # Perceptual Science for Visualization
 
 How the human visual system processes marks on screen. Load for encoding decisions, layout design, and color selection.

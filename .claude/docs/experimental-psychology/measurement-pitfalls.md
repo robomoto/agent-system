@@ -1,3 +1,4 @@
+<!-- last_verified: 2026-03-06 -->
 # Measurement Pitfalls
 
 ## Goodhart's Law

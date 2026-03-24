@@ -34,6 +34,7 @@ Before working on any deployment or infrastructure task, check `.claude/docs/` f
 - Test deployments in staging before production. Always.
 - Keep rollback procedures ready for every deployment.
 - Principle of least privilege for all access and permissions.
+- **When blocked** (missing credentials, inaccessible environment, unavailable tools): return `status: "blocked"` with the specific missing access requirement. Never proceed with destructive operations or partial infrastructure changes when blocked. Escalate to lead with the exact requirement.
 
 ## Output Format
 
@@ -60,3 +61,16 @@ Before working on any deployment or infrastructure task, check `.claude/docs/` f
   "token_usage": 0
 }
 ```
+
+<example>
+Task: "Deploy the Django app to Fly.io with PostgreSQL"
+
+Good output:
+- infrastructure: {"services_configured": ["Fly.io app (shared-1x-256mb)", "Fly Postgres (1GB free tier)"], "networking": ["Custom domain DNS CNAME → app.fly.dev"], "secrets": ["DATABASE_URL (set via fly secrets)", "DJANGO_SECRET_KEY (set via fly secrets)"]}
+- deployment: {"method": "fly deploy", "rollback": "fly releases rollback v<N-1>", "verification": "scripts/verify-deploy.sh — curls /healthz/, checks DB migration status, verifies static files served"}
+- files_changed: [{"path": "fly.toml", "action": "created", "description": "Fly.io app config with health check on /healthz/, auto_stop=true"}, {"path": "scripts/verify-deploy.sh", "action": "created", "description": "Post-deploy verification script"}]
+
+Bad output:
+- Deployment config without a rollback procedure
+- "Set the secrets" without specifying which ones or how
+</example>
