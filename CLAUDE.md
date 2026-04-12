@@ -32,6 +32,7 @@ A framework for building specialist Claude agents that delegate work through a t
 | **experimental-psychologist** | sonnet | Measurement design, community metrics, surveys, testable hypotheses, small-N methods. **Writes findings to `docs/reviews/`** | Read, Write, Glob, Grep, WebFetch |
 | **kotlin-specialist** | sonnet | Kotlin idioms, coroutines, Flow, sealed classes, kotlinx.serialization, null safety, performance | Read, Glob, Grep, WebFetch, WebSearch |
 | **android-specialist** | sonnet | Jetpack Compose, ViewModel, Room, NSD, navigation, Gradle multi-module, ProGuard/R8 | Read, Glob, Grep, WebFetch, WebSearch |
+| **android-device-management-specialist** | sonnet | MDM enrollment, Device Owner/kiosk mode, parental controls, app allowlisting, device provisioning/imaging, restricted device config | Read, Glob, Grep, WebFetch, WebSearch |
 | **css-specialist** | sonnet | Custom properties, design systems, responsive layout, animations, accessibility (contrast, focus), mobile-first, browser compatibility | Read, Glob, Grep, WebFetch, WebSearch |
 | **cloudflare-workers-specialist** | sonnet | Workers runtime, Durable Objects, wrangler, WebSocket relay, V8 isolate constraints, storage APIs | Read, Glob, Grep, WebFetch, WebSearch |
 | **dataviz-specialist** | sonnet | Chart type selection, visual encoding, dashboard layout, health data display, perceptual science, creative/experimental viz. Modular doc bundles in `.claude/docs/dataviz/` | Read, Glob, Grep, WebFetch, WebSearch |

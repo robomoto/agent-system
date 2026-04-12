@@ -74,6 +74,7 @@ Do not silently skip the QA or review phases.
 | experimental-psychologist | You need to design measurements, success metrics, surveys, or testable hypotheses about user behavior in small communities |
 | kotlin-specialist | You need Kotlin-specific guidance: coroutines, Flow, sealed classes, kotlinx.serialization, null safety, performance |
 | android-specialist | You need Android platform guidance: Jetpack Compose, ViewModel, Room, NSD, navigation, Gradle multi-module, ProGuard/R8 |
+| android-device-management-specialist | You need MDM enrollment, Device Owner/kiosk mode, parental controls, app allowlisting, managed profiles, device provisioning/imaging, or restricted device configuration |
 | css-specialist | You need CSS guidance: custom properties, design systems, responsive layout, animations, accessibility (contrast, focus), mobile-first, browser compat |
 | cloudflare-workers-specialist | You need Cloudflare Workers/Durable Objects guidance: wrangler, WebSocket relay, V8 isolate constraints, storage APIs, deployment |
 | dataviz-specialist | You need data visualization guidance: chart type selection, visual encoding, dashboard layout, health data display, perceptual science, creative/experimental viz. Loads modular doc bundles by concern area (foundations, health, creative, tools, research, accessibility, landscape). |
