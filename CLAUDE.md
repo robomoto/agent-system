@@ -120,6 +120,7 @@ Skills are reusable prompt bundles in `.claude/skills/`. Agents declare which sk
 | Skill | Used By | Purpose |
 |-------|---------|---------|
 | `create-specialist` | lead | Create new language/domain specialist agents with local doc bundles on demand |
+| `create-skill` | lead | Create new reusable skills (prompt bundles loaded into caller context). Picks skill vs. specialist correctly |
 | `code-review` | reviewer | Structured review protocol: severity checklist, finding format, multi-pass review |
 | `testing-strategy` | implementer, reviewer | Test pyramid, coverage targets, edge case checklist, anti-patterns |
 | `security-audit` | reviewer, architect | OWASP top 10 checklist, STRIDE threat modeling, severity framework |
@@ -144,9 +145,10 @@ agent-system/
 │   │       ├── idioms.md      # Idiomatic patterns
 │   │       ├── footguns.md    # Common mistakes and gotchas
 │   │       └── reference.md   # Key APIs and features
-│   └── skills/                # Reusable skill bundles (8 total)
+│   └── skills/                # Reusable skill bundles (9 total)
 │       ├── code-review/       # Structured multi-pass review protocol
 │       ├── cost-analysis/     # Token/cloud cost estimation
+│       ├── create-skill/      # Create new reusable skills (token-efficient)
 │       ├── create-specialist/ # Create new specialist agents on demand
 │       ├── design-system/     # Design tokens, components, accessibility
 │       ├── project-review/    # Agent system / config-driven project review

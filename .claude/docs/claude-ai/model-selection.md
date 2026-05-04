@@ -1,13 +1,21 @@
-<!-- last_verified: 2026-03-04 -->
+<!-- last_verified: 2026-05-04 -->
 # Claude Model Selection Guide
 
-## Current Models (verify pricing before quoting)
+## Current Models (verify pricing before quoting — Opus 4.7 pricing not yet confirmed in this doc)
 
-| Model | Input/1M | Output/1M | Context | Best For |
-|-------|----------|-----------|---------|----------|
-| Haiku 4.5 | $0.80 | $4.00 | 200K | Fast read-only tasks, discovery, classification, tracking |
-| Sonnet 4.6 | $3.00 | $15.00 | 200K | Balanced work: implementation, review, analysis, code generation |
-| Opus 4.6 | $15.00 | $75.00 | 200K | Complex reasoning, orchestration, architecture, novel problem-solving |
+| Model | Model ID | Input/1M | Output/1M | Context | Best For |
+|-------|----------|----------|-----------|---------|----------|
+| Haiku 4.5 | `claude-haiku-4-5-20251001` | $0.80 | $4.00 | 200K | Fast read-only tasks, discovery, classification, tracking |
+| Sonnet 4.6 | `claude-sonnet-4-6` | $3.00 | $15.00 | 200K | Balanced work: implementation, review, analysis, code generation |
+| Opus 4.7 | `claude-opus-4-7` | verify | verify | 200K | Complex reasoning, orchestration, architecture, novel problem-solving |
+
+> Opus 4.7 supersedes Opus 4.6 (released between 2026-03 and 2026-05). Confirm pricing on docs.anthropic.com before quoting figures to users.
+
+## Prompt Cache (always relevant for efficiency)
+
+- TTL is 5 minutes — calls within that window read prior context as cache hits.
+- For multi-turn agent loops, this means rapid back-and-forth is cheap; long sleeps between turns waste the cache.
+- For long-lived agent system prompts (this codebase), put stable content (agent identity, doc bundles) at the *top* of the context so it benefits from caching, and put per-task instructions at the bottom.
 
 ## Selection Heuristics
 

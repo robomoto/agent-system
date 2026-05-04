@@ -1,4 +1,4 @@
-<!-- last_verified: 2026-03-04 -->
+<!-- last_verified: 2026-05-04 -->
 # Context Engineering for Claude Agents
 
 ## Core Principle
