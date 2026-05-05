@@ -1,4 +1,4 @@
-<!-- last_verified: 2026-05-04 -->
+<!-- last_verified: 2026-05-04 (rates re-verified via DOR/DOL 2026-05-04 — Seattle combined 10.25%, trip permit $36) -->
 # Washington — Titling an Imported Vehicle
 
 State-specific procedures for titling and registering a vehicle imported into Washington from outside the United States, with focus on Canadian imports.
@@ -29,9 +29,9 @@ Foreign-titled vehicles must have a **VIN inspection** before WA DOL will issue 
 
 **What they verify**: VIN on the dash matches VIN on the foreign title, no signs of alteration, vehicle is the one described.
 
-**Fee**: ~USD 50-75 (set by WSP).
+**Fee**: $65 (verified 2026-05-04).
 
-**Timing**: Inspection is **valid for 90 days** after issuance. Schedule it after the border crossing but before the DOL title appointment. Some inspection stations are walk-in; some are appointment.
+**Timing**: Inspection certificate is **valid for 180 days** under WAC 308-56A-150. **WSP VIN inspections are appointment-only** in 2026 — book at https://wsp.wa.gov/driver/schedule-a-vin/. The scheduler runs on a 2-week rolling calendar and slots fill quickly. **Book before crossing the border.** Walk-ins are not accepted for VIN-program staff (this differs from the rebuilt-salvage pathway, which has separate scheduling).
 
 **Tip**: Some buyers schedule the VIN inspection within a day or two of crossing the border, then schedule the DOL title appointment for shortly after. The vehicle is on a trip permit during this window.
 
@@ -43,7 +43,7 @@ Foreign-titled vehicles must have a **VIN inspection** before WA DOL will issue 
 
 | Example WA address | Approximate combined rate (2026) |
 |---|---|
-| Seattle (King County) | ~10.1% (varies by city — Seattle is at the high end) |
+| Seattle (King County) | 10.25% (verified 2026-05-04: state 6.5% + Seattle/KC local 2.35% + RTA sales 1.4%) |
 | Bellingham (Whatcom) | ~8.7% |
 | Spokane | ~8.9% |
 | Vancouver (Clark) | ~8.5% |
@@ -65,9 +65,9 @@ Foreign-titled vehicles must have a **VIN inspection** before WA DOL will issue 
 $30,000 × 0.087 = $2,610 use tax
 ```
 
-**Calculation example** — $30,000 USD purchase, Seattle WA address, 10.1% combined rate:
+**Calculation example** — $30,000 USD purchase, Seattle WA address, 10.25% combined rate:
 ```
-$30,000 × 0.101 = $3,030 use tax
+$30,000 × 0.1025 = $3,075 use tax
 ```
 
 ## Title and Registration Fees
@@ -118,12 +118,12 @@ Pairs nicely with collector registration. Cosmetic, but desirable for show cars.
 
 **Validity**: 3 days from issuance.
 
-**Fee**: $30.
+**Fee**: $36 (verified 2026-05-04 via dol.wa.gov).
 
 **Where to buy**:
-- DOL website: dol.wa.gov (print at home)
-- Any DOL vehicle licensing office
-- DOL-licensed vendors (some auto-parts stores, some title companies near border crossings)
+- Any DOL Vehicle Licensing Office (walk-in)
+- DOL-licensed subagents / vendors
+- **In 2026, the DOL public site does NOT support self-issue online for unregistered vehicles** — must be obtained in person. Plan accordingly: confirm a Blaine-area subagent's hours before the Friday crossing (Cascade Auto License is the typical option).
 
 **Critical timing**: The permit must be obtained **before driving on WA roads** with the imported vehicle. The vehicle has no WA registration coming off the border, so without the permit, every mile is illegal.
 
