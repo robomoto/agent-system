@@ -328,56 +328,92 @@ Each contains online-form pre-population, phone-call script, document checklist,
 
 ---
 
-## Forms & Resources
+## Document & Form Workflow
 
-Where to download or access each form referenced in this plan. URLs are entry pages — direct PDF links rot, the form-listing pages are stable. Always download the most current version on the day you need it.
+Organized by phase. Each phase tells you what to do, what to bring, and what's left for later.
 
-### Federal forms — US import side
+### Phase 1 — Prepare Ahead of Time
 
-| Form | Agency | Where to find |
+Procurements, downloads, drafts, and account setup. Done from home before traveling.
+
+**Order / paid services**
+
+| Item | Where | Cost | Lead time |
+|---|---|---|---|
+| Pontiac Historical Services build sheet | phs-online.com | ~USD 70 | 2-3 weeks |
+| Carfax Canada / CarProof | carfax.ca | ~CAD 50 | minutes |
+| Hagerty Valuation Tool printout | hagerty.com/valuation-tools-articles/valuation-tool | free | minutes |
+
+**Print / download (carry on the trip)**
+
+| Form | Agency | Where to find | Quantity |
+|---|---|---|---|
+| HS-7 Declaration of Importation | NHTSA | nhtsa.gov — search "HS-7" or "Importing a Motor Vehicle" | Print 2 (single ink correction voids) |
+| EPA Form 3520-1 Engine Declaration | EPA | epa.gov/importing-vehicles-and-engines | Print 2 |
+| CBP Form 7501 Entry Summary | CBP | cbp.gov/document/forms — search "7501" | Print 1 (officer can also prepare) |
+| WA Vehicle Title Application TD-420-001 | WA DOL | dol.wa.gov — search "TD-420-001" | Optional pre-print; can fill at counter |
+
+**Look up / verify**
+
+- Alberta PPR lien search — alberta.ca/personal-property-registry — run online by VIN, ~CAD 10
+- Photos from the seller — VIN plate, cowl tag (`LOR 13292` confirmed), registration certificate front+back, engine bay, odometer
+
+**Draft (sign later)**
+
+- Bill of Sale — no agency form. Plain English template with: VIN, year/make/model, sale price in **both CAD and USD**, date, full names/addresses, odometer reading, signatures, and the words "**sold as-is for export to the United States**". Will be notarized on T-1 at an Alberta registry agent (CAD 25-100), then carried through the border.
+
+**Account setup**
+
+- CERS account registration at cbsa-asfc.gc.ca/services/cers-scder — 1-3 business days for non-Canadian individual. Alternative: have the seller file (their account, their VIN), or pay a customs broker (~CAD 100-300) to file.
+
+### Phase 2 — Submit / Schedule / Bind Before You Go
+
+Filings, bookings, and bindings. Nothing here is downloadable as a PDF; these are actions taken at agencies.
+
+| Action | When | Where | Notes |
+|---|---|---|---|
+| Schedule WSP VIN inspection | T-7 or earlier | wsp.wa.gov/driver/schedule-a-vin/ | Target T+4 or T+5; 2-week rolling calendar; appointment-only |
+| Schedule Seattle Auto Licensing Quick Title | T-7 | call to confirm foreign-title support, then book | Target T+5 to T+7 |
+| **Submit CERS export declaration** | T-4 morning | cbsa-asfc.gc.ca/services/cers-scder | ≥72 hours before T-0; target ≥96 hours cushion. Weekend hours count for the 72h clock but processing is unreliable — avoid Mondays. Save proof-of-report. |
+| **Bind classic insurance policy** | T-2 | phone Hagerty / ACI / Grundy (verify numbers via each carrier's website) | Effective date = morning of T-0 exactly. Email yourself the binder/declarations. |
+
+### Phase 3 — Have Available at the Border / Fill at the Border
+
+Carry these in the 3-ring binder (see "Document Binder" below for tab organization). Some are filled at the booth; some are handed pre-filled.
+
+**Hand to CBSA officer (Canadian side, first)**
+
+- CERS proof-of-report number / printout
+- Original Alberta Vehicle Registration Certificate (signed over to you)
+- Notarized Bill of Sale (2 originals — CBP keeps one)
+- PPR lien search printout
+- Photo ID (passport preferred)
+
+**Fill at CBP booth or hand pre-filled (US side, second)**
+
+| Form | What to mark | Stamped by |
 |---|---|---|
-| **HS-7** (DOT Declaration of Importation) | NHTSA | nhtsa.gov — search "HS-7" or "Importing a Motor Vehicle". Print at least 2 copies (a single ink correction voids the form). |
-| **EPA Form 3520-1** (Declaration for Imported Motor Vehicles and Motor Vehicle Engines) | EPA | epa.gov/importing-vehicles-and-engines — page lists current PDF. Print at least 2 copies. |
-| **CBP Form 7501** (Entry Summary) | CBP | cbp.gov/document/forms — search "7501". CBP officer can complete on your behalf at the booth, but having the form pre-printed speeds processing. |
+| HS-7 | Box 1 (≥25-yr FMVSS exempt — 49 CFR 591.5(i)) | CBP officer |
+| EPA Form 3520-1 | Code E (≥21 yrs, original-equipment configuration — 40 CFR 85.1511(b)(2)) | CBP officer |
+| CBP Form 7501 | HTSUS 9801.00.10 (US Goods Returning) primary, 8703.24.0190 fallback | CBP officer |
 
-### Canadian export side
+CBP keeps copies; you keep the **stamped originals** (essential for WA DOL titling later).
 
-| Resource | Where |
-|---|---|
-| CERS portal (Canadian Export Reporting System) | cbsa-asfc.gc.ca/services/cers-scder — electronic filing only, no downloadable form |
-| Alberta PPR lien search | alberta.ca/personal-property-registry — online or at any registry agent (~CAD 10) |
+**Hand to CBP for 9801.00.10 evidence**
 
-### Washington state — post-arrival
+- Color-printed cowl-tag photo (the `LOR 13292` shot — direct on-vehicle evidence of Lordstown OH assembly; strongest single document)
+- VIN decoder printout
+- PHS build sheet (when received)
+- Color-printed VIN-plate photo
 
-| Form / resource | Agency | Where |
-|---|---|---|
-| **Vehicle Title Application TD-420-001** | WA DOL | dol.wa.gov — search "TD-420-001" or "Vehicle Title Application". Form can also be filled at the DOL counter. |
-| WSP VIN inspection scheduler | WA State Patrol | wsp.wa.gov/driver/schedule-a-vin/ |
-| Trip permit | WA DOL | In-person purchase only — any DOL Vehicle Licensing Office or licensed subagent. No downloadable form. $36 each. |
+**Backup, pay, drive home**
 
-### Documentation vendors (paid; not government forms)
+- Insurance binder confirmation letter (in force as of midnight T-0)
+- Photo ID + proof of US residence (Seattle utility bill or lease)
+- Credit card with international travel notification active (for MPF + duty if 9801 not accepted)
+- WA Trip Permit #1 — bought in person at Cascade Auto License (Blaine) immediately after CBP release ($36); display on dash for the drive to Seattle
 
-| Resource | Where | Purpose |
-|---|---|---|
-| Pontiac Historical Services (PHS) | phs-online.com | Factory build sheet (~USD 70, 2-3 week lead). Supports HTSUS 9801.00.10 origin claim (cowl-tag photo is now in hand and is direct evidence; PHS adds the original engine code and dealer destination). |
-| Carfax Canada / CarProof | carfax.ca | Vehicle history report (~CAD 50). Due-diligence backup. |
-| Hagerty Valuation Tool | hagerty.com/valuation-tools-articles/valuation-tool | Free FMV reference for collector cars. Use the printout to support the $36,000 agreed-value claim with the insurance carrier. |
-
-### Bill of Sale
-
-No agency form — draft from a plain template. Must include:
-- VIN, year/make/model
-- Sale price in **both CAD and USD** (USD converted at Bank of Canada rate on contract date)
-- Date of sale
-- Full names and addresses of buyer (Seattle WA) and seller (Alberta)
-- Odometer reading
-- Both signatures
-- The words "**sold as-is for export to the United States**"
-
-Requirements:
-- **In English** (or English translation if drafted in French)
-- **Notarized** at an Alberta registry agent in front of a Commissioner for Oaths (CAD 25-100)
-- Bring **2 notarized originals** to the border — one for CBP to retain, one for WA DOL at titling
+**Backup-of-the-backup**: scan everything to phone gallery + cloud folder before crossing. If a binder is lost or stolen on the drive home, the scans get you through follow-up appointments.
 
 ---
 

@@ -499,20 +499,74 @@ If, at any point in this process, any of the following occur, **stop and consult
 
 ## 9. Self-Help Resources
 
-### Forms — Direct Download Pointers
+### Forms and Documents — Workflow by Phase
 
-URLs are entry pages on each agency's website (more stable than direct PDF links). Always download the most current version on the day you need it.
+Each form is in one of three phases of your import: prepare ahead, submit / schedule / bind before you go, or have available at the border. URLs below are agency entry pages (more stable than direct PDF links).
 
-| Form | Agency | Find it at |
+#### Phase 1 — Prepare Ahead of Time (from home)
+
+**Order:**
+- Pontiac Historical Services build sheet — phs-online.com (~USD 70, 2-3 wk lead)
+- Carfax Canada / CarProof — carfax.ca (~CAD 50)
+- Hagerty Valuation Tool printout — hagerty.com/valuation-tools-articles/valuation-tool (free)
+
+**Print or download:**
+| Form | Where | Notes |
 |---|---|---|
-| **HS-7** Declaration of Importation | NHTSA | nhtsa.gov — search "HS-7" or "Importing a Motor Vehicle" |
-| **EPA 3520-1** Engine Declaration | EPA | epa.gov/importing-vehicles-and-engines |
-| **CBP 7501** Entry Summary | CBP | cbp.gov/document/forms — search "7501" |
-| **TD-420-001** Vehicle Title Application | WA DOL | dol.wa.gov — search "TD-420-001" |
+| HS-7 Declaration of Importation | nhtsa.gov — search "HS-7" | Print 2 (ink correction voids) |
+| EPA Form 3520-1 | epa.gov/importing-vehicles-and-engines | Print 2 |
+| CBP Form 7501 Entry Summary | cbp.gov/document/forms — search "7501" | Print 1 (officer can prepare) |
+| WA Title Application TD-420-001 | dol.wa.gov — search "TD-420-001" | Optional; can fill at counter |
 
-CERS export declaration filed online at cbsa-asfc.gc.ca/services/cers-scder (no downloadable form). Alberta PPR lien search at alberta.ca/personal-property-registry (online or in-person at any registry agent). WA trip permit is in-person purchase only ($36 each at any DOL or licensed subagent — no downloadable form). Bill of Sale has no agency form — draft from a plain English template, notarized at an Alberta registry agent. PHS build sheet ordered at phs-online.com (paid). Hagerty Valuation Tool printout from hagerty.com/valuation-tools-articles/valuation-tool (free).
+**Verify / look up:**
+- Alberta PPR lien search — alberta.ca/personal-property-registry (~CAD 10)
+- Seller-supplied photos: VIN plate, cowl tag (`LOR 13292`), registration certificate, engine bay
 
-Print at least 2 copies of HS-7 and EPA 3520-1 — a single ink correction voids the form. Carry 2 notarized originals of the Bill of Sale (one for CBP to retain, one for WA DOL at titling).
+**Draft:**
+- Bill of Sale (English, CAD + USD price, "sold as-is for export to the United States"). Notarized at an Alberta registry agent on T-1.
+
+**Set up account:**
+- CERS account at cbsa-asfc.gc.ca/services/cers-scder (1-3 business days for non-Canadian individual; alternative: seller files, or pay a broker)
+
+#### Phase 2 — Submit / Schedule / Bind Before You Go
+
+| When | Action | Where |
+|---|---|---|
+| T-7 | Schedule WSP VIN inspection (target T+4 to T+5) | wsp.wa.gov/driver/schedule-a-vin/ |
+| T-7 | Schedule Seattle Auto Licensing Quick Title appointment (target T+5 to T+7) | call ahead |
+| T-4 morning | **Submit CERS export declaration** (≥72 hr before T-0; target 96 hr) | cbsa-asfc.gc.ca/services/cers-scder |
+| T-2 | **Bind classic insurance** with Hagerty or ACI; effective date = morning of T-0 | phone (verify number on carrier website) |
+| T-0 midday | Buy WA Trip Permit #1 ($36, in-person only) | Cascade Auto License, Blaine |
+
+#### Phase 3 — Have Available at the Border / Fill at the Border
+
+Carry in a labeled 3-ring binder.
+
+**Hand to CBSA officer (Canadian side, first):**
+- CERS proof-of-report
+- Original Alberta Vehicle Registration Certificate (signed over)
+- Notarized Bill of Sale, 2 originals
+- PPR lien search printout
+- Photo ID (passport preferred)
+
+**Fill at CBP booth, stamped by officer (US side):**
+- HS-7 — Box 1 (≥25-yr FMVSS exempt, 49 CFR 591.5(i))
+- EPA Form 3520-1 — Code E (≥21 yr, 40 CFR 85.1511(b)(2))
+- CBP Form 7501 — HTSUS 9801.00.10 primary, 8703.24.0190 fallback
+
+CBP keeps copies; **you keep the stamped originals** for WA DOL.
+
+**Hand to CBP for 9801.00.10 evidence pack:**
+- Color-printed cowl-tag photo (`LOR 13292` — strongest direct evidence)
+- VIN decoder printout
+- PHS build sheet
+- VIN-plate photo
+
+**Backup, payment, drive home:**
+- Insurance binder confirmation
+- Photo ID + Seattle proof of residency
+- Credit card with international travel notification active (for MPF + any duty)
+- Phone gallery + cloud backup of every document in case the binder is lost or stolen on the drive home
 
 ### Federal — U.S.
 
