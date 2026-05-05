@@ -129,8 +129,8 @@ This master plan is the operational index. Every related PDF lives in `~/claude_
 | `03-american-collectors-prefill.pdf` | Same, for ACI |
 | `04-grundy-prefill.pdf` | Same, for Grundy (benchmark only — confirm Day-0 VIN-only bind before relying on it as binder) |
 | `05-pro-se-filing-guide.pdf` | Legal-team-verified pro-se filing guide. 14 sections, ~700 lines, citation-indexed. **The most comprehensive document in the packet** |
-| `06-seller-message-send-ready.pdf` | Clean letter to send to the seller. Edit the bracketed placeholders ([Seller name], [Buyer name], VIN, payment method) before sending |
-| `07-emergency-prep-checklist.pdf` | Drive-home tools, spares, safety, decision tables. Calibrated to this car (points ignition, off-road for 5 years) |
+| `06-seller-message-send-ready.pdf` | Clean letter to send to Larry. Fill VIN and payment-method placeholders before sending |
+| `07-emergency-prep-checklist.pdf` | Drive-home prep in three tiers: replace-before-departure, compact trunk kit, and "call-a-flatbed" list. Calibrated to this car (points ignition, off-road for 5 years) |
 
 ### Reference (`pdf/reference/`)
 
