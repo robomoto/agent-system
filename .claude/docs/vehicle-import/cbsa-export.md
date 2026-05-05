@@ -58,6 +58,8 @@ All knowable **before** taking physical possession:
 - Planned crossing date and approximate time
 - Mode of transport (road, driven by exporter)
 
+**Port of exit is a hard commitment.** The CERS submission specifies a single port, and the booth officer at any other port will not process the export against a CERS declaration filed for a different one. Switching ports after submission requires amending the existing declaration or filing a new one — both possible but they reset the 72-hour clock. **If the route is undecided** (e.g., choosing between Pacific Highway BC and Coutts AB based on travel logistics), defer CERS submission until the port is locked. The CERS account can be activated and other prep done in parallel; only the actual declaration submission needs to wait for the port decision.
+
 ### 3. Physical evidence at the CBSA booth (NOT needed at filing time, but required at the actual crossing)
 
 - Original Vehicle Registration Certificate, signed over to the buyer

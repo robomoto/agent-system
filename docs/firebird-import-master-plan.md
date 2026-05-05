@@ -102,7 +102,7 @@ All entries are calendar-day offsets from Day of Crossing (T-0).
 | T-6 | Confirm PHS arrival window. Pack the 3-ring binder | Buyer |
 | T-5 | Travel to Alberta (Pattern A) — or skip if using Pattern B (pay-from-US) | Buyer |
 | T-4 AM | At Alberta registry agent: notarize Bill of Sale, sign over registration, fresh PPR search, take VIN/cowl-tag/odometer photos, pay seller by bank draft | Buyer + seller |
-| T-4 PM | File CERS at cbsa-asfc.gc.ca/services/cers-scder. Port = Pacific Highway BC. Save proof-of-report. Drive south. **CERS submission target: ≥96 hours before T-0** to absorb weekend processing variance — see CBSA 72-hour notes below | Buyer |
+| T-4 PM (or earlier — any time once route is locked, ≥72 hours before T-0) | File CERS at cbsa-asfc.gc.ca/services/cers-scder with the specified port of exit. **The port specified in CERS commits you to that port.** If route is undecided (Pacific Highway BC vs. Coutts AB / Sweetgrass MT), defer CERS submission until the route is locked. T-4 PM is the conservative default (≥96-hour cushion). Save proof-of-report. Drive south if route is finalized. | Buyer |
 | T-3 | Stage near Surrey BC. Verify CERS status = Accepted | Buyer |
 | T-2 | **Bind insurance with effective date matching T-0 exactly** (not T-2 or T-1 — exact-match required). Schedule WA DOL Quick Title for the working-day window starting at T+4 | Buyer + carrier |
 | T-1 | Final binder check. Confirm trip permit logistics for Day 0 | Buyer |
@@ -416,7 +416,8 @@ Filings, bookings, and bindings. Nothing here is downloadable as a PDF; these ar
 |---|---|---|---|
 | Schedule WSP VIN inspection | T-7 or earlier | wsp.wa.gov/driver/schedule-a-vin/ | Target T+4 or T+5; 2-week rolling calendar; appointment-only |
 | Schedule Seattle Auto Licensing Quick Title | T-7 | call to confirm foreign-title support, then book | Target T+5 to T+7 |
-| **Submit CERS export declaration** | T-4 morning | cbsa-asfc.gc.ca/services/cers-scder | ≥72 hours before T-0; target ≥96 hours cushion. Weekend hours count for the 72h clock but processing is unreliable — avoid Mondays. Save proof-of-report. |
+| Activate CERS account | T-11 or earlier | cbsa-asfc.gc.ca/services/cers-scder | 1-3 business days for non-Canadian individual. Activate as soon as practical so the account is ready when the route is decided. |
+| **Submit CERS export declaration** | T-4 morning (target) — but any time once route is locked, ≥72 hours before T-0 | cbsa-asfc.gc.ca/services/cers-scder | **Submission requires a specified port of exit, and you are committed to crossing at that port.** Pacific Highway BC and Coutts AB are different ports — switching after submission requires amending or re-filing. Hold CERS submission until the route is decided. T-4 morning is the conservative default (≥96-hour cushion absorbs weekend processing variance); earlier is fine if the port is locked and CERS account is active. Avoid Mondays as crossing days — they inherit weekend-pending CERS reviews. Save the proof-of-report. |
 | **Bind classic insurance policy** | T-2 | phone Hagerty / ACI / Grundy (verify numbers via each carrier's website) | Effective date = morning of T-0 exactly. Email yourself the binder/declarations. |
 
 ### Phase 3 — Have Available at the Border / Fill at the Border
