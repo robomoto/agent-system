@@ -7,6 +7,98 @@
 
 ---
 
+## Master Checklist
+
+In-order tracking. Print this PDF and check items off as you go. Re-print when state changes meaningfully. T-N items only become actionable after T-0 (Day of Crossing) is fixed.
+
+### Phase 0 — Independent prep (do anytime)
+
+- [x] CERS account activated (created 2026-05-05)
+- [ ] Order PHS build sheet from phs-online.com (~USD 70, 2-3 week lead)
+- [ ] Order Carfax Canada / CarProof report (~CAD 50)
+- [ ] Run Alberta PPR lien search by VIN at alberta.ca/personal-property-registry (~CAD 10)
+- [ ] Email seller the send-ready briefing (`06-seller-message-send-ready.pdf`, with placeholders filled)
+- [ ] Receive seller answers: engine donor year + swap date, Edelbrock parts inventory, transmission spec (TH350/TH400), factory Rally II wheels disposition, repaint history, current AB sticker status, service records
+- [ ] Phone Hagerty (verify number on hagerty.com) — confirm VIN-bind on foreign title before discussing premium
+- [ ] Phone American Collectors (verify on americancollectors.com) — same
+- [ ] Phone Grundy (verify on grundy.com) — same; explicitly confirm Day-0 VIN-only binding
+- [ ] Walk through CERS portal interface once (no submission) to confirm US-side access and locate the submission form
+
+### Phase 1 — Route decision (gates everything below)
+
+- [ ] Pickup date confirmed with seller
+- [ ] Travel companions decided
+- [ ] Bozeman friend availability checked (if relevant to route)
+- [ ] Crossing port chosen: Pacific Highway BC ↔ Blaine WA, or Coutts AB ↔ Sweetgrass MT
+- [ ] T-0 day-of-week chosen (Tue/Wed/Thu recommended; avoid Mon/Fri/Sat)
+
+### Phase 2 — T-7 (after T-0 is fixed)
+
+- [ ] Schedule WSP VIN inspection at wsp.wa.gov/driver/schedule-a-vin/ — target Tue/Wed of the week after T-0
+- [ ] Schedule Seattle Auto Licensing Quick Title — target T+5 to T+7
+- [ ] Confirm Cascade Auto License (Blaine) hours for T-0 day-of-week — or equivalent Sweetgrass-area subagent if Montana route
+- [ ] Print 2 copies each of HS-7 (nhtsa.gov), EPA 3520-1 (epa.gov), CBP Form 7501 (cbp.gov)
+- [ ] Pre-fill static fields on HS-7 and EPA 3520-1
+- [ ] Draft Bill of Sale (English, CAD + USD price, "sold as-is for export to the United States"); email seller for review
+
+### Phase 3 — T-4 (verification calls)
+
+- [ ] Call CBSA at chosen export port — verify vehicle export hours on T-0 day-of-week, current waits, payment methods accepted
+- [ ] Call CBP at chosen US-side port — verify formal entry processing, payment forms accepted
+- [ ] Call trip-permit subagent (Cascade Auto License Blaine, or Sweetgrass-area equivalent) — confirm hours for T-0
+- [ ] CERS submission window now open — file as soon as port and date are 100% locked, ≥72 hours before T-0 (target ≥96)
+
+### Phase 4 — T-3 (insurance bind)
+
+- [ ] Bind classic insurance with effective date = morning of T-0 exactly (not earlier, not later)
+- [ ] Receive binder + declarations page by email; print and place in binder
+
+### Phase 5 — T-2 to T-1 (sale + CERS submission)
+
+- [ ] Travel to Alberta seller (Pattern A) — or skip if using Pattern B (pay-from-US, file-from-US)
+- [ ] At Alberta registry agent: notarize Bill of Sale (2 originals); seller signs over Vehicle Registration Certificate; pull fresh PPR lien search printout
+- [ ] Take possession: keys, registration certificate, owner's manual, factory paperwork
+- [ ] Photograph VIN plate, cowl tag (already confirmed `LOR 13292`), dashboard odometer
+- [ ] Pre-trip shake-down drive (50-100 mi in mixed conditions) — catch post-storage issues while seller is still helpful
+- [ ] **Submit CERS export declaration** with chosen port — ≥72 hours before T-0 (target ≥96)
+- [ ] Save CERS proof-of-report (PDF + 2 paper copies)
+
+### Phase 6 — T-0 (crossing day, target morning 09:30-11:30 local)
+
+- [ ] Confirm insurance binder is live (effective today)
+- [ ] Verify CERS status = "Accepted" in portal
+- [ ] Pre-departure vehicle check: fluids, tires, lights, fuel topped at last cheap CAD station
+- [ ] At CBSA export booth: present CERS proof, original registration, notarized Bill of Sale, PPR lien search, photo ID
+- [ ] CBSA stamps/surrenders registration — keep the stamped copy
+- [ ] At CBP entry booth: hand binder with HS-7 Box 1, EPA 3520-1 Code E, CBP 7501 declaring HTSUS 9801.00.10
+- [ ] Hand 9801 evidence pack: cowl-tag photo, VIN decoder printout, PHS report
+- [ ] Pay MPF (~USD 125) by credit card (plus duty if 9801 rejected, ~USD 900)
+- [ ] CBP stamps HS-7, EPA 3520-1, 7501 originals — verify stamps before leaving the booth
+- [ ] Buy trip permit #1 in person at Cascade Auto License (Blaine) or equivalent — $36, cash/check
+- [ ] Drive to Seattle (~120 mi via Pacific Highway, ~1,300 mi via Montana route)
+
+### Phase 7 — T+1 to T+5 (Seattle, post-arrival)
+
+- [ ] Park the car; scan all stamped border documents to cloud backup
+- [ ] Buy trip permit #2 if T-0 day-of-week or WSP/DOL appointment timing requires it ($36)
+- [ ] Attend WSP VIN inspection appointment — bring full document pack — pay $65 cash/check
+- [ ] Receive WSP VIN inspection certificate (valid 180 days)
+
+### Phase 8 — T+5 to T+7 (WA DOL titling)
+
+- [ ] Quick Title appointment at Seattle Auto Licensing — bring CBP-stamped HS-7/3520-1/7501, CBSA-stamped Alberta registration, notarized Bill of Sale, WSP cert, insurance dec page, photo ID, proof of WA residency
+- [ ] Pay use tax + DOL fees + Quick Title surcharge (~USD 3,990 total)
+- [ ] Receive WA plates AND title certificate same day
+- [ ] Email WA title number to insurance carrier
+- [ ] Receive reissued declarations from carrier with WA title number
+
+### Phase 9 — Final filing
+
+- [ ] All documents filed in a labeled physical folder (needed for future resale, collector plate registration, DOR audit, insurance disputes)
+- [ ] All scans backed up to two locations (cloud + external drive)
+
+---
+
 ## Bottom Line
 
 | Item | Amount |
