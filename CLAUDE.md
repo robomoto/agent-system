@@ -39,6 +39,8 @@ A framework for building specialist Claude agents that delegate work through a t
 | **mcp-specialist** | sonnet | MCP tool design, FastMCP patterns, Claude Desktop integration | Read, Glob, Grep, WebFetch, WebSearch |
 | **embedded-specialist** | sonnet | ESP32/ESP-IDF, MicroPython, WiFi promiscuous mode, BLE, FreeRTOS, PSRAM/flash, power budgets, PCB considerations, RF hardware | Read, Glob, Grep, WebFetch, WebSearch |
 | **trauma-informed-design-specialist** | sonnet | DV/stalking victim safety: trauma responses, abuser tactics, safety planning, forensic evidence, risk assessment | Read, Write, Glob, Grep, WebFetch, WebSearch |
+| **vehicle-import-specialist** | sonnet | Cross-border vehicle import/export: CBSA CERS export, CBP entry (HS-7, EPA 3520-1, 7501), 25-yr FMVSS / 21-yr EPA exemptions, HTSUS classification incl. 9801.00.10 US Goods Returning, AES, port-of-entry coordination | Read, Glob, Grep, WebFetch, WebSearch |
+| **state-vehicle-titling-specialist** | sonnet | US state vehicle titling/registration for imports and out-of-state vehicles: VIN inspection, use-tax calculation, trip permits, antique/collector registration. Most depth on Washington (RCW 46.16A, 46.18, 82.12) | Read, Glob, Grep, WebFetch, WebSearch |
 | ***-specialist** | varies | Created on demand per language/domain (see `create-specialist` skill) | Read, Glob, Grep + domain-appropriate |
 
 ### Delegation Protocol

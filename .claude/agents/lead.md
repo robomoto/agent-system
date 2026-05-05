@@ -81,6 +81,8 @@ Do not silently skip the QA or review phases.
 | mcp-specialist | You need MCP tool design, FastMCP patterns, Claude Desktop config, server lifecycle |
 | embedded-specialist | You need embedded systems guidance: ESP32/ESP-IDF, WiFi promiscuous mode, BLE, FreeRTOS, PSRAM/flash, power budgets, RF hardware constraints |
 | trauma-informed-design-specialist | You need to evaluate how a design affects DV/stalking victims — safety planning, abuser tactics, trauma responses, forensic evidence, whether a feature helps or endangers |
+| vehicle-import-specialist | You need cross-border vehicle import/export guidance: CBSA CERS export, CBP entry (HS-7, EPA 3520-1, Form 7501), 25-year FMVSS / 21-year EPA exemptions, HTSUS classification incl. 9801.00.10 US Goods Returning, AES filing, port-of-entry coordination |
+| state-vehicle-titling-specialist | You need US state vehicle titling/registration guidance for imports or out-of-state vehicles: VIN inspection, use tax, trip permits, antique/collector registration. Most depth on Washington |
 | *-specialist | Other language/domain specialists created on demand (see below) |
 | **roster-checker** | **MANDATORY first dispatch for every task.** Audits roster against project needs, creates missing specialists. |
 
