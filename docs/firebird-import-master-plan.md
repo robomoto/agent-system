@@ -21,6 +21,48 @@ The Seattle/King County combined sales/use tax (10.25%) is the dominant cost. Fe
 
 ---
 
+## Companion Documents
+
+This master plan is the operational index. Every related PDF lives in `~/claude_projects/firebird-import-packet/pdf/`.
+
+### Actionable (`pdf/`)
+
+| File | What it's for |
+|---|---|
+| `00-master-plan.pdf` | This document |
+| `01-seller-checklist-alberta.pdf` | Buyer's full reference: briefing + backstop checklist + province-by-province title terminology |
+| `02-hagerty-prefill.pdf` | Carry when calling Hagerty — online-form prefill, phone script, document checklist, VIN-bind confirmation question |
+| `03-american-collectors-prefill.pdf` | Same, for ACI |
+| `04-grundy-prefill.pdf` | Same, for Grundy (benchmark only — confirm Day-0 VIN-only bind before relying on it as binder) |
+| `05-pro-se-filing-guide.pdf` | Legal-team-verified pro-se filing guide. 14 sections, ~700 lines, citation-indexed. **The most comprehensive document in the packet** |
+| `06-seller-message-send-ready.pdf` | Clean letter to send to the seller. Edit the bracketed placeholders ([Seller name], [Buyer name], VIN, payment method) before sending |
+| `07-emergency-prep-checklist.pdf` | Drive-home tools, spares, safety, decision tables. Calibrated to this car (points ignition, off-road for 5 years) |
+
+### Reference (`pdf/reference/`)
+
+| File | Topic |
+|---|---|
+| `10-vehicle-import-cbsa-export.pdf` | CBSA export procedures, CERS portal, 72-hour rule (incl. weekend nuance) |
+| `11-vehicle-import-cbp-import.pdf` | CBP entry, HS-7 + EPA 3520-1 + Form 7501, MPF, formal vs. informal entry |
+| `12-vehicle-import-25-year-rule.pdf` | FMVSS / EPA age exemptions in detail |
+| `13-vehicle-import-htsus-classification.pdf` | HTSUS 9801.00.10 vs. 8703.x, 9801 evidence requirements |
+| `14-vehicle-import-alberta-washington-route.pdf` | Route specifics; Pattern A vs. B timelines; AB-specific |
+| `15-vehicle-import-footguns.pdf` | 13 common import mistakes |
+| `20-wa-titling-washington.pdf` | WA DOL specifics (RCW citations, fees, rates, Quick Title) |
+| `21-wa-titling-idioms.pdf` | Cross-state DMV patterns (general reference) |
+| `22-wa-titling-footguns.pdf` | 12 common state-titling mistakes |
+
+### Reading order if you've never opened the packet
+
+1. **`05-pro-se-filing-guide.pdf`** — the comprehensive walkthrough. Section 2 is the master timeline; Section 6 is the decision-by-decision walkthrough.
+2. **`00-master-plan.pdf`** (this) — operational summary, faster to scan
+3. **`06-seller-message-send-ready.pdf`** — fill placeholders, email the seller
+4. **`02-hagerty-prefill.pdf`** (then 03, 04) — when ready to call carriers
+5. **`07-emergency-prep-checklist.pdf`** — when shopping for the trip
+6. **Reference PDFs** — only as lookup material when something specific needs verifying
+
+---
+
 ## Picking Your Crossing Day (Day 0)
 
 Avoid Mondays and Saturdays. Best choices: **Tuesday, Wednesday, or Thursday**.
