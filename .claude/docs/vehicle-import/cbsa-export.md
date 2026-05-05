@@ -18,6 +18,17 @@ Reporting platform:
 - **CERS portal** — submitted electronically, generates a proof-of-report number that the exporter presents at the port of exit
 - The clock starts when CBSA **receives** the declaration, not when the user submits it (small allowance for processing — submit slightly earlier in practice)
 
+### Weekends and the 72-hour clock
+
+The 72-hour rule is **wall-clock**: Saturdays and Sundays count toward it. So a Friday-morning submission can technically support a Monday-morning crossing.
+
+In practice, two complications make weekend-spanning submissions tighter than the math suggests:
+
+1. **CBSA review/acceptance staffing is light over weekends.** The CERS portal accepts submissions 24/7, but a declaration submitted Friday afternoon may not move from "Pending" to "Accepted" until Monday morning. If the user reaches the booth and the system shows "Pending", the booth officer may refuse or hold for verification.
+2. **Submission timestamp matters precisely.** Friday 9 AM submission → Monday 9 AM crossing = exactly 72 hours, meets the rule. Friday 5 PM submission → Monday 9 AM crossing = ~64 hours, **does not meet**.
+
+Practical guidance: submit ≥96 hours before the planned crossing (e.g., Monday morning for a Friday morning cross), and avoid weekend-spanning submissions when possible. Mid-week (Tue/Wed/Thu) crossings benefit from cleaner CBSA processing windows; **Mondays inherit weekend-pending CERS reviews and are generally the worst day to cross**.
+
 The rule does **not** apply to:
 - New vehicles being exported by a manufacturer/dealer with separate processes
 - Personal effects under temporary import/export

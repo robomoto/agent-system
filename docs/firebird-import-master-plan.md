@@ -1,8 +1,9 @@
 # 1968 Pontiac Firebird — Master Import Plan
 
 **Route**: Alberta, Canada → Pacific Highway truck crossing → Seattle, Washington
-**Crossing date**: Friday, 2026-05-15
-**Plan generated**: 2026-05-04
+**Crossing date**: TBD — see "Picking Your Crossing Day" below
+
+> **All timing in this document is relative to the Day of Import/Export (T-0).** "T-N" means N days *before* crossing; "T+N" means N days *after*. The user picks T-0 based on the day-of-week considerations below.
 
 ---
 
@@ -20,39 +21,66 @@ The Seattle/King County combined sales/use tax (10.25%) is the dominant cost. Fe
 
 ---
 
-## Today (T-11, Monday 2026-05-04) — Priority Actions
+## Picking Your Crossing Day (Day 0)
 
-1. **Order the PHS report** at phs-online.com (~$70). 2-3 week lead time. This is your strongest single piece of evidence for the 9801.00.10 duty-free claim.
-2. **Book the WSP VIN inspection** at wsp.wa.gov/driver/schedule-a-vin/. Target Tuesday or Wednesday of the week of 5/19. Appointment-only, 2-week rolling calendar fills fast.
+Avoid Mondays and Saturdays. Best choices: **Tuesday, Wednesday, or Thursday**.
+
+Why:
+- **CBSA + CBP** prefer mid-week crossings (most generous staffing, cleanest processing). Friday afternoon brings truck congestion. Mondays inherit any weekend-pending CERS reviews.
+- **CERS 72-hour rule** counts wall-clock time including weekends, but CBSA processing over weekends is unreliable. A submission Friday afternoon may not be "Accepted" by Monday morning even though 72 hours have passed.
+- **Trip permit + WSP VIN inspection + DOL Quick Title** all need weekday business hours. A Tuesday crossing gives you Tue/Wed/Thu trip-permit window and full M-F to schedule WSP and DOL. A Friday crossing burns the weekend on the permit and forces a second permit for the following Monday.
+
+If your seller logistics constrain you to a Friday: workable but plan for two trip permits and an inspection/title appointment week of T+4. Otherwise, target a Tuesday or Wednesday crossing.
+
+The T-N references below assume you've fixed Day 0. Counts (T-11, T-4, T+3) are in calendar days.
+
+## Earliest Action Day (T-11) — Priority Actions
+
+These five tasks have the longest lead times and should start as soon as Day 0 is chosen — ideally 11+ days before. If your timeline compresses, these still come first.
+
+1. **Order the PHS report** at phs-online.com (~$70). 2-3 week lead time. This is your strongest single piece of evidence for the 9801.00.10 duty-free claim — though the cowl-tag photo (`LOR 13292`) is now in hand and is direct evidence by itself.
+2. **Book the WSP VIN inspection** at wsp.wa.gov/driver/schedule-a-vin/. Target the Tuesday or Wednesday of the week after Day 0. Appointment-only, 2-week rolling calendar fills fast.
 3. **Order Carfax Canada / CarProof** report (~CAD 50, ~USD 36).
-4. **Email the seller** the seller-checklist-alberta packet. Ask for VIN-plate and cowl-tag photos, registration scans, original paperwork, and explicit confirmation that the engine is original or period-correct.
+4. **Email the seller** the seller-checklist-alberta packet. Most visual confirmations are already in hand from the photos; remaining questions are listed in that doc.
 5. **Phone all three insurance carriers**. On every call, lead with the VIN-bind-on-foreign-title question before discussing premium. Verify carrier numbers via each website (hagerty.com, americancollectors.com, grundy.com) before dialing.
 
 ---
 
 ## Master Timeline (T-11 → T+7)
 
-| Day | Date | Action | Owner |
-|---|---|---|---|
-| T-11 | Mon 5/04 | Today's priority actions above | Buyer |
-| T-10 | Tue 5/05 | Run Alberta PPR lien search by VIN (alberta.ca/personal-property-registry, ~CAD 10) | Buyer |
-| T-9 | Wed 5/06 | Verification calls: CBSA Pacific Highway, CBP Blaine, Cascade Auto License Blaine, Seattle Auto Licensing | Buyer |
-| T-8 | Thu 5/07 | Draft Bill of Sale (English, both CAD and USD price, "sold as-is for export to United States"). Email to seller for review | Buyer |
-| T-7 | Fri 5/08 | Download blank HS-7 (nhtsa.gov), EPA 3520-1 (epa.gov), Form 7501 (cbp.gov). Pre-fill static fields | Buyer |
-| T-6 | Sat 5/09 | Confirm PHS arrival window. Pack the 3-ring binder | Buyer |
-| T-5 | Sun 5/10 | Travel to Alberta | Buyer |
-| T-4 AM | Mon 5/11 | At Alberta registry agent: notarize Bill of Sale, sign over registration, fresh PPR search, take VIN/cowl-tag/odometer photos, pay seller by bank draft | Buyer + seller |
-| T-4 PM | Mon 5/11 | File CERS at cbsa-asfc.gc.ca/services/cers-scder. Port = Pacific Highway BC. Save proof-of-report. Drive south | Buyer |
-| T-3 | Tue 5/12 | Stage near Surrey BC. Verify CERS status = Accepted | Buyer |
-| T-2 | Wed 5/13 | **Bind insurance with effective date 2026-05-15** (not 5/13 — exact match required). Schedule WA DOL Quick Title for week of 5/20 | Buyer + carrier |
-| T-1 | Thu 5/14 | Final binder check. Confirm trip permit plan for Friday | Buyer |
-| **T-0 AM** | **Fri 5/15 09:30-11:30 PT** | **Cross at Pacific Highway. CBSA first → CBP. NEVER skip CBSA.** Cross morning, NOT afternoon | Buyer |
-| T-0 mid | Fri 5/15 ~12:00 | At Cascade Auto License (Blaine): buy trip permit #1 in person ($36, cash/check). 3 days starting 5/15 | Buyer |
-| T-0 PM | Fri 5/15 | Drive Blaine → Seattle (~120 mi, 2-3 hr) | Buyer |
-| T+3 | Mon 5/18 | Trip permit #1 expires Sun. Buy trip permit #2 at Seattle DOL/subagent ($36) — covers 5/18-5/20 | Buyer |
-| T+4-5 | Tue-Wed 5/19-5/20 | WSP VIN inspection (booked at T-11). Bring full document pack | Buyer |
-| T+5-7 | Wed-Fri 5/20-5/22 | Quick Title at Seattle Auto Licensing ($50 surcharge, same-day cert). Pay use tax + fees. Receive plates and title same day | Buyer |
-| Same day | | Email WA title number to insurance carrier so policy reissues with state title | Buyer + carrier |
+All entries are calendar-day offsets from Day of Crossing (T-0).
+
+| Day | Action | Owner |
+|---|---|---|
+| T-11 | Earliest Action Day priorities above (PHS, WSP booking, Carfax, seller checklist, carrier calls) | Buyer |
+| T-10 | Run Alberta PPR lien search by VIN (alberta.ca/personal-property-registry, ~CAD 10) | Buyer |
+| T-9 | Verification calls: CBSA Pacific Highway, CBP Blaine, Cascade Auto License Blaine, Seattle Auto Licensing | Buyer |
+| T-8 | Draft Bill of Sale (English, both CAD and USD price, "sold as-is for export to United States"). Email to seller for review | Buyer |
+| T-7 | Download blank HS-7 (nhtsa.gov), EPA 3520-1 (epa.gov), Form 7501 (cbp.gov). Pre-fill static fields | Buyer |
+| T-6 | Confirm PHS arrival window. Pack the 3-ring binder | Buyer |
+| T-5 | Travel to Alberta (Pattern A) — or skip if using Pattern B (pay-from-US) | Buyer |
+| T-4 AM | At Alberta registry agent: notarize Bill of Sale, sign over registration, fresh PPR search, take VIN/cowl-tag/odometer photos, pay seller by bank draft | Buyer + seller |
+| T-4 PM | File CERS at cbsa-asfc.gc.ca/services/cers-scder. Port = Pacific Highway BC. Save proof-of-report. Drive south. **CERS submission target: ≥96 hours before T-0** to absorb weekend processing variance — see CBSA 72-hour notes below | Buyer |
+| T-3 | Stage near Surrey BC. Verify CERS status = Accepted | Buyer |
+| T-2 | **Bind insurance with effective date matching T-0 exactly** (not T-2 or T-1 — exact-match required). Schedule WA DOL Quick Title for the working-day window starting at T+4 | Buyer + carrier |
+| T-1 | Final binder check. Confirm trip permit logistics for Day 0 | Buyer |
+| **T-0 morning (09:30-11:30 local)** | **Cross at Pacific Highway. CBSA first → CBP. NEVER skip CBSA.** Cross morning, not afternoon (truck congestion ramps after 14:00) | Buyer |
+| T-0 midday | At Cascade Auto License (Blaine): buy trip permit #1 in person ($36, cash/check). Valid 3 calendar days from issue | Buyer |
+| T-0 afternoon | Drive Blaine → Seattle (~120 mi, 2-3 hr) | Buyer |
+| T+3 (or sooner if needed) | Trip permit #1 expires after 3 days. If WSP/DOL appointments fall outside that window, buy trip permit #2 at a Seattle DOL/subagent ($36) | Buyer |
+| T+4 to T+5 | WSP VIN inspection (booked at T-11). Bring full document pack | Buyer |
+| T+5 to T+7 | Quick Title at Seattle Auto Licensing ($50 surcharge, same-day cert). Pay use tax + fees. Receive plates and title same day | Buyer |
+| Same day as Quick Title | Email WA title number to insurance carrier so policy reissues with state title | Buyer + carrier |
+
+**Trip-permit window depends on T-0's day-of-week:**
+
+| T-0 day-of-week | Permit #1 covers | Need permit #2? |
+|---|---|---|
+| Mon | Mon-Wed | Only if WSP/DOL push to Thu+ |
+| Tue | Tue-Thu | Only if WSP/DOL push to Fri+ |
+| **Wed (recommended)** | Wed-Fri | Rare — full M-F window for WSP/DOL |
+| Thu | Thu-Sat | Likely yes — DOL closed Sat, need Mon permit |
+| Fri | Fri-Sun | Yes — DOL closed weekend, need Mon permit (T+3) |
 
 ---
 
@@ -121,7 +149,7 @@ Backup: scan everything to phone gallery + cloud folder before crossing.
 
 ---
 
-## Cost Stack (Itemized, Verified 2026-05-04)
+## Cost Stack (Itemized)
 
 ### Federal-side (assumes HTSUS 9801.00.10 accepted)
 
@@ -140,8 +168,8 @@ Backup: scan everything to phone gallery + cloud folder before crossing.
 
 | Item | Amount |
 |---|---|
-| Trip permit #1 (Blaine, 5/15) | $36 |
-| Trip permit #2 (Seattle, 5/18) | $36 |
+| Trip permit #1 (Blaine, T-0) | $36 |
+| Trip permit #2 (Seattle, T+3 — only if needed) | $36 |
 | WSP VIN inspection | $65 |
 | Use tax — Seattle 10.25% × $36,000 | **$3,690** |
 | Title application fee | $15 |
@@ -201,10 +229,10 @@ Estimates assume $36,000 agreed value, 7,500 mi/yr, locked Seattle garage, 49 wi
 ### At Cascade Auto License (Blaine, T-0 ~noon)
 
 1. Buy trip permit #1 in person ($36, cash or check preferred)
-2. Write 5/15 as the first day of use; valid through Sun 5/17
+2. Write T-0 (Day of Crossing) as the first day of use; permit valid 3 calendar days
 3. Display on dash; drive Blaine → Seattle (~120 miles, 2-3 hours via I-5)
 
-### At WSP VIN inspection (T+4 or T+5, week of 5/19)
+### At WSP VIN inspection (T+4 or T+5)
 
 1. Arrive at the booked appointment with: CBP-stamped HS-7, EPA 3520-1, Form 7501, Alberta registration (CBSA-stamped), notarized Bill of Sale, photo ID, $65 (cash/check safest)
 2. Inspector verifies VIN matches paperwork, no tampering signs
@@ -254,21 +282,21 @@ Washington allows written rejection of Personal Injury Protection. Specialty cla
 
 ## Top 5 Footguns (Specific to This Case)
 
-1. **Friday afternoon truck congestion at Pacific Highway.** Cross 09:30-11:30 AM. If turned around Friday afternoon, CBSA vehicle-export staffing is M-F-pattern at most BC ports — you face 48-72 hours holdover with stale CERS. No Saturday cross plan.
-2. **Trip permit must be bought in person** at Cascade Auto License (Blaine) before driving south. The "print at home" option does not exist in 2026 for unregistered vehicles. Cross before the subagent closes — call to confirm Friday hours.
+1. **Friday afternoon truck congestion at Pacific Highway.** Mid-week crossings avoid this entirely. If you must cross Friday: 09:30-11:30 AM only. If turned around Friday afternoon, CBSA vehicle-export staffing is M-F-pattern at most BC ports — you face 48-72 hours holdover with stale CERS. No Saturday cross plan.
+2. **Trip permit must be bought in person** at Cascade Auto License (Blaine) before driving south. The "print at home" option does not exist for unregistered vehicles. Cross before the subagent closes — call ahead to confirm hours for your chosen T-0 day-of-week.
 3. **WSP VIN inspection slots fill 2 weeks out.** Book today. Otherwise you may exceed the 3-permits-per-30-days max and be unable to drive legally before titling.
-4. **Insurance binder dated mismatched with crossing date.** Bind 2026-05-13 with effective date exactly 2026-05-15. Tuesday miles on a Wednesday-effective policy = uninsured.
+4. **Insurance binder dated mismatched with crossing date.** Bind at T-2 with effective date exactly T-0. Miles driven before the binder's effective date = uninsured.
 5. **CBSA before CBP. Always.** A driver who skips Canadian export and goes straight to CBP gets sent back. CBP cannot process an import without evidence of CBSA release.
 
 ---
 
-## Verification Call List (T-9, Wednesday 2026-05-06)
+## Verification Call List (T-9)
 
 Call each and document answers:
 
 | Who | What to confirm |
 |---|---|
-| CBSA Pacific Highway Commercial Operations | Vehicle export hours Friday 5/15, current Friday-morning wait time, payment forms accepted, any closures or system outages |
+| CBSA Pacific Highway Commercial Operations | Vehicle export hours on your chosen T-0 day-of-week, current morning wait time, payment forms accepted, any closures or system outages |
 | CBP Blaine | Formal entry processing handled at this plaza, payment forms accepted, max credit card amount for duty + MPF, typical processing time for a personal classic-vehicle entry |
 | Cascade Auto License (Blaine) | Friday open hours; you must arrive before they close to buy trip permit #1 |
 | Seattle Auto Licensing (Quick Title) | Confirms foreign-title imports are handled (some Quick Title offices defer to King Street Center) |
@@ -296,7 +324,60 @@ Each contains online-form pre-population, phone-call script, document checklist,
 - PIP — reject in writing (WA option)
 - Roadside / towing — flatbed to shop of customer's choice (Hagerty standard spec)
 - Spare-parts coverage $750-$1,000
-- Effective date: 2026-05-15
+- Effective date: T-0 (Day of Crossing)
+
+---
+
+## Forms & Resources
+
+Where to download or access each form referenced in this plan. URLs are entry pages — direct PDF links rot, the form-listing pages are stable. Always download the most current version on the day you need it.
+
+### Federal forms — US import side
+
+| Form | Agency | Where to find |
+|---|---|---|
+| **HS-7** (DOT Declaration of Importation) | NHTSA | nhtsa.gov — search "HS-7" or "Importing a Motor Vehicle". Print at least 2 copies (a single ink correction voids the form). |
+| **EPA Form 3520-1** (Declaration for Imported Motor Vehicles and Motor Vehicle Engines) | EPA | epa.gov/importing-vehicles-and-engines — page lists current PDF. Print at least 2 copies. |
+| **CBP Form 7501** (Entry Summary) | CBP | cbp.gov/document/forms — search "7501". CBP officer can complete on your behalf at the booth, but having the form pre-printed speeds processing. |
+
+### Canadian export side
+
+| Resource | Where |
+|---|---|
+| CERS portal (Canadian Export Reporting System) | cbsa-asfc.gc.ca/services/cers-scder — electronic filing only, no downloadable form |
+| Alberta PPR lien search | alberta.ca/personal-property-registry — online or at any registry agent (~CAD 10) |
+
+### Washington state — post-arrival
+
+| Form / resource | Agency | Where |
+|---|---|---|
+| **Vehicle Title Application TD-420-001** | WA DOL | dol.wa.gov — search "TD-420-001" or "Vehicle Title Application". Form can also be filled at the DOL counter. |
+| WSP VIN inspection scheduler | WA State Patrol | wsp.wa.gov/driver/schedule-a-vin/ |
+| Trip permit | WA DOL | In-person purchase only — any DOL Vehicle Licensing Office or licensed subagent. No downloadable form. $36 each. |
+
+### Documentation vendors (paid; not government forms)
+
+| Resource | Where | Purpose |
+|---|---|---|
+| Pontiac Historical Services (PHS) | phs-online.com | Factory build sheet (~USD 70, 2-3 week lead). Supports HTSUS 9801.00.10 origin claim (cowl-tag photo is now in hand and is direct evidence; PHS adds the original engine code and dealer destination). |
+| Carfax Canada / CarProof | carfax.ca | Vehicle history report (~CAD 50). Due-diligence backup. |
+| Hagerty Valuation Tool | hagerty.com/valuation-tools-articles/valuation-tool | Free FMV reference for collector cars. Use the printout to support the $36,000 agreed-value claim with the insurance carrier. |
+
+### Bill of Sale
+
+No agency form — draft from a plain template. Must include:
+- VIN, year/make/model
+- Sale price in **both CAD and USD** (USD converted at Bank of Canada rate on contract date)
+- Date of sale
+- Full names and addresses of buyer (Seattle WA) and seller (Alberta)
+- Odometer reading
+- Both signatures
+- The words "**sold as-is for export to the United States**"
+
+Requirements:
+- **In English** (or English translation if drafted in French)
+- **Notarized** at an Alberta registry agent in front of a Commissioner for Oaths (CAD 25-100)
+- Bring **2 notarized originals** to the border — one for CBP to retain, one for WA DOL at titling
 
 ---
 
