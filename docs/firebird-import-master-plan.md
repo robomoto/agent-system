@@ -113,7 +113,7 @@ If you choose Pattern B, the wire-to-stranger risk is real. Mitigate with:
 | 1. ID + residency | US passport (preferred over driver's licence at the border), Seattle utility bill or lease |
 | 2. Canadian export pack | Original Alberta Vehicle Registration Certificate (signed), notarized Bill of Sale (2 originals), PPR lien search printout, CERS proof-of-report (PDF + paper) |
 | 3. US import pack | Blank HS-7, EPA 3520-1, Form 7501 (pre-printed) |
-| 4. 9801 origin pack | PHS report, VIN decoder printout (assembly plant code L=Lordstown / N=Norwood), color-printed cowl-tag and VIN-plate photos. **Engine note**: period-correct Pontiac 400 V8 from an early-1970s donor (also US-built at GM Pontiac MI engine plant). Period-correct same-family swap is treated as maintenance, not "improvement abroad." Disclose to CBP if asked. |
+| 4. 9801 origin pack | **Body by Fisher cowl tag photo (color, high-resolution) showing `LOR 13292` — direct evidence of Lordstown OH assembly.** Plus PHS report (body sequence 13292), VIN decoder printout, additional cowl-tag and VIN-plate photos. **Engine note**: period-correct Pontiac 400 V8 from an early-1970s donor (also US-built at GM Pontiac MI engine plant). Period-correct same-family swap is treated as maintenance, not "improvement abroad." **Original color was Nordic Blue (code N-N); current paint is burgundy — repainted, not factory color.** Disclose to CBP if asked. |
 | 5. Insurance + permit | Specialty classic policy binder confirmation letter, WA trip permits |
 | 6. Payment | Credit card with international travel notification active |
 
