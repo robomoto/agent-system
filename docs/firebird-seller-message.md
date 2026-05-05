@@ -1,12 +1,12 @@
 # Firebird Sale — What I'll Need From You
 
-**To:** [Seller name]
-**From:** [Buyer name]
+**To:** Larry Schmalenberg
+**From:** Christopher Douglass
 **Re:** 1968 Pontiac Firebird, VIN ____ — sale and US export
 
 ---
 
-Hi [Seller name],
+Hi Larry,
 
 I'm exporting the 1968 Firebird to Washington state. Here's what I'll need from you so we can keep the sale day quick and clean.
 
@@ -56,5 +56,5 @@ Plan ~45 minutes at the registry. I'll bring the draft Bill of Sale and the [ban
 
 Thanks,
 
-[Buyer name]
-[Buyer phone / email]
+Christopher Douglass
+[phone / email]
