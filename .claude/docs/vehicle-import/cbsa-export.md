@@ -5,14 +5,92 @@ Canadian export procedure for a privately-owned used vehicle leaving Canada perm
 
 ## The 72-Hour Rule
 
-Used self-propelled vehicles must be reported to CBSA **at least 72 hours before** their export, not at the booth. This is a longstanding requirement regardless of value. Reporting platform:
+Used self-propelled vehicles must be **reported** to CBSA **at least 72 hours before** their physical export. This is a longstanding requirement regardless of value.
+
+**Critical clarification — what the 72 hours measures:**
+
+> The 72-hour clock runs between **submitting the CERS declaration** and **physically driving the vehicle through the CBSA export booth**. It is NOT a wait between the CBSA booth and the CBP booth — those happen minutes apart on the same day, across the same border crossing.
+
+A common misreading conflates "export 72 hours before import" (wrong) with "report 72 hours before crossing" (correct). The vehicle does not sit on the Canadian side for three days. CBSA simply needs your declaration on file for 72 hours so they can review it before you arrive at the booth.
+
+Reporting platform:
 
 - **CERS portal** — submitted electronically, generates a proof-of-report number that the exporter presents at the port of exit
-- The 72-hour clock starts when CBSA receives the declaration, not when the user submits it (small allowance for processing — submit slightly earlier in practice)
+- The clock starts when CBSA **receives** the declaration, not when the user submits it (small allowance for processing — submit slightly earlier in practice)
 
 The rule does **not** apply to:
 - New vehicles being exported by a manufacturer/dealer with separate processes
 - Personal effects under temporary import/export
+
+## CERS Filing Prerequisites
+
+To submit a CERS declaration, you need three categories of inputs.
+
+### 1. Account access
+
+- A **CERS account** at the CBSA Client Portal. For a non-Canadian individual, registering takes ~1-3 business days. Plan for this if you don't already have an account.
+- Alternatives if registering yourself is impractical:
+  - The **seller** files (already a Canadian individual, may already have a Business Number / CRA account)
+  - A **customs broker / service provider** files on your behalf (~CAD 100-300)
+
+### 2. Information about the export
+
+All knowable **before** taking physical possession:
+
+- VIN (full 17-digit, or 13-digit Pontiac VIN for pre-1981 vehicles)
+- Year, make, model, colour, odometer reading
+- Declared export value in CAD
+- Exporter (you OR the seller — either is acceptable for private export)
+- Consignee / US importer (the buyer, with US address)
+- Country of destination = USA
+- Planned port of exit (e.g., Pacific Highway, BC)
+- Planned crossing date and approximate time
+- Mode of transport (road, driven by exporter)
+
+### 3. Physical evidence at the CBSA booth (NOT needed at filing time, but required at the actual crossing)
+
+- Original Vehicle Registration Certificate, signed over to the buyer
+- Notarized Bill of Sale
+- PPR / provincial lien search printout
+- Photo ID
+- CERS proof-of-report number / printout
+
+The CERS filing is a **declaration of intent**. The booth verifies the declaration matches physical reality. The sale does not need to be completed at filing time, but speculative filings are bad practice — file only when you have an enforceable agreement (signed deposit + Bill of Sale draft, or wire-transfer paid-in-full).
+
+## Two Valid Timeline Patterns
+
+CERS filing creates flexibility. Two patterns work:
+
+### Pattern A — In-Country Sale, then File (the doc bundle's default)
+
+```
+T-7 to T-5 : travel to Alberta, finalize agreement with seller in person
+T-4 morning: at registry agent — notarize Bill of Sale, transfer registration
+T-4 afternoon: file CERS (now have all sale documents in hand)
+T-3, T-2, T-1: 72-hour clock + buffer for issues
+T-0 : drive to port, cross CBSA -> CBP
+```
+
+Strength: low risk of paying a stranger sight-unseen. Weakness: longer time in Canada.
+
+### Pattern B — Pay-from-US, File-from-US, then Travel
+
+```
+T-10        : register CERS account (if first-time)
+T-8 to T-5  : lock the deal — signed agreement, wire transfer, photos of registration/VIN/cowl tag
+T-4 morning : file CERS (have agreed details, port, date, value)
+T-3, T-2    : 72-hour clock running, finalize travel
+T-1         : travel to Alberta
+T-0 morning : at registry agent — final notarization, signed-over registration; then drive to port
+T-0 afternoon: cross CBSA -> CBP
+```
+
+Strength: minimizes Canada time, locks pricing early. Weakness: requires the buyer to wire payment to a stranger before physical inspection. Mitigations: photo and live-video verification of the vehicle and seller's ID; deposit-then-balance structure; bank-draft payable on registration-transfer day; or escrow.
+
+The choice between A and B depends on:
+- Buyer's confidence in the seller (Kijiji vs. known/established)
+- Buyer's ability to travel for 5+ days vs. 1-2 days
+- Whether the buyer has time to register a CERS account, or whether the seller will file
 
 ## Required Document Set (Export Side)
 

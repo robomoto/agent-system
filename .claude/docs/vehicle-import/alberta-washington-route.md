@@ -83,6 +83,42 @@ Print or save the CERS proof-of-report number.
 - **WA emissions inspection**: WA discontinued routine emissions testing in 2020 statewide. Not a factor.
 - **WA antique vehicle status (≥30 years)**: Available; this affects registration choice not the import itself. See state-titling specialist.
 
+## Alternative Pattern — Pay-from-US, File-from-US
+
+The default timeline above (Pattern A) assumes the buyer travels to Alberta, completes the sale at a registry agent on T-4, and files CERS the same afternoon. A second valid pattern (Pattern B) compresses time-in-Canada by paying remotely and filing CERS from the US:
+
+```
+T-11 to T-10: register CERS account (1-3 business day verification)
+T-8 to T-5  : lock deal with seller — signed agreement, photos, wire transfer or escrow
+T-4 morning : file CERS from the US with VIN, agreed value, planned port, crossing date
+T-3, T-2    : 72-hour clock + travel preparation
+T-1         : travel to Alberta
+T-0 morning : registry agent — notarized Bill of Sale, signed-over registration, fresh PPR search
+T-0 same day: drive to Pacific Highway, cross CBSA -> CBP
+```
+
+**Trade-offs**:
+
+| | Pattern A (in-country, then file) | Pattern B (pay-from-US, file-from-US) |
+|---|---|---|
+| Time in Canada | 5-7 days | 1-2 days |
+| Pricing risk | Locked at sale-day | Locked early |
+| Counterparty risk | Inspect before paying | Wire to stranger before inspection |
+| Buffer for issues | 4 days between sale and crossing | Issues compress into one day |
+| CERS account | Needed only if buyer files | Buyer almost certainly files |
+| Best for | First-time imports, unknown sellers, complex cars | Repeat buyers, well-documented sellers, simple transactions |
+
+**Pattern B mitigations** (if the buyer chooses this path):
+
+- Require live video walk-around of the vehicle before paying
+- Require photo of seller's ID matching the registration certificate name
+- Verify seller's phone number against publicly-listed address (reverse lookup)
+- Deposit-then-balance structure: 20-30% deposit on signed agreement, balance by bank draft at registry agent
+- Use an escrow service for vehicles >US$25K (e.g., escrow.com — vehicle category fee ~1% of value)
+- Verify the registration certificate is genuine (call the seller's local Service Alberta registry to confirm format)
+
+Pattern B is fine if executed carefully. The framework's default narrative uses Pattern A for the conservative recommendation; the underlying regulations support either.
+
 ## Ballpark Cost Stack — Alberta to Washington (1968 Firebird, $30K USD value, US Goods Returning accepted)
 
 | Item | Estimated cost |
