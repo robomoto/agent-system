@@ -306,7 +306,9 @@ These are decision points where there is no single right answer — only trade-o
 
 **Authority**: HTSUS 9801.00.10; 19 CFR 10.1 (documentation for US Goods Returning); CBP Informed Compliance Publication: *Classification of Motor Vehicles*.
 
-**Consider consulting a customs broker** if any of the following are true: the cowl tag is missing or unreadable; the engine has been swapped (LS swap or non-original); the seller's chain of title shows the vehicle has spent time in a non-North-American country; the PHS report is delayed beyond the trip date.
+**Engine origin in this case**: The vehicle has a period-correct Pontiac 400 V8 from an early-1970s donor, replacing the original block. This is **not** an LS swap or modernization. The 400 V8 was a factory engine option for the 1968 Firebird 400, and the replacement engine was built at GM's Pontiac engine plant in Pontiac, Michigan — so the engine is also US-origin. A like-vintage same-family replacement is generally treated as **maintenance / repair**, not "improvement abroad" under 19 CFR 10.1, and the US-origin engine reinforces (does not undermine) the 9801.00.10 claim. Disclosure language to a CBP officer if asked: *"Period-correct Pontiac 400 V8, US-built, replacing the original block."*
+
+**Consider consulting a customs broker** if any of the following are true: the cowl tag is missing or unreadable; the engine has been swapped to a **non-period-correct** configuration (e.g., LS swap, modern fuel injection retrofit, non-Pontiac engine); the seller's chain of title shows the vehicle has spent time in a non-North-American country; the PHS report is delayed beyond the trip date. A period-correct same-family swap (your situation) is generally not a broker trigger, but a broker is still optional insurance against an unusually strict officer.
 
 ### 6.2 Standard registration vs. Collector plate (RCW 46.18.220)
 
@@ -334,9 +336,9 @@ Per the insurance team's analysis (sources: `firebird-hagerty-prefill.md`, `fire
 
 | Carrier | Recommendation | Rationale |
 |---|---|---|
-| **Hagerty** | Primary | Established VIN-bind path with foreign-title evidence; Hagerty Drivers Club Plus includes flatbed-to-shop-of-choice; Hagerty Valuation Tool supports the $36,000 agreed value directly |
-| **American Collectors (ACI)** | Secondary | Similar VIN-bind capability; smaller carrier, useful for premium benchmark; appetite extends to driver-grade and lightly modified |
-| **Grundy** | Benchmark only | Historically strong on unlimited mileage but VIN-bind on foreign title needs explicit phone confirmation; useful as comparison quote |
+| **Hagerty** | Primary, but disclose engine | Established VIN-bind path with foreign-title evidence; Hagerty Drivers Club Plus includes flatbed-to-shop-of-choice; Hagerty Valuation Tool supports the $36,000 agreed value directly. **Caveat**: Hagerty's underwriting appetite skews toward original / numbers-matching cars. Disclose the period-correct 400 V8 swap up-front; ask whether agreed value adjusts and whether a separate appraiser is required. |
+| **American Collectors (ACI)** | Secondary, may price better | Similar VIN-bind capability; smaller carrier, useful for premium benchmark; **appetite extends to driver-grade and lightly modified** — a non-numbers-matching but period-correct drivetrain is well within their appetite, often without an appraisal surcharge. |
+| **Grundy** | Benchmark only | Historically strong on unlimited mileage but VIN-bind on foreign title needs explicit phone confirmation; appetite for non-numbers-matching also requires phone confirmation. |
 
 **All three** should be called for quotes. Bind with whichever (a) confirms VIN-only binding with foreign title, (b) provides flatbed-to-shop-of-choice towing, (c) accepts the Hagerty Valuation Tool + PHS build sheet as agreed-value evidence at $36,000, and (d) offers the lowest total cost of ownership across the policy term.
 
@@ -349,6 +351,8 @@ Per the insurance team's analysis (sources: `firebird-hagerty-prefill.md`, `fire
 - Agreed value $36,000
 
 **Consider consulting a licensed insurance agent** before binding if: you have any coverage gap with your existing daily-driver policy (e.g., umbrella that needs to extend); you have a teenage driver in the household; the vehicle's intended use is unclear (collector vs. daily); or your declared value is contested.
+
+**Note on the period-correct engine swap**: All three carriers will accept the configuration as long as it's disclosed at quote time. Failing to disclose and then having a claim where the engine is part of the loss can result in coverage disputes (misrepresentation defenses). The prefill packets include the engine fact in the "Key facts to volunteer immediately" section — read it verbatim at the start of every call.
 
 ### 6.5 Timeline Pattern — In-Country Sale (default) vs. Pay-from-US / File-from-US (alternative)
 
