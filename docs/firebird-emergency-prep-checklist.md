@@ -1,4 +1,4 @@
-# Firebird Drive-Home Emergency Preparedness Checklist
+# Opération Migration du Poulet de Feu — Drive-Home Emergency Preparedness Checklist
 
 **Vehicle**: 1968 Pontiac Firebird, period-correct Pontiac 400 V8 (points ignition assumed from engine bay photo), off-road since June 2021
 **Route**: Alberta → BC → Pacific Highway crossing → I-5 south → Seattle (~1,200-1,500 km / 750-950 mi)

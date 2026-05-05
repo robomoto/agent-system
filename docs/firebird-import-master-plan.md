@@ -1,4 +1,6 @@
-# 1968 Pontiac Firebird — Master Import Plan
+# Opération Migration du Poulet de Feu — Master Plan
+
+*Project codename for: 1968 Pontiac Firebird import, Alberta → Seattle*
 
 **Route**: Alberta, Canada → Pacific Highway truck crossing → Seattle, Washington
 **Crossing date**: TBD — see "Picking Your Crossing Day" below

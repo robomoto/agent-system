@@ -1,4 +1,6 @@
-# Pro Se Filing Guide — Importing a 1968 Pontiac Firebird from Alberta to Seattle, Washington
+# Opération Migration du Poulet de Feu — Pro Se Filing Guide
+
+*Importing a 1968 Pontiac Firebird from Alberta to Seattle, Washington*
 
 **Document type**: Pro Se Filing Guide (administrative procedure — federal customs and state vehicle titling)
 **Jurisdictions**: US Federal (CBP, NHTSA, EPA), Canada Federal (CBSA), Alberta (provincial), Washington (state)
