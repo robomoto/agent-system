@@ -56,23 +56,26 @@ The Bill of Sale should be:
 - **No Alberta provincial sales tax** (AB is the only province with no PST). Buyer pays no provincial tax to Alberta.
 - **GST**: Private sales between individuals are not GST-able. Dealer sales to a non-resident for export are typically zero-rated; if charged, the buyer can claim a rebate via CRA Form GST189 (Code 1A). Verify with the dealer at sale time.
 
-### 4. CERS Filing
+### 4. CBSA Export — No CERS Required for US-Bound Vehicle
 
-Submit the CERS export declaration via the CBSA portal **at least 72 hours** before the intended crossing time. Note in the declaration:
-- Port of exit (matches the chosen crossing — if the user picks Pacific Highway, file for Pacific Highway)
-- VIN, year/make/model
-- Declared export value (CAD)
-- Buyer (importer) name and address (US side)
-- Estimated crossing date/time
+Under CBSA Memorandum D20-1-1 (ISSN 2369-2391, October 21, 2024 revision), paragraph 20, a vehicle permanently exported to the **United States** does **not** require a CERS export declaration. The rule is documentation-on-request only:
 
-Print or save the CERS proof-of-report number.
+> When a conveyance is permanently exported to the United States: Documentation identifying the conveyance identification number must be presented to the CBSA upon request.
+
+For an AB → WA export, this means:
+- No CERS account login, no filing, no proof-of-report number required
+- Have available at the CBSA booth: registration certificate (showing VIN), notarized Bill of Sale, PPR lien search, photo ID
+- Carry the printed D20-1-1 ¶ 20 binder reference in the binder in case an officer is unfamiliar with the current rule
+
+See `cbsa-export.md` for the full destination-specific framework, including the CERS path that still applies for non-US destinations.
 
 ### 5. Day of Crossing — CBSA Side
 
 1. Arrive at the designated CBSA port during business hours (verify hours; some are M-F only for vehicle export)
-2. Present documents: registration, Bill of Sale, lien search, CERS proof, photo ID
-3. CBSA stamps the registration "EXPORTED" or surrenders it (varies by office); user keeps the stamped copy
-4. Drive to the US side and continue at CBP
+2. Have documents available on request: registration, Bill of Sale, lien search, photo ID. No pre-filed CERS required for US-bound export.
+3. CBSA officer may ask for documents, or may wave the vehicle through. Either is normal under D20-1-1 ¶ 20.
+4. If the officer stamps the registration, keep the stamped copy. If the officer releases without stamping, proceed.
+5. Drive to the US side and continue at CBP
 
 ## Washington-Specific Import Considerations
 
@@ -83,41 +86,37 @@ Print or save the CERS proof-of-report number.
 - **WA emissions inspection**: WA discontinued routine emissions testing in 2020 statewide. Not a factor.
 - **WA antique vehicle status (≥30 years)**: Available; this affects registration choice not the import itself. See state-titling specialist.
 
-## Alternative Pattern — Pay-from-US, File-from-US
+## Timeline — Travel to Alberta, Then Cross (US-Bound)
 
-The default timeline above (Pattern A) assumes the buyer travels to Alberta, completes the sale at a registry agent on T-4, and files CERS the same afternoon. A second valid pattern (Pattern B) compresses time-in-Canada by paying remotely and filing CERS from the US:
+Because no CERS declaration is required for a US-bound vehicle export (D20-1-1 ¶ 20), the "Pattern A vs. Pattern B" choice that earlier versions of this doc described — centered on when to file CERS — no longer applies. The only timeline question for AB → WA is how far in advance the buyer travels to Alberta.
+
+**Standard approach (in-country sale, then cross):**
 
 ```
-T-11 to T-10: register CERS account (1-3 business day verification)
-T-8 to T-5  : lock deal with seller — signed agreement, photos, wire transfer or escrow
-T-4 morning : file CERS from the US with VIN, agreed value, planned port, crossing date
-T-3, T-2    : 72-hour clock + travel preparation
+T-5         : travel to Alberta
+T-4 morning : at registry agent — notarize Bill of Sale, sign over registration, fresh PPR search
+T-3, T-2    : buffer for post-storage shake-down or logistics issues
+T-0 morning : drive to Pacific Highway, stop at CBSA booth, then cross at CBP
+```
+
+**Compressed approach (pay-from-US, travel close to crossing date):**
+
+```
+T-8 to T-5  : lock deal with seller — signed agreement, wire transfer (deposit + honorarium), photos
 T-1         : travel to Alberta
-T-0 morning : registry agent — notarized Bill of Sale, signed-over registration, fresh PPR search
+T-0 morning : at registry agent — notarized Bill of Sale, signed-over registration, fresh PPR search
 T-0 same day: drive to Pacific Highway, cross CBSA -> CBP
 ```
 
-**Trade-offs**:
+Both approaches work. The standard approach gives a buffer for issues (lien surfacing, engine configuration not as photographed, post-storage mechanical problems). The compressed approach minimizes time in Canada but compresses problem-resolution time to same-day.
 
-| | Pattern A (in-country, then file) | Pattern B (pay-from-US, file-from-US) |
-|---|---|---|
-| Time in Canada | 5-7 days | 1-2 days |
-| Pricing risk | Locked at sale-day | Locked early |
-| Counterparty risk | Inspect before paying | Wire to stranger before inspection |
-| Buffer for issues | 4 days between sale and crossing | Issues compress into one day |
-| CERS account | Needed only if buyer files | Buyer almost certainly files |
-| Best for | First-time imports, unknown sellers, complex cars | Repeat buyers, well-documented sellers, simple transactions |
+**Counterparty risk mitigations (compressed approach):**
 
-**Pattern B mitigations** (if the buyer chooses this path):
-
-- Require live video walk-around of the vehicle before paying
+- Require live video walk-around of the vehicle before wiring
 - Require photo of seller's ID matching the registration certificate name
-- Verify seller's phone number against publicly-listed address (reverse lookup)
-- Deposit-then-balance structure: 20-30% deposit on signed agreement, balance by bank draft at registry agent
+- Verify seller's phone number against publicly-listed address
+- Deposit-then-balance structure (deposit wired up front; balance at registry on T-0)
 - Use an escrow service for vehicles >US$25K (e.g., escrow.com — vehicle category fee ~1% of value)
-- Verify the registration certificate is genuine (call the seller's local Service Alberta registry to confirm format)
-
-Pattern B is fine if executed carefully. The framework's default narrative uses Pattern A for the conservative recommendation; the underlying regulations support either.
 
 ## Ballpark Cost Stack — Alberta to Washington (1968 Firebird, $30K USD value, US Goods Returning accepted)
 
@@ -126,8 +125,7 @@ Pattern B is fine if executed carefully. The framework's default narrative uses 
 | Alberta PPR lien search | CAD 10-15 |
 | Notary (Bill of Sale) | CAD 25-100 |
 | PHS build sheet (optional, recommended) | USD $110 |
-| CERS filing | $0 (free) |
-| CBSA export | $0 |
+| CBSA export (no CERS required — US-bound, D20-1-1 ¶ 20) | $0 |
 | CBP duty (with 9801) | $0 (else $750 at 2.5%) |
 | CBP MPF (formal entry) | ~USD 100-115 (≈ 0.3464% × $30K, capped) |
 | Customs broker (optional) | USD 0-300 |

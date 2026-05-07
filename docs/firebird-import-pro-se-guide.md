@@ -51,7 +51,7 @@ the date it was generated and may not reflect subsequent changes.
 
 You are taking a 1968 Pontiac Firebird that lives in Alberta, Canada, and:
 
-1. **Removing it from Canada** by reporting the export to the Canada Border Services Agency (CBSA) at least 72 hours in advance and presenting yourself at the Pacific Highway truck crossing in BC. CBSA stamps the Alberta registration and releases the car from Canada.
+1. **Removing it from Canada** by presenting yourself at the CBSA export booth at the Pacific Highway truck crossing in BC with documentation identifying the vehicle. Under CBSA Memorandum D20-1-1 ¶ 20 (October 2024), a vehicle permanently exported to the United States requires only that documentation identifying the VIN be presented on request — no advance CERS declaration is filed. CBSA releases the car from Canada.
 2. **Bringing it into the United States** by presenting yourself at the U.S. Customs and Border Protection (CBP) booth at Blaine, Washington, filing three federal forms (HS-7, EPA 3520-1, and CBP Form 7501), and paying federal fees (nothing if your duty-free claim is accepted, plus a small Merchandise Processing Fee).
 3. **Driving it home to Seattle** on a Washington trip permit you bought *before* you crossed.
 4. **Getting a Washington VIN inspection** from the Washington State Patrol within the trip-permit window.
@@ -62,7 +62,7 @@ You are taking a 1968 Pontiac Firebird that lives in Alberta, Canada, and:
 
 Several deadlines move with each other and a single missed step can cascade:
 
-- The **CBSA 72-hour rule** is mandatory. Filing late means you arrive at the booth with paperwork CBSA cannot accept and they will turn you around. (Authority: CBSA Memorandum **D-20-1-1**, *Export Reporting*; *Customs Act* (R.S.C. 1985, c. 1 (2nd Supp.)), s. 95.)
+- **No advance CERS filing is required** for this US-bound export. Under CBSA Memorandum D20-1-1 ¶ 20 (October 2024 revision), a vehicle exported to the United States requires only documentation identifying the VIN presented on request at the CBSA booth. Have documents ready; do not file CERS in advance. (Authority: CBSA Memorandum **D20-1-1**, ISSN 2369-2391, modified 2024-10-21; *Customs Act* (R.S.C. 1985, c. 1 (2nd Supp.)), s. 95.)
 - The **WA trip permit is valid for 3 days only** (RCW 46.16A.320; WAC 308-93-090) and **must be obtained before driving on Washington roads**. If your VIN inspection or DOL appointment slips outside the 3-day window, you must buy a second permit. WA allows up to three permits per vehicle per year.
 - The **WSP VIN inspection runs on a 2-week rolling appointment calendar** (https://wsp.wa.gov/driver/schedule-a-vin/) and slots fill quickly. Book it before the Friday crossing.
 - **Hagerty / ACI / Grundy** must be bound effective the morning of T-0. Carriers will generally accept VIN-only binding with foreign-title evidence and a 7-10 day window to provide the WA title number — but this must be confirmed by phone at binding, not assumed.
@@ -84,13 +84,12 @@ All entries are calendar-day offsets from **Day of Import/Export (T-0)**. The us
 | T-7 | Schedule WSP VIN inspection appointment (target T+4 or T+5). | wsp.wa.gov/driver/schedule-a-vin/ |
 | T-7 | Schedule **Quick Title** appointment at Seattle Auto Licensing (King County subagent). Target T+5 to T+7 (after the VIN inspection). Quick Title is RCW 46.12.555 — same-day title certificate for a $50 surcharge. | Seattle Auto Licensing (call to confirm appointment availability for foreign-title imports) |
 | T-7 | Confirm Cascade Auto License (Blaine, WA — DOL subagent) hours for your chosen T-0 day-of-week. Trip permit fee $36 each (RCW 46.16A.320). | Cascade Auto License, Blaine WA |
-| T-4 morning (or earlier once port is locked, ≥72 hours before T-0) | **Submit CERS export declaration**. (CERS = Canadian Export Reporting System.) **The port specified in CERS commits you to crossing there** — Pacific Highway BC and Coutts AB are different submissions; switching after filing requires amending or re-filing. If your route is uncertain (e.g., choosing between BC and Montana crossings depending on travel logistics), **hold CERS submission until the route is decided**. The 72-hour clock runs from CBSA receipt time, not your submission time — target ≥96 hours of cushion to absorb weekend or system-outage processing delays. Weekends count for the wall-clock 72 hours but CBSA processing is unreliable over weekends. Save the proof-of-report number. | cbsa-asfc.gc.ca/services/cers-scder |
-| T-4 | Phone CBSA Pacific Highway and CBP Blaine to confirm: (a) vehicle export is handled; (b) hours of operation on your chosen T-0 day-of-week; (c) any local quirks. (See Section 11 for verify-before-calling list.) | CBSA / CBP public lines |
-| T-3 | Print CERS proof-of-report. Print blank HS-7 and EPA 3520-1 forms (have spares — single ink mistake voids a form). Print CBP Form 7501 instructions and the HTSUS 9801.00.10 / 8703.24 reference page. | NHTSA, EPA, CBP websites |
+| T-4 | Phone CBSA Pacific Highway and CBP Blaine to confirm: (a) vehicle export is handled; (b) hours of operation on your chosen T-0 day-of-week; (c) any local quirks. No CERS filing required for US-bound vehicle export (D20-1-1 ¶ 20, Oct 2024). (See Section 11 for verify-before-calling list.) | CBSA / CBP public lines |
+| T-3 | Print blank HS-7 and EPA 3520-1 forms (have spares — single ink mistake voids a form). Print CBP Form 7501 instructions and the HTSUS 9801.00.10 / 8703.24 reference page. Print D20-1-1 ¶ 20 binder reference (`12`) for the CBSA booth. | NHTSA, EPA, CBP, binder reference |
 | T-3 | **Bind insurance**. Phone Hagerty (verify number on hagerty.com) or ACI (verify on americancollectors.com). Confirm VIN-only binding with foreign-title evidence and the Hagerty Drivers Club Plus / equivalent flatbed-to-shop-of-choice towing. Effective date = morning of T-0. Email the declarations page to yourself. | Hagerty / ACI agent |
-| T-2 | Drive to Alberta seller (Pattern A). Bring: bank draft, draft Bill of Sale (notarize at Alberta registry agent, CAD ~$20-100), copies of all photos and VIN documents. (Pattern B users skip — they already paid and travel later.) | Alberta registry agent, seller |
+| T-2 | Drive to Alberta. Bring: bank draft for closing balance, draft Bill of Sale (notarize at Alberta registry agent, CAD ~$20-100), copies of all photos and VIN documents. | Alberta registry agent, seller |
 | T-1 | Day at the seller's location. Sign Bill of Sale at Alberta registry agent (Commissioner for Oaths or notary). Pull PPR lien search printout (CAD ~$10). Take possession of original Vehicle Registration Certificate, keys, owner's manual, build sheet, dashboard photos. Drive south toward Pacific Highway crossing. Park overnight on the Canadian side; do **not** cross tired. | Buyer + seller + Alberta registry agent |
-| **T-0 morning** | **Step 1 (CBSA Pacific Highway):** Present at CBSA export booth at 09:30-11:30 local. Show CERS proof-of-report, registration, Bill of Sale, PPR lien search, photo ID. CBSA stamps registration "EXPORTED" or surrenders it; you keep the stamped copy. | CBSA Pacific Highway BC |
+| **T-0 morning** | **Step 1 (CBSA Pacific Highway):** Present at CBSA export booth at 09:30-11:30 local. Have available on request: registration (showing VIN), notarized Bill of Sale, PPR lien search, photo ID. Under D20-1-1 ¶ 20, no CERS proof-of-report is required — documentation is presented on request only. Officer may ask for documents or wave through; both are normal. Carry printed D20-1-1 ¶ 20 reference (`12`) in case officer questions the no-CERS approach. CBSA may stamp registration "EXPORTED" or release without stamping; keep stamped copy if issued. | CBSA Pacific Highway BC |
 | T-0 morning | **Step 2 (CBP Blaine):** Drive across to U.S. side. Present at CBP booth. File HS-7 Box 1 (FMVSS exempt, ≥25 years; **49 CFR 591.5(i)**), EPA Form 3520-1 Code E (≥21 years, original-equipment configuration; **40 CFR 85.1511(b)(2)**), and Form 7501 declaring **HTSUS 9801.00.10** with **8703.24.0190** as fallback. Pay MPF (~US$124.70 at 0.3464% × $36,000, capped) by credit card. Insist all forms are **stamped** and **originals returned to you**. | CBP Blaine WA |
 | T-0 midday | **Step 3 (Cascade Auto License, Blaine):** Buy WA trip permit #1 ($36, valid 3 calendar days starting today). | Cascade Auto License, Blaine WA |
 | T-0 afternoon | **Step 4 (Drive home to Seattle):** ~115 miles south on I-5. Insurance is in force. Drive carefully — you have foreign plates and a 58-year-old car; do not give WSP a reason to stop you. | — |
@@ -146,8 +145,7 @@ All entries are calendar-day offsets from **Day of Import/Export (T-0)**. The us
 | Alberta PPR lien search | CAD ~$10 | Service Alberta tariff |
 | Notary (Bill of Sale) | CAD ~$25-100 | Alberta Commissioner for Oaths / Notary |
 | **Federal — Canadian side** | | |
-| CERS filing | $0 | CBSA Memorandum D-20-1-1 (no fee) |
-| CBSA export | $0 | Customs Act s. 95 (no fee) |
+| CBSA export (documentation-on-request, no CERS filing) | $0 | CBSA Memorandum D20-1-1 ¶ 20 (Oct 2024 revision); Customs Act s. 95 |
 | **Federal — U.S. side** | | |
 | HTSUS 8703.24.0190 duty (if 9801 rejected) | 2.5% × declared value (~US$900 on $36,000) | HTSUS 8703.24.0190 |
 | HTSUS 9801.00.10 duty (if accepted) | **$0** | HTSUS 9801.00.10; 19 CFR 10.1 |
@@ -202,19 +200,22 @@ All entries are calendar-day offsets from **Day of Import/Export (T-0)**. The us
 
 **Hours**: Verify by phone the week before. Vehicle export staffing is sometimes M-F only at smaller ports — Pacific Highway typically handles vehicle export during regular business hours, but **call to confirm Friday morning**.
 
-**Bring**: CERS proof-of-report number (printed); original Alberta Vehicle Registration Certificate; signed notarized Bill of Sale (original + 2 copies); PPR lien search printout; photo ID; lender lien-release letter if there ever was a lien; keys.
+**Bring**: Original Alberta Vehicle Registration Certificate (showing VIN); signed notarized Bill of Sale (original + 2 copies); PPR lien search printout; photo ID; lender lien-release letter if there ever was a lien; keys; **printed D20-1-1 ¶ 20 binder reference** (`12-cbsa-d20-1-1-paragraph-20.pdf`) in case an officer questions the no-CERS approach.
+
+**Under D20-1-1 ¶ 20 (October 2024 revision), no advance CERS filing is required for a US-bound vehicle.** Documentation identifying the VIN is presented on request at the booth.
 
 **What happens**:
 1. Pull into the export / commercial lane, not the passenger-traveler lane.
-2. Officer asks for CERS proof-of-report number and documents.
-3. Officer verifies VIN on vehicle matches paperwork.
-4. Officer **stamps the registration** "EXPORTED" or surrenders it (varies by office). You keep a stamped copy.
-5. Officer releases the vehicle from Canada.
-6. You drive the short distance to the U.S. side.
+2. Officer may ask for documents or may wave the vehicle through. Both are normal under ¶ 20.
+3. If officer asks: hand over registration, Bill of Sale, PPR lien search, and photo ID.
+4. Officer verifies VIN on vehicle matches paperwork.
+5. Officer may **stamp the registration** "EXPORTED" or release without stamping (varies by officer). Keep stamped copy if issued.
+6. Officer releases the vehicle from Canada.
+7. You drive the short distance to the U.S. side.
 
 **Common questions**:
 - *"Why are you exporting?"* — "Personal sale; I'm importing for my own use to Washington."
-- *"Have you reported under CERS?"* — "Yes, here's the proof-of-report number." Do not show up without it; you will be turned around.
+- *"Do you have a CERS filing?"* — "Under D20-1-1 paragraph 20, US-bound vehicle exports are documentation-on-request — no CERS declaration is filed. I have the registration, Bill of Sale, and lien search available." If the officer pushes back, present the printed D20-1-1 ¶ 20 reference (`12`).
 
 ### 5.3 At CBP Blaine (T-0 morning, immediately after CBSA)
 
@@ -359,64 +360,62 @@ Per the insurance team's analysis (sources: `firebird-hagerty-prefill.md`, `fire
 
 **Note on the period-correct engine swap**: All three carriers will accept the configuration as long as it's disclosed at quote time. Failing to disclose and then having a claim where the engine is part of the loss can result in coverage disputes (misrepresentation defenses). The prefill packets include the engine fact in the "Key facts to volunteer immediately" section — read it verbatim at the start of every call.
 
-### 6.5 Timeline Pattern — In-Country Sale (default) vs. Pay-from-US / File-from-US (alternative)
+### 6.5 Timeline Pattern — In-Country Sale vs. Pay-from-US / Travel Close to Crossing
 
-**Important clarification on the 72-hour rule.** The 72 hours runs between **submitting the CERS declaration** and **physically driving through the CBSA export booth**. It is NOT a wait between the CBSA booth and the CBP booth — those happen minutes apart on the same day, at the same crossing. (Authority: CBSA Memorandum **D-20-1-1**.)
+**There is no CERS-based timeline decision for a US-bound vehicle.** Under CBSA Memorandum D20-1-1 ¶ 20 (October 2024 revision), a vehicle exported to the United States requires only documentation-on-request at the CBSA booth — no advance filing is required. The earlier "Pattern A vs. Pattern B" framing in this guide was built around when to submit a CERS declaration; that question does not arise for this trip.
 
-Because filing is decoupled from physical possession, two patterns are legally valid.
+The only timeline question is how many days to spend in Alberta before crossing.
 
-#### Pattern A — In-Country Sale, then File (the default in Section 2)
+#### Standard — Travel Early, Buffer for Issues
 
-You travel to Alberta, complete the sale at a registry agent on T-4, file CERS the same afternoon with the documents in hand, then cross at T-0. Time in Canada: ~5-7 days. Lower counterparty risk because you inspect before paying.
-
-#### Pattern B — Pay-from-US, File-from-US, then Travel
+Travel to Alberta several days before T-0, complete the sale at a registry agent, and allow buffer time before crossing.
 
 ```
-T-10        : Register CERS account (1-3 business days for non-Canadian
-              individuals; alternative: have the seller file or use a
-              customs broker)
-T-8 to T-5  : Lock the deal with seller — signed agreement, photos of
-              registration / VIN plate / cowl tag, wire transfer or escrow
-T-4 morning : File CERS from the US with VIN, exporter/consignee details,
-              port of exit, planned crossing date, declared value in CAD
-T-3, T-2    : 72-hour clock running + travel preparation
+T-5         : Travel to Alberta
+T-4 morning : At registry agent — notarized Bill of Sale, signed-over
+              registration, fresh PPR lien search, VIN/cowl-tag photos
+T-3, T-2    : Shake-down drive, buffer for any post-storage issues
+T-0 morning : Drive to Pacific Highway, cross CBSA -> CBP
+```
+
+Strength: 4-day buffer between taking possession and crossing — absorbs PPR surprises, registry agent quirks, engine issues post-storage.
+
+#### Compressed — Pay-from-US, Travel Close to T-0
+
+Wire the deposit and honorarium from the US, get photos and seller confirmation, then travel to Alberta only 1-2 days before crossing.
+
+```
+T-8 to T-5  : Lock the deal — signed agreement, wire transfer, photos of
+              registration / VIN / cowl tag from seller
 T-1         : Travel to Alberta
-T-0 morning : At Alberta registry agent — notarized Bill of Sale,
-              signed-over Vehicle Registration Certificate, fresh PPR
-              lien search printout
+T-0 morning : At registry agent — notarized Bill of Sale, signed-over
+              Vehicle Registration Certificate, fresh PPR search
 T-0 same day: Drive to Pacific Highway, cross CBSA -> CBP
 ```
 
-CERS only requires **information** (VIN, parties, port, date, value) — not physical possession of the vehicle or the registration certificate. (See Section 3 for what the CBSA booth requires; that does require physical documents but not until T-0.) So you can pay from the US, file from the US, and travel to Alberta only 1-2 days before crossing.
+Strength: minimal time in Canada. Weakness: same-day compression; no buffer if the vehicle is not as described or a lien surfaces.
 
 #### Trade-offs
 
-| Factor | Pattern A | Pattern B |
+| Factor | Standard | Compressed |
 |---|---|---|
 | Time in Canada | 5-7 days | 1-2 days |
-| Pricing risk | Locked at sale day | Locked early via wire |
-| Counterparty risk | Low (inspect before paying) | Higher (wire to stranger before inspection) |
-| Buffer if something goes wrong | 4 days between sale and crossing | Day-of compressed |
-| CERS account hassle | Optional if seller files | Buyer almost certainly files |
-| Best for | First-time imports, unknown sellers | Repeat buyers, well-documented sellers, escrow-mediated transactions |
+| Counterparty risk | Low (inspect before final payment) | Higher (deposit wired before inspection) |
+| Buffer for issues | 4 days between possession and crossing | Same-day only |
+| Best for | First-time imports, unknown sellers | Well-documented sellers, escrow-mediated deals |
 
-#### Pattern B Risk Mitigations
-
-If you choose Pattern B, mitigate the wire-to-stranger risk:
+#### Risk Mitigations (Compressed)
 
 - **Live video walk-around** of the vehicle showing VIN plate and cowl tag, dated by the seller
 - **Photo of seller's government ID** matching the name on the Vehicle Registration Certificate
 - **Reverse phone lookup** to verify the seller's phone matches a public Alberta address
-- **Deposit-then-balance** structure (e.g., 20-30% deposit on signed agreement, balance by bank draft delivered at the Alberta registry agent on T-0)
+- **Deposit-then-balance** structure (deposit wired up front; balance by bank draft at registry on T-0)
 - **Escrow service** for vehicles above US$25,000 (escrow.com vehicle fee ~1% of value)
-- **Alberta-side proxy** — if you have a friend, family member, or paid inspector in Alberta, have them do the physical inspection before payment
-- **Verify the registration certificate** is genuine by calling the seller's local Service Alberta registry to confirm format and issue date
+- **Alberta-side proxy** — if you have a trusted contact in Alberta, have them do the physical inspection before payment
 
 #### Recommendation
 
-**Stay with Pattern A unless you have a specific reason to compress.** The 4-day buffer between sale and crossing absorbs the inevitable hiccups (lien surfacing in PPR, name-mismatch on registration, registry agent unavailable, engine configuration not as photographed). Pattern B is legitimate and works for buyers with established seller relationships, escrow-mediated deals, or trusted Alberta-side inspectors. For a Kijiji-style first transaction with a private seller, Pattern A is the conservative choice.
-
-The pro-se filing-guide treats Pattern A as the primary timeline (Section 2). If you elect Pattern B, the deadlines remain the same — only the location of the buyer at each step changes.
+**Standard (5-7 days) unless you have a specific reason to compress.** The buffer absorbs the inevitable hiccups: lien surfacing in PPR, registry agent unavailable, post-storage mechanical issue requiring seller cooperation, engine configuration not as photographed. For a private-seller first transaction (this case), standard is the conservative choice.
 
 ### 6.6 PIP rejection in writing vs. accept WA default PIP
 
@@ -437,7 +436,7 @@ The most common ways this goes wrong, drawn from the source bundles:
 
 1. **Showing up at the wrong CBSA port.** Not every CBSA port handles vehicle export. Pacific Highway does, but vehicle-export staffing is sometimes M-F only. **Call the port the week before** to confirm hours and that vehicle export is handled the day you plan to cross.
 
-2. **Filing CERS less than 72 hours before crossing.** This is mandatory, not advisory. The clock runs from CBSA receipt time, not your submission time. **Submit by noon Monday for a Friday morning crossing.** Showing up with a 30-hour-old report gets you turned around.
+2. **Following stale guidance that requires advance CERS filing for a US-bound vehicle.** Prior versions of CBSA Memorandum D20-1-1 required a CERS export declaration (72 hours in advance) for used self-propelled vehicles regardless of destination. The **October 2024 revision** of D20-1-1 (ISSN 2369-2391, modified 2024-10-21) superseded that for US-bound exports: under paragraph 20, documentation-on-request is the rule. Do not file CERS for an AB → WA export; just have your documents ready at the booth. Carry the printed D20-1-1 ¶ 20 reference (`12`) in case a booth officer is unfamiliar with the current rule. (The 72-hour CERS rule still applies for exports to countries other than the United States.)
 
 3. **Driving to CBP before CBSA releases the vehicle.** A driver who skips the Canadian export booth and goes straight to the U.S. side will be sent back. **CBSA first, then CBP.** Always.
 
@@ -527,8 +526,8 @@ Each form is in one of three phases of your import: prepare ahead, submit / sche
 **Draft:**
 - Bill of Sale (English, CAD + USD price, "sold as-is for export to the United States"). Notarized at an Alberta registry agent on T-1.
 
-**Set up account:**
-- CERS account at cbsa-asfc.gc.ca/services/cers-scder (1-3 business days for non-Canadian individual; alternative: seller files, or pay a broker)
+**Note on CERS:**
+- *No CERS account or filing required for this trip.* Under D20-1-1 ¶ 20 (October 2024 revision), US-bound vehicle exports are documentation-on-request only. A CERS account previously created remains available but is unused for this export; it would be needed only for a future export to a non-US destination.
 
 #### Phase 2 — Submit / Schedule / Bind Before You Go
 
@@ -536,7 +535,6 @@ Each form is in one of three phases of your import: prepare ahead, submit / sche
 |---|---|---|
 | T-7 | Schedule WSP VIN inspection (target T+4 to T+5) | wsp.wa.gov/driver/schedule-a-vin/ |
 | T-7 | Schedule Seattle Auto Licensing Quick Title appointment (target T+5 to T+7) | call ahead |
-| T-4 morning | **Submit CERS export declaration** (≥72 hr before T-0; target 96 hr) | cbsa-asfc.gc.ca/services/cers-scder |
 | T-2 | **Bind classic insurance** with Hagerty or ACI; effective date = morning of T-0 | phone (verify number on carrier website) |
 | T-0 midday | Buy WA Trip Permit #1 ($36, in-person only) | Cascade Auto License, Blaine |
 
@@ -544,12 +542,12 @@ Each form is in one of three phases of your import: prepare ahead, submit / sche
 
 Carry in a labeled 3-ring binder.
 
-**Hand to CBSA officer (Canadian side, first):**
-- CERS proof-of-report
-- Original Alberta Vehicle Registration Certificate (signed over)
+**Have available at CBSA officer's request (Canadian side, first) — present on request per D20-1-1 ¶ 20:**
+- Original Alberta Vehicle Registration Certificate (signed over, showing VIN)
 - Notarized Bill of Sale, 2 originals
 - PPR lien search printout
 - Photo ID (passport preferred)
+- **Printed D20-1-1 ¶ 20 binder reference** (`12-cbsa-d20-1-1-paragraph-20.pdf`) — produce only if officer questions the no-CERS approach
 
 **Fill at CBP booth, stamped by officer (US side):**
 - HS-7 — Box 1 (≥25-yr FMVSS exempt, 49 CFR 591.5(i))
@@ -580,8 +578,8 @@ CBP keeps copies; **you keep the stamped originals** for WA DOL.
 
 ### Federal — Canada
 
-- **CBSA D-Memorandum D-20-1-1** (Export Reporting): https://www.cbsa-asfc.gc.ca/publications/dm-md/d20/d20-1-1-eng.html
-- **CERS portal**: https://www.cbsa-asfc.gc.ca/services/cers-scder
+- **CBSA Memorandum D20-1-1** (Export Reporting, ISSN 2369-2391, October 2024 revision): https://www.cbsa-asfc.gc.ca/publications/dm-md/d20/d20-1-1-eng.html — paragraph 20 governs permanently exported conveyances; US-bound = documentation-on-request; non-US-bound = CERS declaration
+- **CERS portal** (for non-US destination exports): https://www.cbsa-asfc.gc.ca/services/cers-scder
 - **Customs Act**: https://laws-lois.justice.gc.ca/eng/acts/c-52.6/
 
 ### Provincial — Alberta
@@ -622,7 +620,7 @@ Phone numbers and what to confirm with each agency. **Always verify a phone numb
 
 | Agency | Number / Channel | What to confirm |
 |---|---|---|
-| **CBSA Pacific Highway** | Verify via cbsa-asfc.gc.ca/contact-contactez (look for Pacific Highway port direct line) | (a) Vehicle export handled on your chosen T-0 day-of-week morning? (b) Hours of operation? (c) CERS submission accepted at booth or only pre-filed? (d) Any local document quirks (notarization preference, etc.)? |
+| **CBSA Pacific Highway** | Verify via cbsa-asfc.gc.ca/contact-contactez (look for Pacific Highway port direct line) | (a) Vehicle export handled on your chosen T-0 day-of-week morning? (b) Hours of operation? (c) Any local document quirks (notarization preference, etc.)? Note: per D20-1-1 ¶ 20, no CERS filing is required for US-bound vehicle export — documentation is presented on request. |
 | **CBP Blaine** | Verify via cbp.gov/contact (look for Port of Blaine direct line) | (a) Personal vehicle import accepted Friday morning? (b) Self-filed Form 7501 accepted at the port, or do they prefer broker-filed? (c) Credit card accepted for MPF? (d) HTSUS 9801.00.10 acceptance pattern for US-origin classics? |
 | **Cascade Auto License (Blaine)** | Search "Cascade Auto License Blaine WA" — verify hours and Friday operation | (a) Trip permit available same-day for foreign-titled vehicle? (b) Cash, debit, or credit accepted? (c) Hours Friday afternoon? |
 | **Washington State Patrol — VIN inspection** | https://wsp.wa.gov/driver/schedule-a-vin/ | Online scheduler — confirm 2-week rolling calendar, book the slot for ~T+3 |
@@ -639,14 +637,15 @@ Phone numbers and what to confirm with each agency. **Always verify a phone numb
 
 ### 11.1 Turned around at CBSA (export side)
 
-**Causes**: CERS not filed or filed less than 72 hours before; PPR shows a lien; documents incomplete; chosen port not staffed for vehicle export that day.
+**Causes**: Documents incomplete or VIN mismatch; PPR shows a lien; chosen port not staffed for vehicle export that day; officer questions no-CERS path and is not satisfied by the D20-1-1 ¶ 20 reference (rare, but possible with a booth officer using stale guidance).
 
 **Recovery**:
 1. Do not argue with the officer. Drive back into Canada (you have not yet exported).
-2. Identify the missing piece. If CERS late: re-file CERS with a new crossing date, wait 72 hours, return.
-3. If a lien is found: contact the prior lender for a release letter. Lien clearance may take days.
-4. If the port is not staffed: drive to the next-nearest staffed port (Aldergrove/Lynden or Sumas/Sumas) and verify by phone before driving.
-5. Re-bind insurance for the new effective date.
+2. Identify the missing piece:
+   - If officer insists on a CERS filing: this reflects pre-October-2024 guidance. Present the printed D20-1-1 ¶ 20 reference. If the officer still insists, consider calling CBSA Client Services (1-800-461-9999) from the parking area before re-attempting — or, as a practical matter, filing CERS and returning 72 hours later with the proof-of-report. The filing itself is free.
+   - If a lien is found: contact the prior lender for a release letter. Lien clearance may take days.
+   - If the port is not staffed: drive to the next-nearest staffed port (Aldergrove/Lynden or Sumas/Sumas) and verify by phone before driving.
+3. Re-bind insurance for the new effective date.
 
 ### 11.2 Turned around at CBP (import side)
 
@@ -660,16 +659,17 @@ Phone numbers and what to confirm with each agency. **Always verify a phone numb
 5. If VIN discrepancy: you may be allowed to return to Canada to resolve with the seller. **Document everything** — photos, names of officers, time of contact. **Consider consulting a customs broker before re-attempting.**
 6. If the entry is denied entirely: the vehicle returns to Canada. You'll need to reset the timeline (CBSA re-export, etc.) which costs at least one full week.
 
-### 11.3 Missed CERS 72-hour window
+### 11.3 CBSA booth officer insists on CERS filing (stale-guidance scenario)
 
-**Causes**: User submitted CERS Tuesday for a Friday crossing (less than 72 hours).
+**Causes**: For a US-bound vehicle export, no CERS filing is required under D20-1-1 ¶ 20 (October 2024 revision). However, some officers may be working from older internal references that described a 72-hour CERS requirement for used self-propelled vehicles.
 
 **Recovery**:
-1. **Reschedule the crossing** to the following week.
-2. Re-bind insurance for the new effective date.
-3. Re-schedule WSP and DOL appointments.
-4. Notify Alberta seller of the delay; secure the vehicle (storage, key handling) for the extra days.
-5. **Lesson**: always submit CERS by **noon Monday** for a Friday crossing.
+1. Present the printed D20-1-1 ¶ 20 binder reference (`12`). The verbatim rule addresses this directly: *"When a conveyance is permanently exported to the United States: Documentation identifying the conveyance identification number must be presented to the CBSA upon request."*
+2. If the officer is not satisfied: do not argue further. Ask the officer to contact their supervisor or CBSA operations.
+3. As a fallback: file CERS from your phone or laptop (the portal is at cbsa-asfc.gc.ca/services/cers-scder). Filing is free and instant. Return to the booth 72 hours later with the proof-of-report.
+4. Re-bind insurance for the new effective date.
+5. Re-schedule WSP and DOL appointments.
+6. Notify the seller of the delay; arrange secure storage for the vehicle.
 
 ### 11.4 WSP VIN inspection appointment unavailable
 
@@ -724,7 +724,7 @@ This guide is rated **strong-authority** for federal procedural elements and Was
 
 | Area | Confidence | Rationale |
 |---|---|---|
-| **CBSA export (CERS, 72-hr rule)** | Strong-authority | CBSA Memorandum D-20-1-1 and Customs Act s. 95 are clear; CERS is the operational system in 2026 |
+| **CBSA export (documentation-on-request, US-bound)** | Strong-authority | CBSA Memorandum D20-1-1 ¶ 20 (ISSN 2369-2391, October 2024 revision) and Customs Act s. 95 are clear; the destination-specific rule for US-bound conveyances is unambiguous. Risk: booth officer unfamiliar with current rule — mitigated by carrying printed D20-1-1 ¶ 20 reference |
 | **CBP import — HS-7 Box 1 (FMVSS exemption)** | Strong-authority | 49 CFR 591.5(i) is unambiguous for ≥25-year-old vehicles; 1968 Firebird has 33+ years of margin |
 | **EPA 3520-1 Code E (emissions exemption)** | Strong-authority | 40 CFR 85.1511(b)(2) clear; "original equipment configuration" is the only fact question |
 | **HTSUS 9801.00.10 (US Goods Returning) — duty-free for Ohio-built vehicle** | **Weak-authority (officer discretion)** | The legal rule is clear; **acceptance is discretionary** at the booth and depends on documentation quality. The duty differential ($900) is the most material 9801-related risk. PHS + cowl tag + VIN-decode evidence puts this at the strong end of the discretionary range, but it is not guaranteed |
@@ -769,8 +769,8 @@ Every regulatory citation used in this document, with subsection and a one-line 
 | Citation | One-line description |
 |---|---|
 | ***Customs Act* (R.S.C. 1985, c. 1 (2nd Supp.)), s. 95** | Statutory basis for export reporting requirement |
-| **CBSA Memorandum D-20-1-1** | Export Reporting — operational guidance for used self-propelled vehicles |
-| **CERS** (Canadian Export Reporting System) | Electronic platform for export declarations; replaced legacy B13A and CAED |
+| **CBSA Memorandum D20-1-1** (ISSN 2369-2391, issued October 24, 2024, modified 2024-10-21) | Export Reporting — paragraph 20 sets destination-specific rule for permanently exported conveyances: US-bound = documentation-on-request only; non-US-bound = CERS declaration with standard timeframes |
+| **CERS** (Canadian Export Reporting System) | Electronic platform for export declarations; still applicable for non-US-bound exports; replaced legacy B13A and CAED |
 
 ### Provincial — Alberta
 

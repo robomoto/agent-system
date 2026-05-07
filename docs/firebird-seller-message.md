@@ -19,7 +19,7 @@ I'm exporting the 1968 Firebird to Washington state. Here's what I'll need from 
 
 ## Before I fly in
 
-I need some specifics to arrange for Canadian export (CERS filing with CBSA) and to bind US insurance effective the moment I take possession of the car:
+I need some specifics to arrange Canadian export documentation and to bind US insurance effective the moment I take possession of the car:
 
 - **Photo of the Service Alberta Vehicle Registration Certificate, front and back** — high-resolution, both sides. This is the single document the export filing and the US insurance underwriter both need.
 - **Bank info for the deposit wire** — already covered in the Deposit and Intent-to-Purchase Agreement (Section 7). Just flagging the connection.

@@ -50,7 +50,7 @@ A 1968 Firebird with its original GM-built drivetrain, US-assembled, qualifies f
 
 ## AES / ITN — Generally NOT Required for This Direction
 
-The Automated Export System (AES, now part of ACE AESDirect) and Internal Transaction Number (ITN) requirements are **export** requirements (15 CFR 30), governing what leaves the US. A vehicle **entering** the US from Canada does not need a US-side AES filing; the Canadian-side CERS filing is the export declaration on that side.
+The Automated Export System (AES, now part of ACE AESDirect) and Internal Transaction Number (ITN) requirements are **export** requirements (15 CFR 30), governing what leaves the US. A vehicle **entering** the US from Canada does not need a US-side AES filing. For a US-bound vehicle export, no Canadian-side CERS declaration is filed either — under CBSA Memorandum D20-1-1 ¶ 20 (October 2024 revision), the Canadian export obligation for a US-bound vehicle is documentation-on-request only (VIN documentation presented at the CBSA booth if asked). For non-US-destination exports from Canada, a CERS declaration would be the Canadian export declaration — but that fact pattern does not arise on a Canada-to-US import.
 
 **Exception**: a vehicle that originated in the US, was registered there, exported earlier, and is now being re-exported back through the US — different fact pattern, requires separate analysis.
 

@@ -5,13 +5,15 @@
 
 **Problem**: Not every CBSA port handles vehicle export. Even within designated ports, vehicle-export staffing is sometimes M-F only. Drive 8 hours to a port that can't process you, get turned around.
 
-**Fix**: Call the chosen CBSA port directly the week before. Confirm vehicle export is handled, hours of operation, and expected wait. The CERS declaration commits you to a port — pick the right one.
+**Fix**: Call the chosen CBSA port directly the week before. Confirm vehicle export is handled, hours of operation, and expected wait. For non-US destinations, the CERS declaration commits you to a specific port — pick the right one before filing. For US-bound exports (documentation-on-request), the port is still important to confirm, but there's no CERS filing to amend.
 
-## 2. Filing CERS Less Than 72 Hours Before Crossing
+## 2. Following Stale Guidance That Requires CERS for a US-Bound Vehicle
 
-**Problem**: CBSA's 72-hour rule for used self-propelled vehicles is mandatory. Showing up with a CERS report 30 hours old gets you turned around. The clock runs from CBSA receipt time, not from when you submit.
+**Problem**: Prior versions of CBSA Memorandum D20-1-1, and older doc bundles built from them, described a "vehicle carve-out" that required a CERS export declaration (with a 72-hour advance notice) for all used self-propelled vehicles regardless of destination. The **October 2024 revision** of D20-1-1 (ISSN 2369-2391, modified 2024-10-21) superseded that rule. Under paragraph 20, a vehicle permanently exported to the **United States** requires only that documentation identifying the VIN be presented to CBSA upon request — no CERS declaration is filed.
 
-**Fix**: Submit at least 4 days (96 hours) before crossing to allow processing. Save the timestamped confirmation.
+**Fix**: For AB → WA or any Canada → US vehicle export, the procedure is documentation-on-request only. Do not file CERS; do have the registration certificate, Bill of Sale, PPR search, and photo ID available at the CBSA booth. Carry the D20-1-1 ¶ 20 binder reference (`12`) to present if a booth officer questions the no-CERS path.
+
+> The CERS 72-hour rule still applies for vehicle exports to countries **other than** the United States. The rule is destination-specific, not globally abolished.
 
 ## 3. Driving to CBP Before CBSA Releases the Vehicle
 
