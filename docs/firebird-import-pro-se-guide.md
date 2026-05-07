@@ -509,7 +509,7 @@ Each form is in one of three phases of your import: prepare ahead, submit / sche
 
 **Order:**
 - Pontiac Historical Services build sheet — phs-online.com (USD $110, 2-3 wk lead, ordered 2026-05-07)
-- ~~Carfax Canada / CarProof~~ — **not viable for 1968** (13-char VIN incompatible with Carfax's modern lookup); substitute is asking Larry for any prior bills of sale or registration documents he kept
+- **Carfax Canada / CarProof: not viable for 1968** — 13-char VIN incompatible with Carfax's modern lookup. Substitute: ask Larry for any prior bills of sale or registration documents he kept.
 - Hagerty Valuation Tool printout — hagerty.com/valuation-tools-articles/valuation-tool (free)
 
 **Print or download:**
@@ -602,7 +602,7 @@ CBP keeps copies; **you keep the stamped originals** for WA DOL.
 
 - **Pontiac Historical Services (PHS)**: https://www.phs-online.com (USD $110; 2-3 week turnaround — order now)
 - **Hagerty Valuation Tool**: https://www.hagerty.com/valuation-tools (free)
-- ~~**Carfax Canada (CarProof)**: https://www.carfax.ca~~ — **N/A for pre-1981 vehicles**; the 13-character GM VIN format isn't supported by their modern lookup
+- **Carfax Canada (CarProof)**: https://www.carfax.ca — **N/A for pre-1981 vehicles**; the 13-character GM VIN format isn't supported by their modern lookup
 
 ### Free and reduced-cost legal help
 

@@ -521,7 +521,7 @@ Procurements, downloads, drafts, and account setup. Done from home before travel
 |---|---|---|---|
 | Pontiac Historical Services build sheet | phs-online.com | USD $110 (ordered 2026-05-07) | 2-3 weeks |
 | Hagerty Valuation Tool printout | hagerty.com/valuation-tools-articles/valuation-tool | free | minutes |
-| ~~Carfax Canada / CarProof~~ | ~~carfax.ca~~ | **N/A** — 1968 13-char VIN doesn't process; ask Larry for prior paperwork instead |
+| Carfax Canada / CarProof | carfax.ca | **N/A** — 1968 13-char VIN doesn't process; ask Larry for prior paperwork instead |
 
 **Print / download (carry on the trip)**
 

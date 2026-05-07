@@ -66,7 +66,7 @@ A short briefing to hand the Alberta seller. Edit the bracketed placeholders.
 
 - Confirmed via cowl tag photo: LOR (Lordstown OH) assembly plant, body sequence 13292, style 22637 (1968 Firebird sport coupe), trim 259 (black), original paint N-N (Nordic Blue Metallic — repainted)
 - Run the PPR lien search yourself before driving north (alberta.ca/personal-property-registry, ~CAD 10)
-- ~~Run a Carfax Canada / CarProof report~~ — **N/A for pre-1981 vehicles** (13-character VIN doesn't process through Carfax's modern lookup). Substitute: ask the seller for any prior bills of sale or registration documents they kept.
+- **Carfax Canada / CarProof: N/A for pre-1981 vehicles** — 13-character VIN doesn't process through Carfax's modern lookup. Substitute: ask the seller for any prior bills of sale or registration documents they kept.
 - Order a Pontiac Historical Services (PHS) report (USD $110 at phs-online.com) — body sequence 13292 should be sufficient. PHS report confirms the original engine code (which establishes that the current 400 is a swap, not the original) and the dealer destination.
 - Confirm seller's government ID matches the name on the registration. Mismatched names (estate sale, divorce, name change) need extra paperwork.
 - Confirm the VIN on the registration matches the VIN on the car (dash plate, cowl tag, frame stamp if accessible)
