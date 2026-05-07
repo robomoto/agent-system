@@ -2,7 +2,7 @@
 
 **To:** Larry Schmalenberg
 **From:** Christopher Douglass
-**Re:** 1968 Pontiac Firebird, VIN ____ — sale and US export
+**Re:** 1968 Pontiac Firebird, VIN 223378U134833 — sale and US export
 
 ---
 
@@ -10,51 +10,48 @@ Hi Larry,
 
 I'm exporting the 1968 Firebird to Washington state. Here's what I'll need from you so we can keep the sale day quick and clean.
 
-## At the sale
+## At the sale (in Alberta)
 
 1. **Original Vehicle Registration Certificate**, signed over to me.
 2. **Bill of Sale**, notarized. I'll bring a draft. It needs the VIN, sale price in CAD, date, both names and addresses, odometer reading, signatures, and the words "**sold as-is for export to the United States**." We'll sign at an Alberta registry agent in front of a Commissioner for Oaths.
 3. **Government photo ID** for the notary.
+4. **Owner's manual** and any factory paperwork (build sheets, original window sticker, dealer documents) if you have them — collector value to me.
 
-## Before I drive up — a few specifics I still need
+## Before I fly in
 
-The photos you sent already cover most of it (thanks — the cowl tag confirms LOR/Lordstown OH assembly, which saves me significantly on US duty). A few remaining questions:
+I need some specifics to arrange for Canadian export (CERS filing with CBSA) and to bind US insurance effective the moment I take possession of the car:
 
-4. **Engine**: what year is the donor Pontiac 400 block, and roughly when was the swap done? Any receipts or shop records from the swap if you have them.
-5. **Edelbrock parts**: I noticed an Edelbrock box in the trunk photo — which Edelbrock components are on the engine (intake, carb, fuel pump, all of the above)?
-6. **Transmission**: TH350, TH400, or something else?
-7. **Wheels**: the chrome Magnum 500-style wheels look great. Are the factory Rally II wheels included with the sale, or were they sold off?
-8. **Repaint**: roughly when was the car repainted from the original Nordic Blue (code NN) to the current burgundy, and by whom if you remember? Just helps me complete the file.
-9. **Current registration**: the rear plate shows a JUN '21 sticker. Is the car currently sticker-current, or has it been off-the-road since then? If the registration is lapsed we'll arrange a one-trip permit or a flatbed for the drive to the border — I just want to know what we're dealing with.
-10. **Service records**: any maintenance records, mileage history, recent work? Bring whatever paperwork you have.
-
-## Also bring
-
-- Service Alberta Vehicle Registration Certificate (front and back)
-- Owner's manual and any factory paperwork (build sheets, original window sticker, dealer documents) — these have collector value to me.
+- **Photo of the Service Alberta Vehicle Registration Certificate, front and back** — high-resolution, both sides. This is the single document the export filing and the US insurance underwriter both need.
+- **Bank info for the deposit wire** — already covered in the Deposit and Intent-to-Purchase Agreement (Section 7). Just flagging the connection.
 
 ## Other
 
-11. I'll run a PPR lien search on the VIN before driving up. If anything turns up I'll get in touch — standard practice.
+I'll run a PPR lien search on the VIN before flying up. If anything turns up I'll get in touch — standard practice.
 
 ## What you don't need to do
 
 - Deal with US Customs or any US paperwork.
 - Drive the car to the border.
-- Share bank info — payment will be by [bank draft / certified cheque / wire].
 
 ## Day of sale
 
 | Step | Where |
 |---|---|
-| Sign notarized Bill of Sale | Registry agent |
+| Wire balance of purchase price | Initiated the morning of, or the day before |
+| Sign notarized Bill of Sale | Alberta registry agent |
 | Sign registration over to me | Same |
-| Pull current PPR lien search | Same (~$10) |
+| Pull current PPR lien search printout | Same (~$10) |
 | Hand over keys, registration, manual, paperwork | Wherever the car is |
 
-Plan ~45 minutes at the registry. I'll bring the draft Bill of Sale and the [bank draft / cheque].
+Plan ~45 minutes at the registry.
+
+---
+
+You can reach me at:
+
+**Phone:** +1 (206) 708-4267
+**Email:** revmonkey1977@gmail.com
 
 Thanks,
 
 Christopher Douglass
-[phone / email]

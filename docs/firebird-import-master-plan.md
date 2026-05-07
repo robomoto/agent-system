@@ -3,6 +3,8 @@
 *Project codename for: 1968 Pontiac Firebird import, Alberta → Seattle*
 
 **Route**: Alberta, Canada → Pacific Highway truck crossing → Seattle, Washington
+**Vehicle**: 1968 Pontiac Firebird hardtop coupe (Body Style 22637); VIN **223378U134833** (Lordstown OH, plant code U); 51,446 mi (PPI baseline 2026-05-06); period-correct Pontiac 400 V8 (early-1970s donor, US-built, not numbers-matching)
+**Purchase**: CAD $48,500 (~USD $36,000 at ~1.347 FX), private sale from Larry Schmalenberg (larryschmalenberg@hotmail.com); CAD $5,000 deposit + CAD $300 cooperation honorarium wired up front
 **Crossing date**: TBD — see "Picking Your Crossing Day" below
 
 > **All timing in this document is relative to the Day of Import/Export (T-0).** "T-N" means N days *before* crossing; "T+N" means N days *after*. The user picks T-0 based on the day-of-week considerations below.
@@ -13,18 +15,30 @@
 
 In-order tracking. Print this PDF and check items off as you go. Re-print when state changes meaningfully. T-N items only become actionable after T-0 (Day of Crossing) is fixed.
 
-### Phase 0 — Independent prep (do anytime)
+### Phase 0 — Pre-trip prep (deposit gate + supporting docs)
+
+Two interleaved sub-flows. Sub-flow A is independent — anything anytime. Sub-flow B is sequential and gates the 6-week closing clock.
+
+**Sub-flow A — Independent docs & accounts**
 
 - [x] CERS account activated (created 2026-05-05)
 - [ ] Order PHS build sheet from phs-online.com (~USD 70, 2-3 week lead)
 - [ ] Order Carfax Canada / CarProof report (~CAD 50)
-- [ ] Run Alberta PPR lien search by VIN at alberta.ca/personal-property-registry (~CAD 10)
-- [ ] Email seller the send-ready briefing (`06-seller-message-send-ready.pdf`, with placeholders filled)
-- [ ] Receive seller answers: engine donor year + swap date, Edelbrock parts inventory, transmission spec (TH350/TH400), factory Rally II wheels disposition, repaint history, current AB sticker status, service records
+- [ ] Pull Hagerty Valuation Tool printout (free, 5 min) at hagerty.com/valuation-tool — supports the agreed-value claim with all three carriers
+- [ ] Walk through CERS portal interface once (no submission) to confirm US-side access and locate the submission form
+
+**Sub-flow B — Deposit, agreement, repairs (Effective Date → 42-day closing clock)**
+
+- [ ] Send Larry the seller message (`06`) and deposit agreement (`08`) by email
+- [ ] Receive Larry's counter-signed agreement + CIBC banking info (institution 010, transit, account, SWIFT CIBCCATT, branch address) + high-res photo of Service Alberta Registration Certificate (front+back) — this triggers the **Effective Date**
+- [ ] Run Alberta PPR lien search by VIN 223378U134833 at alberta.ca/personal-property-registry (~CAD 10) — before wiring
+- [ ] Phone-confirm Larry's banking info using a number you find independently (not from his email) — wire-fraud check
+- [ ] Wire **CAD $5,300** to Larry (CAD $5,000 deposit + CAD $300 cooperation honorarium per agreement § 5.3(b)) within 3 business days of Effective Date
+- [ ] Book Classic Performance for the 5 pre-closing repairs: trans cooler lines, speedometer cable, front brake flex hose retainer clips, LH upper control arm + control arm bushings, valve-cover gasket if oil leak inspection confirms it
+- [ ] Book tire shop for new tires + LH steering arm bolts torqued to spec + 4-wheel alignment (tire shop runs **after** CP — alignment is meaningless until suspension geometry is corrected)
 - [ ] Phone Hagerty (verify number on hagerty.com) — confirm VIN-bind on foreign title before discussing premium
 - [ ] Phone American Collectors (verify on americancollectors.com) — same
 - [ ] Phone Grundy (verify on grundy.com) — same; explicitly confirm Day-0 VIN-only binding
-- [ ] Walk through CERS portal interface once (no submission) to confirm US-side access and locate the submission form
 
 ### Phase 1 — Route decision (gates everything below)
 
@@ -103,15 +117,20 @@ In-order tracking. Print this PDF and check items off as you go. Re-print when s
 
 ## Bottom Line
 
-| Item | Amount |
+| Item | Amount (USD unless noted) |
 |---|---|
 | Federal-side (HTSUS 9801.00.10 accepted, US Goods Returning) | **$257** |
 | Washington state-side | **$3,990.65** |
 | Insurance, year 1 (Hagerty estimate) | **$300-475** |
-| **Total above purchase price** | **~$4,548-4,723** |
+| Pre-closing repairs at Classic Performance (5 items) | CAD $1,500-3,000 (~USD **$1,100-2,200**) |
+| Tire shop (tires + steering arm bolts + alignment) | CAD $1,000-1,500 (~USD **$750-1,100**) |
+| Cooperation honorarium to seller | CAD $300 (~USD **$222**) |
+| Buyer travel to AB (flight + 1-2 nights + ground) | ~USD **$1,000-1,500** |
+| Transport reimbursement to seller | CAD $50-200 (~USD **$40-150**) |
+| **Total above purchase price** | **~USD $7,710-10,810** |
 | Fallback if 9801 rejected at the booth | +$900 duty |
 
-The Seattle/King County combined sales/use tax (10.25%) is the dominant cost. Federal duty is $0 because the Firebird was built in Ohio (Lordstown or Norwood) and qualifies as US Goods Returning under HTSUS 9801.00.10.
+The Seattle/King County combined sales/use tax (10.25%) is the largest single cost. Federal duty is $0 because the Firebird was built in Ohio (Lordstown, plant code `U`) and qualifies as US Goods Returning under HTSUS 9801.00.10. Cowl tag (`LOR 13292`) and VIN both confirm origin — two independent pieces of evidence.
 
 ---
 
@@ -129,8 +148,10 @@ This master plan is the operational index. Every related PDF lives in `~/claude_
 | `03-american-collectors-prefill.pdf` | Same, for ACI |
 | `04-grundy-prefill.pdf` | Same, for Grundy (benchmark only — confirm Day-0 VIN-only bind before relying on it as binder) |
 | `05-pro-se-filing-guide.pdf` | Legal-team-verified pro-se filing guide. 14 sections, ~700 lines, citation-indexed. **The most comprehensive document in the packet** |
-| `06-seller-message-send-ready.pdf` | Clean letter to send to Larry. Fill VIN and payment-method placeholders before sending |
+| `06-seller-message-send-ready.pdf` | Clean letter to send to Larry. All names, VIN, contact info filled. Asks for the photo of his Service Alberta Registration Certificate (front+back) |
 | `07-emergency-prep-checklist.pdf` | Drive-home prep in three tiers: replace-before-departure, compact trunk kit, and "call-a-flatbed" list. Calibrated to this car (points ignition, off-road for 5 years) |
+| `08-deposit-agreement.pdf` | **Send first.** CAD $48,500 purchase, CAD $5,300 (deposit + honorarium) wired up front, 42-day closing window. Effective Date triggers when Larry counter-signs AND sends banking info |
+| `09-deposit-review-guide.pdf` | Buyer's companion to 08: section-by-section walkthrough, things to ask Larry, red flags. Recommends Alberta-licensed lawyer review before signing (~CAD $200-400 for a 30-min review on this size of deal) |
 
 ### Reference (`pdf/reference/`)
 
@@ -148,12 +169,13 @@ This master plan is the operational index. Every related PDF lives in `~/claude_
 
 ### Reading order if you've never opened the packet
 
-1. **`05-pro-se-filing-guide.pdf`** — the comprehensive walkthrough. Section 2 is the master timeline; Section 6 is the decision-by-decision walkthrough.
+1. **`09-deposit-review-guide.pdf` then `08-deposit-agreement.pdf`** — read 09 first to understand each clause, then send 08 to Larry. **The Effective Date here gates everything else in the timeline.**
 2. **`00-master-plan.pdf`** (this) — operational summary, faster to scan
-3. **`06-seller-message-send-ready.pdf`** — fill placeholders, email the seller
-4. **`02-hagerty-prefill.pdf`** (then 03, 04) — when ready to call carriers
-5. **`07-emergency-prep-checklist.pdf`** — when shopping for the trip
-6. **Reference PDFs** — only as lookup material when something specific needs verifying
+3. **`05-pro-se-filing-guide.pdf`** — comprehensive walkthrough. Section 2 is the master timeline; Section 6 is the decision-by-decision walkthrough
+4. **`06-seller-message-send-ready.pdf`** — email Larry alongside the deposit agreement
+5. **`02-hagerty-prefill.pdf`** (then 03, 04) — when ready to call carriers
+6. **`07-emergency-prep-checklist.pdf`** — when shopping for the trip
+7. **Reference PDFs** — only as lookup material when something specific needs verifying
 
 ---
 
@@ -170,21 +192,29 @@ If your seller logistics constrain you to a Friday: workable but plan for two tr
 
 The T-N references below assume you've fixed Day 0. Counts (T-11, T-4, T+3) are in calendar days.
 
-## Earliest Action Day (T-11) — Priority Actions
+## Earliest Action Priorities (do these now)
 
-These five tasks have the longest lead times and should start as soon as Day 0 is chosen — ideally 11+ days before. If your timeline compresses, these still come first.
+The single time-critical action is the **deposit agreement** — it gates the 6-week closing clock and unlocks all downstream scheduling. The remaining items have long lead times and should start in parallel.
 
-1. **Order the PHS report** at phs-online.com (~$70). 2-3 week lead time. This is your strongest single piece of evidence for the 9801.00.10 duty-free claim — though the cowl-tag photo (`LOR 13292`) is now in hand and is direct evidence by itself.
-2. **Book the WSP VIN inspection** at wsp.wa.gov/driver/schedule-a-vin/. Target the Tuesday or Wednesday of the week after Day 0. Appointment-only, 2-week rolling calendar fills fast.
-3. **Order Carfax Canada / CarProof** report (~CAD 50, ~USD 36).
-4. **Email the seller** the seller-checklist-alberta packet. Most visual confirmations are already in hand from the photos; remaining questions are listed in that doc.
-5. **Phone all three insurance carriers**. On every call, lead with the VIN-bind-on-foreign-title question before discussing premium. Verify carrier numbers via each website (hagerty.com, americancollectors.com, grundy.com) before dialing.
+1. **Send Larry the deposit agreement (`08-deposit-agreement.pdf`) and the seller message (`06-seller-message-send-ready.pdf`).** The Effective Date — and the 42-day closing window — only starts when Larry returns the agreement counter-signed AND sends his CIBC banking info per Section 7. If he doesn't act within 14 days, the agreement is automatically void.
+2. **Order the PHS report** at phs-online.com (~USD 70). 2-3 week lead time. The cowl-tag photo (`LOR 13292`) is already direct evidence of Lordstown OH assembly — the PHS adds belt-and-suspenders for HTSUS 9801.00.10.
+3. **Pull the Hagerty Valuation Tool printout** at hagerty.com/valuation-tool — free, 5 minutes. Most cost-effective single document for supporting the USD $36,000 / CAD $48,500 agreed value across all three carriers.
+4. **Book the WSP VIN inspection** at wsp.wa.gov/driver/schedule-a-vin/ — target Tue/Wed of the week after Day 0. Appointment-only, 2-week rolling calendar.
+5. **Order Carfax Canada / CarProof** report (~CAD 50).
+6. **Phone all three insurance carriers** (Hagerty, ACI, Grundy). Lead each call with the VIN-bind-on-foreign-title question before discussing premium. The prefills (`02`, `03`, `04`) have most fields filled; what's left goes live on the call (DOB, license number, occupation, AmFam policy number, garage alarm details).
+
+**Once Larry counter-signs and sends banking info:**
+
+7. Run the Alberta PPR lien search by VIN (~CAD 10). Phone-confirm CIBC banking info via an independently-found number. Wire **CAD $5,300** (deposit + honorarium) within 3 business days.
+8. Book Classic Performance for the 5 pre-closing repairs. Book tire shop for tires + steering arm + alignment (after CP). Schedule both inside the 42-day window.
 
 ---
 
 ## Master Timeline (T-11 → T+7)
 
 All entries are calendar-day offsets from Day of Crossing (T-0).
+
+> **Where T-N starts.** The deposit agreement's 42-day closing window starts on the **Effective Date** (Larry's counter-sign + banking info). Pick T-0 inside that window with enough buffer for CP repairs (1-2 wks if LH control arm needs ordering), tire-shop work, and your travel to/from Alberta. The Phase 0 sub-flow B items (deposit, repairs, carrier calls) run concurrently with — not within — the T-N count.
 
 | Day | Action | Owner |
 |---|---|---|
@@ -195,7 +225,7 @@ All entries are calendar-day offsets from Day of Crossing (T-0).
 | T-7 | Download blank HS-7 (nhtsa.gov), EPA 3520-1 (epa.gov), Form 7501 (cbp.gov). Pre-fill static fields | Buyer |
 | T-6 | Confirm PHS arrival window. Pack the 3-ring binder | Buyer |
 | T-5 | Travel to Alberta (Pattern A) — or skip if using Pattern B (pay-from-US) | Buyer |
-| T-4 AM | At Alberta registry agent: notarize Bill of Sale, sign over registration, fresh PPR search, take VIN/cowl-tag/odometer photos, pay seller by bank draft | Buyer + seller |
+| T-4 AM | At Alberta registry agent: notarize Bill of Sale, sign over registration, fresh PPR search, take VIN/cowl-tag/odometer photos. Wire balance of CAD $43,500 (initiated morning-of or day prior; deposit agreement § 4.2) | Buyer + seller |
 | T-4 PM (or earlier — any time once route is locked, ≥72 hours before T-0) | File CERS at cbsa-asfc.gc.ca/services/cers-scder with the specified port of exit. **The port specified in CERS commits you to that port.** If route is undecided (Pacific Highway BC vs. Coutts AB / Sweetgrass MT), defer CERS submission until the route is locked. T-4 PM is the conservative default (≥96-hour cushion). Save proof-of-report. Drive south if route is finalized. | Buyer |
 | T-3 | Stage near Surrey BC. Verify CERS status = Accepted | Buyer |
 | T-2 | **Bind insurance with effective date matching T-0 exactly** (not T-2 or T-1 — exact-match required). Schedule WA DOL Quick Title for the working-day window starting at T+4 | Buyer + carrier |
@@ -330,7 +360,18 @@ Use-tax breakdown: 6.5% state + 2.35% Seattle/King County local + 1.4% RTA sales
 | American Collectors (secondary) | $275-425 |
 | Grundy (benchmark only) | $300-500 |
 
-Estimates assume $36,000 agreed value, 7,500 mi/yr, locked Seattle garage, 49 with clean record. Actual depends on carrier underwriting.
+Estimates assume USD $36,000 agreed value (≈ CAD $48,500 at current FX), 7,500 mi/yr, locked Seattle garage, 49 with clean record. Actual depends on carrier underwriting.
+
+### Pre-closing & coordination (between deposit and closing)
+
+| Item | Amount |
+|---|---|
+| Cooperation honorarium to seller (deposit agreement § 5.3(b)) | CAD $300 — wired with deposit |
+| Classic Performance pre-closing repairs (5 items) | CAD $1,500-3,000 |
+| Tire shop (tires + steering arm bolts + alignment) | CAD $1,000-1,500 |
+| Transport reimbursement to seller (§ 5.3(a)) | CAD $50-200 |
+| Buyer travel to AB (flight + 1-2 nights hotel + ground) | ~USD $1,000-1,500 |
+| **Pre-closing subtotal** | **~CAD $3,850-6,200** (~USD $2,850-4,600 + travel) |
 
 ---
 
