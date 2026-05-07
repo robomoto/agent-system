@@ -22,6 +22,7 @@ Two interleaved sub-flows. Sub-flow A is independent — anything anytime. Sub-f
 **Sub-flow A — Independent docs & accounts**
 
 - [x] CERS account activated (created 2026-05-05)
+- [ ] **Get a Temporary Business Number (TBN) from CBSA and link it to the CCP/CERS profile** — see "CERS — Adding a Temporary Business Number" section below. Without an RM-program-account BN linked to the portal login, CERS submissions will not have a populated exporter dropdown
 - [x] PHS build sheet ordered from phs-online.com (USD $110, 2-3 week lead) — 2026-05-07
 - [ ] Pull Hagerty Valuation Tool printout (free, 5 min) at hagerty.com/valuation-tool — supports the agreed-value claim with all three carriers
 - [ ] Review the Bill of Sale (`10`) and instructions (`11`); when closing date is set, fill the date, AB city, day-of FX rate, and Larry's address/phone, then print 2 unsigned originals on heavyweight paper to bring to the registry agent
@@ -210,6 +211,34 @@ The single time-critical action is the **deposit agreement** — it gates the 6-
 
 7. Run the Alberta PPR lien search by VIN (~CAD 10). Phone-confirm CIBC banking info via an independently-found number. Wire **CAD $5,300** (deposit + honorarium) within 3 business days.
 8. Book Classic Performance for the 5 pre-closing repairs. Book tire shop for tires + steering arm + alignment (after CP). Schedule both inside the 42-day window.
+
+---
+
+## CERS — Adding a Temporary Business Number (TBN)
+
+CERS expects exporter records to be tied to a CRA Business Number with an export (RM) program account. For a one-time personal-vehicle export by a non-resident individual, the right path is a **Temporary Business Number (TBN)** issued by CBSA — not a permanent BN through CRA, and not the BSF407 form (which is for broker/account-relationship registration, not TBN issuance).
+
+### Step 1 — Get the TBN issued
+
+The TBN is **not requested by paper form**. It's issued by CBSA on a phone call.
+
+- **CBSA Border Information Service (BIS)**: **1-800-461-9999** (in Canada) or **+1-204-983-3500** (outside Canada)
+- Tell them: "I'm a non-resident individual exporting a personal vehicle through CERS and I need a Temporary Business Number with an export (RM) account."
+- They'll issue the TBN on the call and tell you how to associate it with your CCP/CERS profile.
+
+### Step 2 — Add the TBN to your CERS account
+
+Inside the CBSA Client Portal (CCP), where your CERS account lives:
+
+1. **My Profile** → **Account Identification** (or **Add Business**, depending on the portal version)
+2. Enter the BN/TBN they issued, with the RM account suffix (looks like `123456789RM0001`)
+3. The system links your individual portal login to the export program account
+4. CERS submission forms now have a populated exporter dropdown
+
+### Wrong turns to avoid
+
+- **BSF407** is for customs brokers / service providers linking an existing BN to an importer/exporter relationship — not for individuals requesting a TBN. If a CCP screen wants you to upload BSF407, you're on the delegate-authority / broker-relationship path. Back out and look for the "Direct Filer" or "Self-Service" option.
+- **CRA Form RC1** is the path for a *permanent* BN — slow for non-residents (no SIN to anchor it). The TBN path through CBSA is faster and right-sized for a one-off export.
 
 ---
 
