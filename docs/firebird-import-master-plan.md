@@ -25,6 +25,7 @@ Two interleaved sub-flows. Sub-flow A is independent — anything anytime. Sub-f
 - [ ] Order PHS build sheet from phs-online.com (~USD 70, 2-3 week lead)
 - [ ] Order Carfax Canada / CarProof report (~CAD 50)
 - [ ] Pull Hagerty Valuation Tool printout (free, 5 min) at hagerty.com/valuation-tool — supports the agreed-value claim with all three carriers
+- [ ] Review the Bill of Sale (`10`) and instructions (`11`); when closing date is set, fill the date, AB city, day-of FX rate, and Larry's address/phone, then print 2 unsigned originals on heavyweight paper to bring to the registry agent
 - [ ] Walk through CERS portal interface once (no submission) to confirm US-side access and locate the submission form
 
 **Sub-flow B — Deposit, agreement, repairs (Effective Date → 42-day closing clock)**
@@ -152,6 +153,8 @@ This master plan is the operational index. Every related PDF lives in `~/claude_
 | `07-emergency-prep-checklist.pdf` | Drive-home prep in three tiers: replace-before-departure, compact trunk kit, and "call-a-flatbed" list. Calibrated to this car (points ignition, off-road for 5 years) |
 | `08-deposit-agreement.pdf` | **Send first.** CAD $48,500 purchase, CAD $5,300 (deposit + honorarium) wired up front, 42-day closing window. Effective Date triggers when Larry counter-signs AND sends banking info |
 | `09-deposit-review-guide.pdf` | Buyer's companion to 08: section-by-section walkthrough, things to ask Larry, red flags. Recommends Alberta-licensed lawyer review before signing (~CAD $200-400 for a 30-min review on this size of deal) |
+| `10-bill-of-sale.pdf` | The notarized ownership-transfer document. **Drafted to satisfy four audiences in one form**: Alberta registry agent (Commissioner for Oaths jurat), CBSA export booth (export declaration), CBP import booth (transaction-value evidence for HTSUS 9801.00.10), WA DOL Quick Title (RCW 46.12 ownership evidence + 49 CFR 580.17(a)(2) odometer-exempt citation for a 1968 vehicle) |
+| `11-bill-of-sale-instructions.pdf` | How to use 10: fill-in fields (closing date, AB city, day-of FX rate, Larry's address/phone), what the Commissioner for Oaths does at the registry, how many originals/photocopies to print, what each of the four checkpoints will actually look at |
 
 ### Reference (`pdf/reference/`)
 
@@ -221,7 +224,7 @@ All entries are calendar-day offsets from Day of Crossing (T-0).
 | T-11 | Earliest Action Day priorities above (PHS, WSP booking, Carfax, seller checklist, carrier calls) | Buyer |
 | T-10 | Run Alberta PPR lien search by VIN (alberta.ca/personal-property-registry, ~CAD 10) | Buyer |
 | T-9 | Verification calls: CBSA Pacific Highway, CBP Blaine, Cascade Auto License Blaine, Seattle Auto Licensing | Buyer |
-| T-8 | Draft Bill of Sale (English, both CAD and USD price, "sold as-is for export to United States"). Email to seller for review | Buyer |
+| T-8 | Bill of Sale (`10`) is already drafted to satisfy AB / CBSA / CBP / WA DOL. Fill closing date, AB city, day-of CAD/USD FX rate, and Larry's address/phone. Print 2 unsigned originals on heavyweight paper. Email Larry a copy for advance review | Buyer |
 | T-7 | Download blank HS-7 (nhtsa.gov), EPA 3520-1 (epa.gov), Form 7501 (cbp.gov). Pre-fill static fields | Buyer |
 | T-6 | Confirm PHS arrival window. Pack the 3-ring binder | Buyer |
 | T-5 | Travel to Alberta (Pattern A) — or skip if using Pattern B (pay-from-US) | Buyer |
@@ -537,7 +540,7 @@ Procurements, downloads, drafts, and account setup. Done from home before travel
 
 **Draft (sign later)**
 
-- Bill of Sale — no agency form. Plain English template with: VIN, year/make/model, sale price in **both CAD and USD**, date, full names/addresses, odometer reading, signatures, and the words "**sold as-is for export to the United States**". Will be notarized on T-1 at an Alberta registry agent (CAD 25-100), then carried through the border.
+- Bill of Sale — drafted as `10-bill-of-sale.pdf` (companion `11-bill-of-sale-instructions.pdf`). Single document satisfies AB registry / CBSA export / CBP import / WA DOL Quick Title. Pre-fill closing date, AB city, day-of CAD/USD FX rate, and Larry's address/phone before printing. Will be notarized at an Alberta registry agent on closing day (Commissioner for Oaths fee CAD $25-50; AB title-transfer fee around CAD $25 separately).
 
 **Account setup**
 
