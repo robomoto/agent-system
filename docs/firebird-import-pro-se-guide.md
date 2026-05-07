@@ -69,7 +69,7 @@ Several deadlines move with each other and a single missed step can cascade:
 
 ### The single most important fact
 
-**Your Firebird was built in Ohio (Lordstown or Norwood GM Assembly).** That fact is the basis for an HTSUS **9801.00.10** "U.S. Goods Returning" claim, which makes the vehicle **duty-free** at the U.S. border. (Authority: HTSUS heading **9801.00.10**; **19 CFR 10.1**.) Without that documentation, you fall to HTSUS **8703.24.0190** at **2.5%** duty — about **US$900** on a US$36,000 declared value. The Pontiac Historical Services (PHS) build sheet (~US$70 from phs-online.com), VIN-decode evidence of an Ohio plant code, and the cowl-tag photo are the documents that make 9801 stick. Bring them.
+**Your Firebird was built in Ohio (Lordstown or Norwood GM Assembly).** That fact is the basis for an HTSUS **9801.00.10** "U.S. Goods Returning" claim, which makes the vehicle **duty-free** at the U.S. border. (Authority: HTSUS heading **9801.00.10**; **19 CFR 10.1**.) Without that documentation, you fall to HTSUS **8703.24.0190** at **2.5%** duty — about **US$900** on a US$36,000 declared value. The Pontiac Historical Services (PHS) build sheet (USD $110 from phs-online.com), VIN-decode evidence of an Ohio plant code, and the cowl-tag photo are the documents that make 9801 stick. Bring them.
 
 ---
 
@@ -79,7 +79,7 @@ All entries are calendar-day offsets from **Day of Import/Export (T-0)**. The us
 
 | Day | What you do | With whom |
 |---|---|---|
-| T-11 | Order Pontiac Historical Services build sheet (US$70). Run Alberta PPR lien search by VIN (CAD ~$10). Run CarProof/Carfax Canada (CAD ~$50). The cowl-tag photo confirms LOR (Lordstown OH) — strongest direct evidence; PHS adds the original engine code. | Buyer + seller; phs-online.com; alberta.ca/personal-property-registry |
+| T-11 | Order Pontiac Historical Services build sheet (USD $110). Run Alberta PPR lien search by VIN (CAD ~$10). **Note: Carfax Canada / CarProof not viable** — the 1968 13-character GM VIN doesn't process through their modern lookup. Substitute: ask Larry for any prior bills of sale, prior registrations, or original sales paperwork. The cowl-tag photo confirms LOR (Lordstown OH) — strongest direct evidence; PHS adds the original engine code. | Buyer + seller; phs-online.com; alberta.ca/personal-property-registry |
 | T-10 to T-7 | Confirm seller has Alberta **Vehicle Registration Certificate** (the original; Alberta does not issue a "title" — see Section 7). Confirm Bill of Sale draft is ready in **English**, including VIN, sale price (CAD + USD equivalent), date, both parties' full names and addresses, signatures, odometer, and the words **"sold as-is for export to the United States."** | Buyer + seller |
 | T-7 | Schedule WSP VIN inspection appointment (target T+4 or T+5). | wsp.wa.gov/driver/schedule-a-vin/ |
 | T-7 | Schedule **Quick Title** appointment at Seattle Auto Licensing (King County subagent). Target T+5 to T+7 (after the VIN inspection). Quick Title is RCW 46.12.555 — same-day title certificate for a $50 surcharge. | Seattle Auto Licensing (call to confirm appointment availability for foreign-title imports) |
@@ -111,7 +111,7 @@ All entries are calendar-day offsets from **Day of Import/Export (T-0)**. The us
 | **Notarized Bill of Sale (English)** | Buyer + seller, notarized at Alberta registry agent | Discretionary CBP practice (not strictly required by 19 CFR but routinely requested); WA requires for use-tax basis (RCW 82.12.020) | Photocopy held by buyer; copy given to WA DOL |
 | **Alberta PPR lien search printout** | alberta.ca/personal-property-registry | Personal Property Security Act (Alberta); CBSA practice — vehicle cannot export with active lien | Buyer keeps; show CBSA on demand |
 | **VIN plate / cowl tag photos** | Vehicle | 49 CFR 591.5(i) requires age verification at import; CBP practice for HTSUS 9801.00.10 | Buyer keeps |
-| **Pontiac Historical Services build sheet** | phs-online.com (~US$70) | Evidence supporting HTSUS 9801.00.10 under **19 CFR 10.1** (US Goods Returning documentation) | Buyer keeps |
+| **Pontiac Historical Services build sheet** | phs-online.com (USD $110) | Evidence supporting HTSUS 9801.00.10 under **19 CFR 10.1** (US Goods Returning documentation) | Buyer keeps |
 | **Photos: 4 corners + interior + odometer** | Buyer takes | Underwriting requirement of Hagerty / ACI / Grundy at binding | Buyer keeps; emails to insurer |
 
 ### Filed at the U.S. border (CBP Blaine)
@@ -142,7 +142,7 @@ All entries are calendar-day offsets from **Day of Import/Export (T-0)**. The us
 | Item | Amount (USD unless noted) | Authority for the fee |
 |---|---|---|
 | **Pre-trip** | | |
-| Pontiac Historical Services build sheet | ~US$70 | Private vendor (phs-online.com) |
+| Pontiac Historical Services build sheet | USD $110 | Private vendor (phs-online.com) |
 | Alberta PPR lien search | CAD ~$10 | Service Alberta tariff |
 | Notary (Bill of Sale) | CAD ~$25-100 | Alberta Commissioner for Oaths / Notary |
 | **Federal — Canadian side** | | |
@@ -169,7 +169,7 @@ All entries are calendar-day offsets from **Day of Import/Export (T-0)**. The us
 
 | Category | Approximate | Notes |
 |---|---|---|
-| Pre-trip + Canadian-side | ~CAD $50 + US$70 | PHS, lien search, notary |
+| Pre-trip + Canadian-side | ~CAD $10 + USD $110 | PHS, lien search, notary (no Carfax — 1968 VIN incompatible) |
 | Federal U.S. side | ~US$125 | MPF only (9801 = $0 duty) |
 | Washington state side | **~US$3,990** | Use tax dominates; $3,690 + ~$300 fees |
 | Insurance (annualized) | ~US$400-700 | Bind on T-3 |
@@ -303,7 +303,7 @@ These are decision points where there is no single right answer — only trade-o
 
 | Path | Cost at the booth | Risk |
 |---|---|---|
-| **Bring full 9801 documentation pack** (PHS build sheet, VIN-decode showing Ohio plant code, cowl tag photo) | $0 duty + $124.70 MPF | Officer may still reject — discretionary call. Doc pack costs ~US$70 + your time. |
+| **Bring full 9801 documentation pack** (PHS build sheet, VIN-decode showing Ohio plant code, cowl tag photo) | $0 duty + $124.70 MPF | Officer may still reject — discretionary call. Doc pack costs USD $110 + your time. |
 | **Pay 8703.24 duty without claiming 9801** | $900 duty + $124.70 MPF | None at the booth — entry is straightforward. |
 | **Hire a customs broker to pre-file** | $150-300 broker fee + duty (or $0 if 9801 accepted) | Pro: broker locks in classification before you arrive. Con: cost. |
 
@@ -508,8 +508,8 @@ Each form is in one of three phases of your import: prepare ahead, submit / sche
 #### Phase 1 — Prepare Ahead of Time (from home)
 
 **Order:**
-- Pontiac Historical Services build sheet — phs-online.com (~USD 70, 2-3 wk lead)
-- Carfax Canada / CarProof — carfax.ca (~CAD 50)
+- Pontiac Historical Services build sheet — phs-online.com (USD $110, 2-3 wk lead, ordered 2026-05-07)
+- ~~Carfax Canada / CarProof~~ — **not viable for 1968** (13-char VIN incompatible with Carfax's modern lookup); substitute is asking Larry for any prior bills of sale or registration documents he kept
 - Hagerty Valuation Tool printout — hagerty.com/valuation-tools-articles/valuation-tool (free)
 
 **Print or download:**
@@ -600,9 +600,9 @@ CBP keeps copies; **you keep the stamped originals** for WA DOL.
 
 ### Documentation vendors
 
-- **Pontiac Historical Services (PHS)**: https://www.phs-online.com (~US$70; 2-3 week turnaround — order now)
+- **Pontiac Historical Services (PHS)**: https://www.phs-online.com (USD $110; 2-3 week turnaround — order now)
 - **Hagerty Valuation Tool**: https://www.hagerty.com/valuation-tools (free)
-- **Carfax Canada (CarProof)**: https://www.carfax.ca
+- ~~**Carfax Canada (CarProof)**: https://www.carfax.ca~~ — **N/A for pre-1981 vehicles**; the 13-character GM VIN format isn't supported by their modern lookup
 
 ### Free and reduced-cost legal help
 
@@ -813,7 +813,7 @@ Every regulatory citation used in this document, with subsection and a one-line 
 |---|---|
 | Hagerty Valuation Tool | Industry-standard collector-vehicle valuation; supports agreed-value documentation |
 | NADA Classic Car Pricing Guide | Alternative collector valuation reference used by DOL clerks for FMV checks |
-| Pontiac Historical Services (PHS) | Authoritative source for 1968 Pontiac build documentation; ~US$70, supports 9801 origin claim |
+| Pontiac Historical Services (PHS) | Authoritative source for 1968 Pontiac build documentation; USD $110, supports 9801 origin claim |
 
 ---
 

@@ -32,8 +32,8 @@ Direct from southern Alberta to Montana, then west on I-90/US-2 through MT, ID, 
 ### 1. Pre-Sale Due Diligence
 
 - **PPR lien search**: Alberta Personal Property Registry (alberta.ca/personal-property-registry). Search by VIN. CAD ~$10. Demonstrates clear title, required for export.
-- **CarProof / Carfax Canada** report (~CAD 50): odometer history, accident reports, branded-title check.
-- **Pontiac Historical Services** report (PHS, ~USD 70): for any classic Pontiac, gives factory build sheet, options, dealer destination, paint/trim codes. Independent but invaluable for 9801 origin documentation.
+- **CarProof / Carfax Canada** report (~CAD 50): odometer history, accident reports, branded-title check. **Note: only works on 17-character (post-1981) VINs.** Pre-1981 vehicles (e.g., a 1968 GM with a 13-character VIN like `223378U134833`) cannot be looked up. Substitutes: provincial PPR lien search, NICB VINCheck (theft/total-loss flags), and asking the seller for any prior ownership paperwork they retained.
+- **Pontiac Historical Services** report (PHS, USD $110 as of 2026): for any classic Pontiac, gives factory build sheet, options, dealer destination, paint/trim codes. Independent but invaluable for 9801 origin documentation.
 
 ### 2. Bill of Sale
 
@@ -125,7 +125,7 @@ Pattern B is fine if executed carefully. The framework's default narrative uses 
 |---|---|
 | Alberta PPR lien search | CAD 10-15 |
 | Notary (Bill of Sale) | CAD 25-100 |
-| PHS build sheet (optional, recommended) | USD 70 |
+| PHS build sheet (optional, recommended) | USD $110 |
 | CERS filing | $0 (free) |
 | CBSA export | $0 |
 | CBP duty (with 9801) | $0 (else $750 at 2.5%) |

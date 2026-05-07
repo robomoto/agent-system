@@ -22,10 +22,10 @@ Two interleaved sub-flows. Sub-flow A is independent — anything anytime. Sub-f
 **Sub-flow A — Independent docs & accounts**
 
 - [x] CERS account activated (created 2026-05-05)
-- [ ] Order PHS build sheet from phs-online.com (~USD 70, 2-3 week lead)
-- [ ] Order Carfax Canada / CarProof report (~CAD 50)
+- [x] PHS build sheet ordered from phs-online.com (USD $110, 2-3 week lead) — 2026-05-07
 - [ ] Pull Hagerty Valuation Tool printout (free, 5 min) at hagerty.com/valuation-tool — supports the agreed-value claim with all three carriers
 - [ ] Review the Bill of Sale (`10`) and instructions (`11`); when closing date is set, fill the date, AB city, day-of FX rate, and Larry's address/phone, then print 2 unsigned originals on heavyweight paper to bring to the registry agent
+- [ ] Ask Larry for any prior ownership documents he has (prior bills of sale, prior registrations, original sales paperwork) — pre-1981 GM VINs are only 13 characters and **do not process through Carfax Canada / CarProof's modern lookup**, so prior paperwork is the substitute history record
 - [ ] Walk through CERS portal interface once (no submission) to confirm US-side access and locate the submission form
 
 **Sub-flow B — Deposit, agreement, repairs (Effective Date → 42-day closing clock)**
@@ -200,11 +200,11 @@ The T-N references below assume you've fixed Day 0. Counts (T-11, T-4, T+3) are 
 The single time-critical action is the **deposit agreement** — it gates the 6-week closing clock and unlocks all downstream scheduling. The remaining items have long lead times and should start in parallel.
 
 1. **Send Larry the deposit agreement (`08-deposit-agreement.pdf`) and the seller message (`06-seller-message-send-ready.pdf`).** The Effective Date — and the 42-day closing window — only starts when Larry returns the agreement counter-signed AND sends his CIBC banking info per Section 7. If he doesn't act within 14 days, the agreement is automatically void.
-2. **Order the PHS report** at phs-online.com (~USD 70). 2-3 week lead time. The cowl-tag photo (`LOR 13292`) is already direct evidence of Lordstown OH assembly — the PHS adds belt-and-suspenders for HTSUS 9801.00.10.
+2. **PHS report ordered 2026-05-07** at phs-online.com (USD $110). 2-3 week lead time. The cowl-tag photo (`LOR 13292`) is already direct evidence of Lordstown OH assembly — the PHS adds belt-and-suspenders for HTSUS 9801.00.10.
 3. **Pull the Hagerty Valuation Tool printout** at hagerty.com/valuation-tool — free, 5 minutes. Most cost-effective single document for supporting the USD $36,000 / CAD $48,500 agreed value across all three carriers.
 4. **Book the WSP VIN inspection** at wsp.wa.gov/driver/schedule-a-vin/ — target Tue/Wed of the week after Day 0. Appointment-only, 2-week rolling calendar.
-5. **Order Carfax Canada / CarProof** report (~CAD 50).
-6. **Phone all three insurance carriers** (Hagerty, ACI, Grundy). Lead each call with the VIN-bind-on-foreign-title question before discussing premium. The prefills (`02`, `03`, `04`) have most fields filled; what's left goes live on the call (DOB, license number, occupation, AmFam policy number, garage alarm details).
+5. **Phone all three insurance carriers** (Hagerty, ACI, Grundy). Lead each call with the VIN-bind-on-foreign-title question before discussing premium. The prefills (`02`, `03`, `04`) have most fields filled; what's left goes live on the call (DOB, license number, occupation, AmFam policy number, garage alarm details).
+6. **History substitute (Carfax not viable):** the 1968 GM 13-character VIN doesn't process through Carfax Canada / CarProof. Ask Larry for any prior bills of sale, prior registration certificates, or original sales paperwork he kept — that's the de-facto chain-of-title record for a pre-1981 vehicle.
 
 **Once Larry counter-signs and sends banking info:**
 
@@ -221,7 +221,7 @@ All entries are calendar-day offsets from Day of Crossing (T-0).
 
 | Day | Action | Owner |
 |---|---|---|
-| T-11 | Earliest Action Day priorities above (PHS, WSP booking, Carfax, seller checklist, carrier calls) | Buyer |
+| T-11 | Earliest Action priorities above (PHS, Hagerty Valuation Tool, WSP booking, carrier calls; ask Larry for prior ownership paperwork in lieu of Carfax) | Buyer |
 | T-10 | Run Alberta PPR lien search by VIN (alberta.ca/personal-property-registry, ~CAD 10) | Buyer |
 | T-9 | Verification calls: CBSA Pacific Highway, CBP Blaine, Cascade Auto License Blaine, Seattle Auto Licensing | Buyer |
 | T-8 | Bill of Sale (`10`) is already drafted to satisfy AB / CBSA / CBP / WA DOL. Fill closing date, AB city, day-of CAD/USD FX rate, and Larry's address/phone. Print 2 unsigned originals on heavyweight paper. Email Larry a copy for advance review | Buyer |
@@ -326,11 +326,10 @@ Backup: scan everything to phone gallery + cloud folder before crossing.
 |---|---|
 | Customs duty | $0 (US Goods Returning) |
 | Merchandise Processing Fee (MPF) | $124.70 |
-| PHS report | $70 |
-| Carfax Canada | $36 |
+| PHS report | $110 |
 | Alberta PPR lien search | $10 |
 | Notary in Alberta | $50 |
-| **Federal-side total** | **$290.70** |
+| **Federal-side total** | **$294.70** |
 | Fallback if 9801 rejected | +$900 duty under HTSUS 8703.24.0190 |
 
 ### Washington state-side (Seattle, King County)
@@ -432,7 +431,7 @@ Estimates assume USD $36,000 agreed value (≈ CAD $48,500 at current FX), 7,500
 
 ### HTSUS 9801.00.10 documentation effort vs. paying $900 duty
 
-The PHS report ($70) plus VIN-decoder printout plus cowl-tag photos is a documentation pack that supports the 9801 claim. CBP accepts this for US-origin vehicles. The $900 duty under fallback HTSUS 8703.24.0190 is far more than the $70 PHS cost. **Always do the documentation pack** for a US-built vehicle.
+The PHS report ($110) plus VIN-decoder printout plus cowl-tag photos is a documentation pack that supports the 9801 claim. CBP accepts this for US-origin vehicles. The $900 duty under fallback HTSUS 8703.24.0190 is far more than the $110 PHS cost. **Always do the documentation pack** for a US-built vehicle.
 
 ### Standard registration vs. Collector plate
 
@@ -520,9 +519,9 @@ Procurements, downloads, drafts, and account setup. Done from home before travel
 
 | Item | Where | Cost | Lead time |
 |---|---|---|---|
-| Pontiac Historical Services build sheet | phs-online.com | ~USD 70 | 2-3 weeks |
-| Carfax Canada / CarProof | carfax.ca | ~CAD 50 | minutes |
+| Pontiac Historical Services build sheet | phs-online.com | USD $110 (ordered 2026-05-07) | 2-3 weeks |
 | Hagerty Valuation Tool printout | hagerty.com/valuation-tools-articles/valuation-tool | free | minutes |
+| ~~Carfax Canada / CarProof~~ | ~~carfax.ca~~ | **N/A** — 1968 13-char VIN doesn't process; ask Larry for prior paperwork instead |
 
 **Print / download (carry on the trip)**
 

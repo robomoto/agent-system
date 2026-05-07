@@ -25,6 +25,16 @@
 
 **Fix**: Photograph the build plate and cowl tag before leaving Alberta. Carry the PHS report or equivalent.
 
+## 4a. Pre-1981 VIN Format Breaks Modern History-Report Lookups
+
+**Problem**: GM (and most North American manufacturers) used VINs of varying formats and lengths before the **1981 ISO 17-character VIN standard**. A 1968 GM vehicle, for example, has a **13-character VIN** (e.g., `223378U134833`). Carfax Canada / CarProof, AutoCheck, and most modern vehicle-history services validate input against the 17-character format and reject pre-1981 VINs as malformed. The buyer cannot get a standard history report.
+
+**Fix**: Don't promise a Carfax-equivalent in your timeline for a pre-1981 vehicle. Substitutes:
+1. **Provincial PPR lien search** (Alberta, BC, Ontario, etc.) — works on any VIN length, returns liens.
+2. **Ask the seller for any prior ownership documents they retained** — old bills of sale, prior registration certificates, original sales paperwork.
+3. **Marque-specific build records** (PHS for Pontiac; Marti Report for Ford; GM Heritage Center; etc.) — factory build records, not history reports, but they confirm originality and assembly.
+4. **NICB VINCheck** (US, free, vincheck.nicb.org) — limited to theft/total-loss flags but accepts older VINs.
+
 ## 5. Assuming USMCA = Duty-Free
 
 **Problem**: USMCA (formerly NAFTA) duty-free treatment for Canada-origin vehicles requires the vehicle to qualify as Canada-origin under the rules of origin. Most classic American cars built in Canada (small list — e.g., some Camaros built at Oshawa) might qualify, but the vast majority of US-classic cars sold in Canada were originally built in the US, sold in the US, then later moved to Canada. USMCA is irrelevant; **9801** is the right argument.

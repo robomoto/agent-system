@@ -51,7 +51,7 @@ For a vehicle, the test is:
 1. Before the border, assemble the documentation pack:
    - Photos of the VIN plate and cowl tag
    - VIN decode (any reputable decoder will identify the assembly plant)
-   - If available, Pontiac Historical Services (PHS) report (~$70 USD, good investment for any 1968 Firebird and adds collector-market value too)
+   - If available, Pontiac Historical Services (PHS) report (USD $110 as of 2026, good investment for any 1968 Firebird and adds collector-market value too)
 2. Declare 9801.00.10 on the Form 7501 line for the vehicle, with 8703.24 as a fallback.
 3. The CBP officer has discretion. If they reject 9801, duty falls to 8703.24 (2.5%). The user pays at the booth (credit card or cash; bank-issued checks may not be accepted at small ports).
 
