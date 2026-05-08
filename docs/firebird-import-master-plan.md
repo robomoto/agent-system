@@ -142,7 +142,6 @@ This master plan is the operational index. Every related PDF lives in `~/claude_
 | `02-hagerty-prefill.pdf` | Carry when calling Hagerty — online-form prefill, phone script, document checklist, VIN-bind confirmation question |
 | `03-american-collectors-prefill.pdf` | Same, for ACI |
 | `04-grundy-prefill.pdf` | Same, for Grundy (benchmark only — confirm Day-0 VIN-only bind before relying on it as binder) |
-| `05-pro-se-filing-guide.pdf` | Legal-team-verified pro-se filing guide. 14 sections, ~700 lines, citation-indexed. **The most comprehensive document in the packet** |
 | `06-seller-message-send-ready.pdf` | Clean letter to send to Larry. All names, VIN, contact info filled. Asks for the photo of his Service Alberta Registration Certificate (front+back) |
 | `07-emergency-prep-checklist.pdf` | Drive-home prep in three tiers: replace-before-departure, compact trunk kit, and "call-a-flatbed" list. Calibrated to this car (points ignition, age, recent storage history per seller) |
 | `08-deposit-agreement.pdf` | **Send first.** CAD $48,500 purchase, CAD $5,300 (deposit + honorarium) wired up front, 42-day closing window. Effective Date triggers when Larry counter-signs AND sends banking info |
@@ -168,12 +167,13 @@ This master plan is the operational index. Every related PDF lives in `~/claude_
 ### Reading order if you've never opened the packet
 
 1. **`09-deposit-review-guide.pdf` then `08-deposit-agreement.pdf`** — read 09 first to understand each clause, then send 08 to Larry. **The Effective Date here gates everything else in the timeline.**
-2. **`00-master-plan.pdf`** (this) — operational summary, faster to scan
-3. **`05-pro-se-filing-guide.pdf`** — comprehensive walkthrough. Section 2 is the master timeline; Section 6 is the decision-by-decision walkthrough
+2. **`00-master-plan.pdf`** (this) — operational summary
+3. **`10-bill-of-sale.pdf` and `11-bill-of-sale-instructions.pdf`** — read 11 first, then have Larry sign + notarize 10 ahead of your arrival
 4. **`06-seller-message-send-ready.pdf`** — email Larry alongside the deposit agreement
 5. **`02-hagerty-prefill.pdf`** (then 03, 04) — when ready to call carriers
 6. **`07-emergency-prep-checklist.pdf`** — when shopping for the trip
-7. **Reference PDFs** — only as lookup material when something specific needs verifying
+7. **`12-cbsa-d20-1-1-paragraph-20.pdf`** — print and put in Tab 2 for the border
+8. **Reference PDFs** — only as lookup material when something specific needs verifying
 
 ---
 
