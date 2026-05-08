@@ -35,8 +35,8 @@ Two interleaved sub-flows. Sub-flow A is independent — anything anytime. Sub-f
 - [ ] Run Alberta PPR lien search by VIN 223378U134833 at alberta.ca/personal-property-registry (~CAD 10) — before wiring
 - [ ] Phone-confirm Larry's banking info using a number you find independently (not from his email) — wire-fraud check
 - [ ] Wire **CAD $5,300** to Larry (CAD $5,000 deposit + CAD $300 cooperation honorarium per agreement § 5.3(b)) within 3 business days of Effective Date
-- [ ] Book Classic Performance for the 5 pre-closing repairs: trans cooler lines, speedometer cable, front brake flex hose retainer clips, LH upper control arm + control arm bushings, valve-cover gasket if oil leak inspection confirms it
-- [ ] Book tire shop for new tires + LH steering arm bolts torqued to spec + 4-wheel alignment (tire shop runs **after** CP — alignment is meaningless until suspension geometry is corrected)
+- [ ] **No pre-closing repairs** — mechanic not available in the closing window. Vehicle is sold as-is per the PPI. Front-end work (LH steering arm torque + control arm bushings + alignment) and new tires happen at a Seattle shop post-arrival
+- [ ] Schedule a Seattle suspension/tire shop appointment for the week of T+1: front-end torque + alignment + new tires (oversized fronts come off)
 - [ ] Phone Hagerty (verify number on hagerty.com) — confirm VIN-bind on foreign title before discussing premium
 - [ ] Phone American Collectors (verify on americancollectors.com) — same
 - [ ] Phone Grundy (verify on grundy.com) — same; explicitly confirm Day-0 VIN-only binding
@@ -119,12 +119,10 @@ Two interleaved sub-flows. Sub-flow A is independent — anything anytime. Sub-f
 | Federal-side (HTSUS 9801.00.10 accepted, US Goods Returning) | **$257** |
 | Washington state-side | **$3,990.65** |
 | Insurance, year 1 (Hagerty estimate) | **$300-475** |
-| Pre-closing repairs at Classic Performance (5 items) | CAD $1,500-3,000 (~USD **$1,100-2,200**) |
-| Tire shop (tires + steering arm bolts + alignment) | CAD $1,000-1,500 (~USD **$750-1,100**) |
-| Cooperation honorarium to seller | CAD $300 (~USD **$222**) |
+| Cooperation honorarium to seller (deposit agreement § 3.4) | CAD $300 (~USD **$222**) |
+| Seattle post-arrival: front-end + tires + alignment | USD **$1,000-2,000** (estimate; varies by shop and parts) |
 | Buyer travel to AB (flight + 1-2 nights + ground) | ~USD **$1,000-1,500** |
-| Transport reimbursement to seller | CAD $50-200 (~USD **$40-150**) |
-| **Total above purchase price** | **~USD $7,710-10,810** |
+| **Total above purchase price** | **~USD $6,768-9,484** |
 | Fallback if 9801 rejected at the booth | +$900 duty |
 
 The Seattle/King County combined sales/use tax (10.25%) is the largest single cost. Federal duty is $0 because the Firebird was built in Ohio (Lordstown, plant code `U`) and qualifies as US Goods Returning under HTSUS 9801.00.10. Cowl tag (`LOR 13292`) and VIN both confirm origin — two independent pieces of evidence.
@@ -205,7 +203,7 @@ The single time-critical action is the **deposit agreement** — it gates the 6-
 **Once Larry counter-signs and sends banking info:**
 
 7. Run the Alberta PPR lien search by VIN (~CAD 10). Phone-confirm CIBC banking info via an independently-found number. Wire **CAD $5,300** (deposit + honorarium) within 3 business days.
-8. Book Classic Performance for the 5 pre-closing repairs. Book tire shop for tires + steering arm + alignment (after CP). Schedule both inside the 42-day window.
+8. Schedule a Seattle suspension/tire shop appointment for the week of T+1: front-end torque + 4-wheel alignment + new tires. The car drives home as-is (PPI-flagged front-end items not addressed pre-trip); plan the route conservatively and limit highway speeds.
 
 ---
 
@@ -339,16 +337,16 @@ Use-tax breakdown: 6.5% state + 2.35% Seattle/King County local + 1.4% RTA sales
 
 Estimates assume USD $36,000 agreed value (≈ CAD $48,500 at current FX), 7,500 mi/yr, locked Seattle garage, 49 with clean record. Actual depends on carrier underwriting.
 
-### Pre-closing & coordination (between deposit and closing)
+### Coordination, travel, and post-arrival service
 
 | Item | Amount |
 |---|---|
-| Cooperation honorarium to seller (deposit agreement § 5.3(b)) | CAD $300 — wired with deposit |
-| Classic Performance pre-closing repairs (5 items) | CAD $1,500-3,000 |
-| Tire shop (tires + steering arm bolts + alignment) | CAD $1,000-1,500 |
-| Transport reimbursement to seller (§ 5.3(a)) | CAD $50-200 |
+| Cooperation honorarium to seller (deposit agreement § 3.4) | CAD $300 — wired with deposit |
 | Buyer travel to AB (flight + 1-2 nights hotel + ground) | ~USD $1,000-1,500 |
-| **Pre-closing subtotal** | **~CAD $3,850-6,200** (~USD $2,850-4,600 + travel) |
+| Seattle post-arrival: front-end torque + 4-wheel alignment + new tires | USD $1,000-2,000 |
+| **Subtotal** | **~USD $2,222-3,722** |
+
+> **Note**: no pre-closing repairs are scheduled. The PPI-flagged front-end items (loose LH steering arm bolts, deteriorated control arm bushings) and oil leak are deferred to a Seattle shop post-arrival.
 
 ---
 
