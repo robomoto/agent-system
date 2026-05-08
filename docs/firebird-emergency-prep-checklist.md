@@ -1,6 +1,6 @@
 # Opération Migration du Poulet de Feu — Drive-Home Emergency Preparedness Checklist
 
-**Vehicle**: 1968 Pontiac Firebird, period-correct Pontiac 400 V8 (points ignition assumed from engine bay photo), off-road since June 2021
+**Vehicle**: 1968 Pontiac Firebird, period-correct Pontiac 400 V8 (points ignition assumed from engine bay photo). Storage history per seller (the JUN '21 decal on the plate is the last sticker Alberta issued before abolishing the program in 2018 — it does **not** indicate the car has been off-road; confirm actual usage with the seller).
 **Route**: Alberta → BC → Pacific Highway crossing → I-5 south → Seattle (~1,200-1,500 km / 750-950 mi)
 **Duration**: 2-3 days driving; longer if you stage near the seller and the border
 

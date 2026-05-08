@@ -28,7 +28,7 @@ A short briefing to hand the Alberta seller. Edit the bracketed placeholders.
 > 6. **Transmission**: TH350, TH400, or something else?
 > 7. **Wheels**: the chrome Magnum 500-style wheels look great. Are the factory Rally II wheels included with the sale, or were they sold off?
 > 8. **Repaint**: roughly when was the car repainted from the original Nordic Blue (code NN) to the current burgundy, and by whom if you remember? No big deal — just helps me complete the file.
-> 9. **Current registration**: the rear plate shows a JUN '21 sticker. Is the car currently sticker-current, or has it been off-the-road since then? If the registration is lapsed, we'll arrange a one-trip permit for the drive to the border (or a flatbed) — just want to know what we're dealing with.
+> 9. **Current registration and insurance**: is the car currently registered and insured? (Alberta abolished registration stickers in 2018, so the JUN '21 decal isn't useful — registration status is electronic now and only you can confirm it.) If the registration is lapsed, we'll arrange a one-trip permit for the drive to the border (or a flatbed) — just want to know what we're dealing with.
 > 10. **Service records**: any maintenance records, mileage history, recent work? Bring whatever paperwork you have.
 >
 > **Also bring**
@@ -72,7 +72,7 @@ A short briefing to hand the Alberta seller. Edit the bracketed placeholders.
 - Confirm the VIN on the registration matches the VIN on the car (dash plate, cowl tag, frame stamp if accessible)
 - Confirm odometer on Bill of Sale matches the dashboard. Photograph the dashboard at sale.
 - Pay by traceable instrument (bank draft, certified cheque, or wire). Cash above CAD 10,000 triggers FINTRAC reporting and looks bad to CBSA.
-- If AB sticker is lapsed (likely, given JUN '21), plan ahead: arrange a one-trip / in-transit permit via Service Alberta OR a flatbed to Pacific Highway. Driving an unregistered car on AB roads is a citation risk.
+- **Alberta abolished registration stickers in 2018**, so a "JUN '21 sticker" on a plate tells you nothing about current registration — confirm directly with the seller. Independently of that, **plates stay with the seller after sale in Alberta**, so the post-sale drive from registry agent to the border has no plate on the vehicle. Plan ahead: arrange an Alberta in-transit permit via Service Alberta (issued through any registry agent, ~CAD $25) for that segment, OR have the seller drive the car to a registry-agent location near the border, OR flatbed to Pacific Highway.
 
 ## "Clear Canadian Title" → Alberta Terms
 
