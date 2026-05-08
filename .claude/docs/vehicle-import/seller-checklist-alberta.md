@@ -27,7 +27,7 @@ A short briefing to hand the Alberta seller. Edit the bracketed placeholders.
 > 5. **Edelbrock parts**: I noticed an Edelbrock box in the trunk photo — which Edelbrock components are on the engine (intake, carb, fuel pump, all of the above)?
 > 6. **Transmission**: TH350, TH400, or something else?
 > 7. **Wheels**: the chrome Magnum 500-style wheels look great. Are the factory Rally II wheels included with the sale, or were they sold off?
-> 8. **Repaint**: roughly when was the car repainted from the original Nordic Blue (code NN) to the current burgundy, and by whom if you remember? No big deal — just helps me complete the file.
+> 8. **Paint history**: the cowl-tag paint code is **N-N (Flambeau Burgundy)**, which matches the current dark burgundy. Is the current paint the original Flambeau Burgundy, or has the car been repainted? If repainted, roughly when, and by whom if you remember? Just helps complete the file.
 > 9. **Current registration and insurance**: is the car currently registered and insured? (Alberta abolished registration stickers in 2018, so the JUN '21 decal isn't useful — registration status is electronic now and only you can confirm it.) If the registration is lapsed, we'll arrange a one-trip permit for the drive to the border (or a flatbed) — just want to know what we're dealing with.
 > 10. **Service records**: any maintenance records, mileage history, recent work? Bring whatever paperwork you have.
 >
@@ -64,7 +64,7 @@ A short briefing to hand the Alberta seller. Edit the bracketed placeholders.
 
 ## Buyer's Backstop Checklist (Internal — Do Not Send)
 
-- Confirmed via cowl tag photo: LOR (Lordstown OH) assembly plant, body sequence 13292, style 22637 (1968 Firebird sport coupe), trim 259 (black), original paint N-N (Nordic Blue Metallic — repainted)
+- Confirmed via cowl tag photo: LOR (Lordstown OH) assembly plant, body sequence 13292, style 22637 (1968 Firebird sport coupe), trim 259 (black), factory paint N-N (Flambeau Burgundy; current paint is a 2015 respray in the original factory color per seller)
 - Run the PPR lien search yourself before driving north (alberta.ca/personal-property-registry, ~CAD 10)
 - **Carfax Canada / CarProof: N/A for pre-1981 vehicles** — 13-character VIN doesn't process through Carfax's modern lookup. Substitute: ask the seller for any prior bills of sale or registration documents they kept.
 - Order a Pontiac Historical Services (PHS) report (USD $110 at phs-online.com) — body sequence 13292 should be sufficient. PHS report confirms the original engine code (which establishes that the current 400 is a swap, not the original) and the dealer destination.
